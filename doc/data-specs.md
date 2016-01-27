@@ -2,6 +2,10 @@
 
 ## Songs
 
+* First line
+* Author
+* References or purpose
+
 ### Books
 
 Index of abbreviations (roughly alphabetical):
