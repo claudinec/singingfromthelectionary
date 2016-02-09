@@ -8,11 +8,14 @@
   "require": {
     "composer/installers": "~1.0",
     "derhasi/composer-preserve-paths": "0.1.*",
-    "drupal/drupal": "7.*"
+    "drupal/drupal": "7.*",
+    "drupal/admin_menu": "^7.3@RC",
+    "drupal/backup_migrate": "^7.3"
   },
   "conflict": {
     "drupal/core": "8.*"
   },
+  "minimum-stability": "RC",
   "scripts": {
     "post-create-project-cmd": [
       "rm README.md LICENSE .travis.yml phpunit.xml.dist"

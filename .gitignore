@@ -20,9 +20,9 @@ web/sites/*/*settings*.php
 drush/contrib
 vendor
 web/core
-web/modules/contrib
-web/themes/contrib
-web/profiles/contrib
+web/sites/all/modules/contrib
+web/sites/all/themes/contrib
+web/sites/all/profiles/contrib
 
 # Ignore paths that contain generated content.
 web/files/
