@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # OS specific temporary files
 .DS_Store*
 ehthumbs.db
@@ -21,7 +20,6 @@ nbproject
 # Vendor files
 vendor/
 
-=======
 # Ignore configuration files that may contain sensitive information.
 sites/*/*settings*.php
 
@@ -58,4 +56,3 @@ xmlrpc.php
 /profiles
 /scripts
 /themes
->>>>>>> 7be491cd56c87c44dabbc011af3a47729dcafa04
