@@ -11,12 +11,13 @@
     "drupal/drupal": "7.*",
     "drupal/admin_menu": "^7.3@RC",
     "drupal/backup_migrate": "^7.3",
-    "drupal/token": "^7.1"
+    "drupal/token": "^7.1",
+    "drupal/feeds": "^7.2@beta"
   },
   "conflict": {
     "drupal/core": "8.*"
   },
-  "minimum-stability": "RC",
+  "minimum-stability": "dev",
   "scripts": {
     "post-create-project-cmd": [
       "rm README.md LICENSE .travis.yml phpunit.xml.dist"
