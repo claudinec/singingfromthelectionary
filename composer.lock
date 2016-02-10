@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "92b3f5a1d4385acb4148faefee1dc5d0",
-    "content-hash": "cde1ec3a729fdd7080cf3c90233d781b",
+    "hash": "f59331dee9a69451455f97739717c12f",
+    "content-hash": "e62e96afcb22de03e8e9098a1e323053",
     "packages": [
         {
             "name": "composer/installers",
@@ -318,6 +318,33 @@
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Handles general site configuration for administrators.",
             "homepage": "https://www.drupal.org/project/drupal"
+        },
+        {
+            "name": "drupal/token",
+            "version": "7.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/token",
+                "reference": "6019b9e657cfe6a919e8e717c52e4e07bd94dab0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/token-7.x-1.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Provides a user interface for the Token API and some missing core tokens.",
+            "homepage": "https://www.drupal.org/project/token"
         }
     ],
     "packages-dev": [],
