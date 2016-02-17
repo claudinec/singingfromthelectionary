@@ -1,0 +1,15 @@
+name = Lectionary Songs
+description = Song content type for Singing from the Lectionary
+core = 7.x
+package = Lectionary
+version = 7.x-0.1
+dependencies[] = features
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = field_author
+features[field_base][] = field_first_line
+features[field_instance][] = node-song-body
+features[field_instance][] = node-song-field_author
+features[field_instance][] = node-song-field_first_line
+features[node][] = song
