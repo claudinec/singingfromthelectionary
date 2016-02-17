@@ -1,0 +1,9 @@
+name = Lectionary Admin
+description = Admin features for Singing from the Lectionary
+core = 7.x
+package = Lectionary
+version = 7.x-0.1
+dependencies[] = admin_menu
+dependencies[] = backup_migrate
+dependencies[] = features
+features[features_api][] = api:2
