@@ -4,7 +4,8 @@
 
 * First line
 * Author
-* References or purpose
+* References or purpose - tags?
+* Information
 
 ### Books
 
