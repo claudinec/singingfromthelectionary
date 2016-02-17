@@ -9,7 +9,7 @@
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.23",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
@@ -191,17 +191,11 @@
         },
         {
             "name": "drupal/backup_migrate",
-            "version": "7.3.1",
+            "version": "dev-7.x-3.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/backup_migrate",
-                "reference": "174bb364b71887a23140efea626d2843b57bd4cf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/backup_migrate-7.x-3.1.zip",
-                "reference": null,
-                "shasum": null
+                "reference": "9a3800f1dd2d3fc8c789073e4552c38bf70ed955"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -214,7 +208,8 @@
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Backup the Drupal database and files or migrate them to another environment.",
-            "homepage": "https://www.drupal.org/project/backup_migrate"
+            "homepage": "https://www.drupal.org/project/backup_migrate",
+            "time": "2015-07-01 20:41:14"
         },
         {
             "name": "drupal/ctools",
@@ -258,17 +253,11 @@
         },
         {
             "name": "drupal/drupal",
-            "version": "7.42.0",
+            "version": "7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/drupal",
-                "reference": "2f322a0d495c5f29154615a3a9cb8c07b58afcdc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/drupal-7.42.zip",
-                "reference": null,
-                "shasum": null
+                "reference": "aaf2d59820d7daf70c3acdde20c0e13d618a4e07"
             },
             "replace": {
                 "drupal/aggregator": "self.version",
@@ -357,7 +346,8 @@
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Handles general site configuration for administrators.",
-            "homepage": "https://www.drupal.org/project/drupal"
+            "homepage": "https://www.drupal.org/project/drupal",
+            "time": "2016-02-03 16:28:36"
         },
         {
             "name": "drupal/feeds",
@@ -428,17 +418,11 @@
         },
         {
             "name": "drupal/token",
-            "version": "7.1.6",
+            "version": "dev-7.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/token",
-                "reference": "6019b9e657cfe6a919e8e717c52e4e07bd94dab0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token-7.x-1.6.zip",
-                "reference": null,
-                "shasum": null
+                "reference": "d9f4e54356922db0b3c0a746095ce1c05ef26b78"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -451,7 +435,8 @@
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Provides a user interface for the Token API and some missing core tokens.",
-            "homepage": "https://www.drupal.org/project/token"
+            "homepage": "https://www.drupal.org/project/token",
+            "time": "2015-12-27 17:30:45"
         }
     ],
     "packages-dev": [],
