@@ -6,6 +6,7 @@ version = 7.x-0.1
 dependencies[] = admin_menu
 dependencies[] = backup_migrate
 dependencies[] = ctools
+dependencies[] = diff
 dependencies[] = features
 features[backup_migrate_profiles][] = default
 features[backup_migrate_schedules][] = daily_schedule

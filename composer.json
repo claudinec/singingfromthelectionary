@@ -13,7 +13,8 @@
     "drupal/backup_migrate": "^7.3",
     "drupal/token": "^7.1",
     "drupal/feeds": "^7.2@beta",
-    "drupal/features": "^7.2"
+    "drupal/features": "^7.2",
+    "drupal/diff": "^7.3"
   },
   "conflict": {
     "drupal/core": "8.*"

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0f89bbd42f5d052457fff0683e3740bf",
-    "content-hash": "f7aeba90d6a55a08630a903ed5405b48",
+    "hash": "67779dc8b0f058a1b993a31b52414e89",
+    "content-hash": "3952e22afe650ecc0ad3d9c5d4b15f9a",
     "packages": [
         {
             "name": "composer/installers",
@@ -250,6 +250,28 @@
             "description": "A library of helpful tools by Merlin of Chaos.",
             "homepage": "https://www.drupal.org/project/ctools",
             "time": "2015-11-18 04:40:26"
+        },
+        {
+            "name": "drupal/diff",
+            "version": "dev-7.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/diff",
+                "reference": "3a03b6c3e229214fdd5533ca419e21b6d93df3c1"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Show differences between content revisions.",
+            "homepage": "https://www.drupal.org/project/diff",
+            "time": "2015-08-26 15:25:08"
         },
         {
             "name": "drupal/drupal",
