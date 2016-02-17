@@ -21,11 +21,11 @@ function lectionary_songs_feeds_importer_default() {
       'plugin_key' => 'FeedsFileFetcher',
       'config' => array(
         'allowed_extensions' => 'txt csv tsv xml opml',
-        'direct' => FALSE,
+        'direct' => 1,
         'directory' => 'private://feeds',
         'allowed_schemes' => array(
-          0 => 'public',
-          1 => 'private',
+          'public' => 'public',
+          'private' => 'private',
         ),
       ),
     ),
