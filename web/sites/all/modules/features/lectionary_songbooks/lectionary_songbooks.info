@@ -1,0 +1,13 @@
+name = Lectionary Songbooks
+description = Songbook content type for Singing from the Lectionary
+core = 7.x
+package = Lectionary
+version = 7.x-0.1
+dependencies[] = features
+dependencies[] = lectionary_songs
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = field_abbreviation
+features[field_instance][] = node-songbook-body
+features[field_instance][] = node-songbook-field_abbreviation
+features[node][] = songbook
