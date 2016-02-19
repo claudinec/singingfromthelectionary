@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "67779dc8b0f058a1b993a31b52414e89",
-    "content-hash": "3952e22afe650ecc0ad3d9c5d4b15f9a",
+    "hash": "38ea74d897146ecaf0b891af6daf2140",
+    "content-hash": "87ef26683ecbc66fc96df75e593f1218",
     "packages": [
         {
             "name": "composer/installers",
@@ -370,6 +370,58 @@
             "description": "Handles general site configuration for administrators.",
             "homepage": "https://www.drupal.org/project/drupal",
             "time": "2016-02-03 16:28:36"
+        },
+        {
+            "name": "drupal/entity",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entity",
+                "reference": "4d76c5c2302e225fea2db7aba08d48f3558bf275"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/entity_token": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Enables modules to work with any entity type and to provide entities.",
+            "homepage": "https://www.drupal.org/project/entity",
+            "time": "2015-02-27 17:08:22"
+        },
+        {
+            "name": "drupal/entityreference",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entityreference",
+                "reference": "b5009cd1406f72a4fbc1103642ddc69a28d26c5a"
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*",
+                "drupal/entity": "7.*"
+            },
+            "replace": {
+                "drupal/entityreference_behavior_example": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Provides a field that can reference other entities.",
+            "homepage": "https://www.drupal.org/project/entityreference",
+            "time": "2015-11-13 09:34:14"
         },
         {
             "name": "drupal/features",
