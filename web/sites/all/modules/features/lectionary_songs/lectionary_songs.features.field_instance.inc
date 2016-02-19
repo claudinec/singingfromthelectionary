@@ -36,7 +36,7 @@ function lectionary_songs_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'body',
-    'label' => 'Information',
+    'label' => 'Notes',
     'required' => 0,
     'settings' => array(
       'display_summary' => 1,
@@ -139,7 +139,7 @@ function lectionary_songs_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Author');
   t('First line');
-  t('Information');
+  t('Notes');
 
   return $field_instances;
 }
