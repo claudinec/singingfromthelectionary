@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * lectionary_songs.feeds_importer_default.inc
+ * lectionary_songbooks.feeds_importer_default.inc
  */
 
 /**
  * Implements hook_feeds_importer_default().
  */
-function lectionary_songs_feeds_importer_default() {
+function lectionary_songbooks_feeds_importer_default() {
   $export = array();
 
   $feeds_importer = new stdClass();
@@ -46,7 +46,7 @@ function lectionary_songs_feeds_importer_default() {
           0 => array(
             'source' => 'First line',
             'target' => 'title',
-            'unique' => FALSE,
+            'unique' => 1,
           ),
           1 => array(
             'source' => 'First line',
@@ -56,6 +56,11 @@ function lectionary_songs_feeds_importer_default() {
           2 => array(
             'source' => 'Author',
             'target' => 'field_author',
+            'unique' => FALSE,
+          ),
+          3 => array(
+            'source' => 'References or purpose',
+            'target' => 'body',
             'unique' => FALSE,
           ),
         ),
