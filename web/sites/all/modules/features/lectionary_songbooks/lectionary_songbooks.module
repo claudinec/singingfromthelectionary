@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Lectionary Songbooks feature.
+ */
+
+include_once 'lectionary_songbooks.features.inc';

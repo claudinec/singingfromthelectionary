@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Lectionary Imports feature.
+ */
+
+include_once 'lectionary_imports.features.inc';
