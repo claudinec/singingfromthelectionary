@@ -1,2 +1,3 @@
-# singingfromthelectionary
-Singing From the Lectionary
+# Singing From the Lectionary
+
+Drupal website.
