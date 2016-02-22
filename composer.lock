@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "24760cdd1e774ca6935b6d7f35f66c5f",
-    "content-hash": "8d153f39bdaf7cd95271ca215f082b0c",
+    "hash": "af5c8db0cd3beddb1bf886dfc0f8ea8c",
+    "content-hash": "26fbfb79cbdaaf74e974af6ecedaafd1",
     "packages": [
         {
             "name": "composer/installers",
@@ -538,6 +538,32 @@
             "description": "Scheduler API",
             "homepage": "https://www.drupal.org/project/job_scheduler",
             "time": "2015-01-21 14:00:51"
+        },
+        {
+            "name": "drupal/omega",
+            "version": "dev-7.x-5.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/omega",
+                "reference": "19884803e08e5584341e01eb7cfbb9b2531e0e7c"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/omega_clean": "self.version",
+                "drupal/omega_default": "self.version"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-5.x": "7.5.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Omega Five was built to enable a simplistic way for non-developers to create, manage and alter advanced responsive layouts without the need for ANY coding skills.",
+            "homepage": "https://www.drupal.org/project/omega",
+            "time": "2015-07-23 15:32:54"
         },
         {
             "name": "drupal/pathauto",
