@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3d84386f2b6eea3262c99c870aa84f59",
-    "content-hash": "6e71f54361603fe5ab2782a481991292",
+    "hash": "43132811d806735e1fe27bc219fa9653",
+    "content-hash": "55e780947078a55907492dcd5418f3d2",
     "packages": [
         {
             "name": "composer/installers",
@@ -567,6 +567,42 @@
             "description": "Scheduler API",
             "homepage": "https://www.drupal.org/project/job_scheduler",
             "time": "2015-01-21 14:00:51"
+        },
+        {
+            "name": "drupal/migrate",
+            "version": "dev-7.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/migrate",
+                "reference": "bdb5a86116295df7c35fbb39bdd4397f743498c1"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/migrate_example": "self.version",
+                "drupal/migrate_example_baseball": "self.version",
+                "drupal/migrate_example_oracle": "self.version",
+                "drupal/migrate_ui": "self.version"
+            },
+            "suggest": {
+                "drupal/comment": "Required by drupal/migrate_example",
+                "drupal/features": "Required by drupal/migrate_example_oracle, drupal/migrate_example_baseball",
+                "drupal/image": "Required by drupal/migrate_example, drupal/migrate_example_oracle",
+                "drupal/list": "Required by drupal/migrate_example",
+                "drupal/number": "Required by drupal/migrate_example, drupal/migrate_example_baseball",
+                "drupal/taxonomy": "Required by drupal/migrate_example"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Import content from external sources",
+            "homepage": "https://www.drupal.org/project/migrate",
+            "time": "2015-11-28 20:45:16"
         },
         {
             "name": "drupal/pathauto",
