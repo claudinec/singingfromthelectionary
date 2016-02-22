@@ -17,8 +17,7 @@
     "drupal/diff": "^7.3",
     "drupal/entityreference": "^7.1",
     "drupal/pathauto": "^7.1",
-    "drupal/bootstrap": "7.3.4",
-    "drupal/omega": "^7.4"
+    "drupal/bootstrap": "7.3.4"
   },
   "conflict": {
     "drupal/core": "8.*"
