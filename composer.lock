@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8fa433338a0809c88acab1191363207f",
-    "content-hash": "a81398b5dc46eda3e4e32b54c94690d6",
+    "hash": "08578efc54026393cfe0fbf45fa455c3",
+    "content-hash": "88a89bcfea13ddd5100936264c2fbafc",
     "packages": [
         {
             "name": "composer/installers",
@@ -210,6 +210,23 @@
             "description": "Backup the Drupal database and files or migrate them to another environment.",
             "homepage": "https://www.drupal.org/project/backup_migrate",
             "time": "2015-07-01 20:41:14"
+        },
+        {
+            "name": "drupal/bootstrap",
+            "version": "dev-7.x-4.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/bootstrap",
+                "reference": "ad64d61763f378d3f3867d3c2a0356fbcccdb59d"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-4.x": "7.4.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "time": "2015-07-24 01:50:24"
         },
         {
             "name": "drupal/ctools",
