@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "af5c8db0cd3beddb1bf886dfc0f8ea8c",
-    "content-hash": "26fbfb79cbdaaf74e974af6ecedaafd1",
+    "hash": "3d84386f2b6eea3262c99c870aa84f59",
+    "content-hash": "6e71f54361603fe5ab2782a481991292",
     "packages": [
         {
             "name": "composer/installers",
@@ -512,6 +512,35 @@
             "homepage": "https://www.drupal.org/project/feeds"
         },
         {
+            "name": "drupal/feeds_tamper",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/feeds_tamper",
+                "reference": "e310053a3f55a331d444665e0c0efef121bd190c"
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/feeds": "7.*"
+            },
+            "replace": {
+                "drupal/feeds_tamper_ui": "self.version"
+            },
+            "suggest": {
+                "drupal/feeds_ui": "Required by drupal/feeds_tamper_ui"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Modify feeds data before it gets saved.",
+            "homepage": "https://www.drupal.org/project/feeds_tamper",
+            "time": "2015-12-15 04:49:30"
+        },
+        {
             "name": "drupal/job_scheduler",
             "version": "dev-7.x-2.x",
             "source": {
@@ -538,32 +567,6 @@
             "description": "Scheduler API",
             "homepage": "https://www.drupal.org/project/job_scheduler",
             "time": "2015-01-21 14:00:51"
-        },
-        {
-            "name": "drupal/omega",
-            "version": "dev-7.x-5.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/omega",
-                "reference": "19884803e08e5584341e01eb7cfbb9b2531e0e7c"
-            },
-            "require": {
-                "drupal/drupal": "7.*"
-            },
-            "replace": {
-                "drupal/omega_clean": "self.version",
-                "drupal/omega_default": "self.version"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-5.x": "7.5.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "description": "Omega Five was built to enable a simplistic way for non-developers to create, manage and alter advanced responsive layouts without the need for ANY coding skills.",
-            "homepage": "https://www.drupal.org/project/omega",
-            "time": "2015-07-23 15:32:54"
         },
         {
             "name": "drupal/pathauto",
