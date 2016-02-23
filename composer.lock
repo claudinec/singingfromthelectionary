@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "44d868d1caf9e7701396bbd41e1d2a20",
-    "content-hash": "45023a143f2b13d6cf5d3cad2bf1459d",
+    "hash": "97b0689db1ab8ab58623817fd791b78e",
+    "content-hash": "f17f13b28c4a34c844b76862aa38d26d",
     "packages": [
         {
             "name": "composer/installers",
@@ -718,6 +718,34 @@
             "time": "2015-12-15 04:49:30"
         },
         {
+            "name": "drupal/field_collection",
+            "version": "7.1.0-beta11",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/field_collection",
+                "reference": "ec024e5cfb5308bce4d10756683a8cd3fa881b8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_collection-7.x-1.0-beta11.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/entity": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Provides a field collection field, to which any number of fields can be attached.",
+            "homepage": "https://www.drupal.org/project/field_collection"
+        },
+        {
             "name": "drupal/heartbeat",
             "version": "dev-7.x-1.x",
             "source": {
@@ -999,7 +1027,8 @@
         "drupal/admin_menu": 5,
         "drupal/feeds": 10,
         "drupal/displaysuite": 20,
-        "drupal/data": 15
+        "drupal/data": 15,
+        "drupal/field_collection": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,

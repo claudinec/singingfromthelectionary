@@ -25,7 +25,8 @@
     "drupal/devel": "^7.1",
     "drupal/data": "^7.1@alpha",
     "drupal/schema": "^7.1",
-    "drupal/advanced_help": "^7.1"
+    "drupal/advanced_help": "^7.1",
+    "drupal/field_collection": "^7.1@beta"
   },
   "conflict": {
     "drupal/core": "8.*"
