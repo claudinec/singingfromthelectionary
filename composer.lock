@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f4065575530c045e064fe8881a807d8d",
-    "content-hash": "b10ac1482a834ee234c3b7a0215a398d",
+    "hash": "80e58ed7475b50ace6a0451e14bf59ac",
+    "content-hash": "b29ac2f954547fb98341329d08f805a8",
     "packages": [
         {
             "name": "composer/installers",
@@ -277,6 +277,35 @@
             "description": "A library of helpful tools by Merlin of Chaos.",
             "homepage": "https://www.drupal.org/project/ctools",
             "time": "2015-11-18 04:40:26"
+        },
+        {
+            "name": "drupal/devel",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/devel",
+                "reference": "8868652ec5f2a1121cf306287f1996dad44f4c27"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/devel_generate": "self.version",
+                "drupal/devel_node_access": "self.version"
+            },
+            "suggest": {
+                "drupal/menu": "Required by drupal/devel_node_access"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Various blocks, pages, and functions for developers.",
+            "homepage": "https://www.drupal.org/project/devel",
+            "time": "2016-01-31 19:21:05"
         },
         {
             "name": "drupal/diff",
