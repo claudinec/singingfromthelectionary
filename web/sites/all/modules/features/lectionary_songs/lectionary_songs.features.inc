@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function lectionary_songs_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "data" && $api == "data_default") {
+    return array("version" => "1");
+  }
   if ($module == "feeds" && $api == "feeds_importer_default") {
     return array("version" => "1");
   }
