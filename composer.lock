@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "38ea74d897146ecaf0b891af6daf2140",
-    "content-hash": "87ef26683ecbc66fc96df75e593f1218",
+    "hash": "97b0689db1ab8ab58623817fd791b78e",
+    "content-hash": "f17f13b28c4a34c844b76862aa38d26d",
     "packages": [
         {
             "name": "composer/installers",
@@ -190,6 +190,31 @@
             "homepage": "https://www.drupal.org/project/admin_menu"
         },
         {
+            "name": "drupal/advanced_help",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/advanced_help",
+                "reference": "7f3d4cfb82dff7a6c93dbe5d730bf0e7c354adfe"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/help_example": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Provide extended help and documentation.",
+            "homepage": "https://www.drupal.org/project/advanced_help",
+            "time": "2016-01-31 06:50:08"
+        },
+        {
             "name": "drupal/backup_migrate",
             "version": "dev-7.x-3.x",
             "source": {
@@ -210,6 +235,33 @@
             "description": "Backup the Drupal database and files or migrate them to another environment.",
             "homepage": "https://www.drupal.org/project/backup_migrate",
             "time": "2015-07-01 20:41:14"
+        },
+        {
+            "name": "drupal/bootstrap",
+            "version": "7.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/bootstrap",
+                "reference": "0cc98e28d5c079a480993943e23adbda959463f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-7.x-3.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+            "homepage": "https://www.drupal.org/project/bootstrap"
         },
         {
             "name": "drupal/ctools",
@@ -252,6 +304,74 @@
             "time": "2015-11-18 04:40:26"
         },
         {
+            "name": "drupal/data",
+            "version": "7.1.0-alpha7",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/data",
+                "reference": "a2a94f4572f09f11806df9ca456d939f0a7eb36c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/data-7.x-1.0-alpha7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/data_entity": "self.version",
+                "drupal/data_search": "self.version",
+                "drupal/data_ui": "self.version"
+            },
+            "suggest": {
+                "drupal/data_ui": "Required by drupal/data_entity",
+                "drupal/entity": "Required by drupal/data_entity",
+                "drupal/schema": "Required by drupal/data_ui",
+                "drupal/search": "Required by drupal/data_search"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Provides two dimensional storage space for arbitrary data sets.",
+            "homepage": "https://www.drupal.org/project/data"
+        },
+        {
+            "name": "drupal/devel",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/devel",
+                "reference": "8868652ec5f2a1121cf306287f1996dad44f4c27"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/devel_generate": "self.version",
+                "drupal/devel_node_access": "self.version"
+            },
+            "suggest": {
+                "drupal/menu": "Required by drupal/devel_node_access"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Various blocks, pages, and functions for developers.",
+            "homepage": "https://www.drupal.org/project/devel",
+            "time": "2016-01-31 19:21:05"
+        },
+        {
             "name": "drupal/diff",
             "version": "dev-7.x-3.x",
             "source": {
@@ -272,6 +392,56 @@
             "description": "Show differences between content revisions.",
             "homepage": "https://www.drupal.org/project/diff",
             "time": "2015-08-26 15:25:08"
+        },
+        {
+            "name": "drupal/displaysuite",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/displaysuite",
+                "reference": "41324b7d294339a026b94addc3aef99ec631f853"
+            },
+            "require": {
+                "drupal/block": "7.*",
+                "drupal/comment": "7.*",
+                "drupal/contextual": "7.*",
+                "drupal/ctools": "7.*",
+                "drupal/dashboard": "7.*",
+                "drupal/dblog": "7.*",
+                "drupal/drupal": "7.*",
+                "drupal/ds": "7.*",
+                "drupal/ds_extras": "7.*",
+                "drupal/field_ui": "7.*",
+                "drupal/file": "7.*",
+                "drupal/heartbeat": "7.*",
+                "drupal/help": "7.*",
+                "drupal/image": "7.*",
+                "drupal/list": "7.*",
+                "drupal/menu": "7.*",
+                "drupal/nodesinblock": "7.*",
+                "drupal/number": "7.*",
+                "drupal/options": "7.*",
+                "drupal/page_manager": "7.*",
+                "drupal/panels": "7.*",
+                "drupal/panels_node": "7.*",
+                "drupal/path": "7.*",
+                "drupal/search": "7.*",
+                "drupal/shortcut": "7.*",
+                "drupal/taxonomy": "7.*",
+                "drupal/toolbar": "7.*",
+                "drupal/views": "7.*",
+                "drupal/views_ui": "7.*"
+            },
+            "type": "drupal-profile",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Install Display Suite and some key modules it supports.",
+            "homepage": "https://www.drupal.org/project/displaysuite",
+            "time": "2011-06-23 21:17:58"
         },
         {
             "name": "drupal/drupal",
@@ -370,6 +540,40 @@
             "description": "Handles general site configuration for administrators.",
             "homepage": "https://www.drupal.org/project/drupal",
             "time": "2016-02-03 16:28:36"
+        },
+        {
+            "name": "drupal/ds",
+            "version": "dev-7.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ds",
+                "reference": "2ccb1ddb42cb0dcf406bec5d8a70cc19ef2a1f0e"
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/ds_devel": "self.version",
+                "drupal/ds_extras": "self.version",
+                "drupal/ds_format": "self.version",
+                "drupal/ds_forms": "self.version",
+                "drupal/ds_search": "self.version",
+                "drupal/ds_ui": "self.version"
+            },
+            "suggest": {
+                "drupal/devel": "Required by drupal/ds_devel"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Extend the display options for every entity type.",
+            "homepage": "https://www.drupal.org/project/ds",
+            "time": "2016-01-19 18:29:18"
         },
         {
             "name": "drupal/entity",
@@ -485,6 +689,110 @@
             "homepage": "https://www.drupal.org/project/feeds"
         },
         {
+            "name": "drupal/feeds_tamper",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/feeds_tamper",
+                "reference": "e310053a3f55a331d444665e0c0efef121bd190c"
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/feeds": "7.*"
+            },
+            "replace": {
+                "drupal/feeds_tamper_ui": "self.version"
+            },
+            "suggest": {
+                "drupal/feeds_ui": "Required by drupal/feeds_tamper_ui"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Modify feeds data before it gets saved.",
+            "homepage": "https://www.drupal.org/project/feeds_tamper",
+            "time": "2015-12-15 04:49:30"
+        },
+        {
+            "name": "drupal/field_collection",
+            "version": "7.1.0-beta11",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/field_collection",
+                "reference": "ec024e5cfb5308bce4d10756683a8cd3fa881b8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_collection-7.x-1.0-beta11.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/entity": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Provides a field collection field, to which any number of fields can be attached.",
+            "homepage": "https://www.drupal.org/project/field_collection"
+        },
+        {
+            "name": "drupal/heartbeat",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/heartbeat",
+                "reference": "c1f306e2ce3bbc36579e2bbd74f271659889d8d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/heartbeat-7.x-1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/heartbeat_comments": "self.version",
+                "drupal/heartbeat_defaults": "self.version",
+                "drupal/heartbeat_example": "self.version",
+                "drupal/heartbeat_nodejs": "self.version",
+                "drupal/heartbeat_og": "self.version",
+                "drupal/heartbeat_plugins": "self.version",
+                "drupal/heartbeat_rules": "self.version",
+                "drupal/heartbeat_ui": "self.version"
+            },
+            "suggest": {
+                "drupal/heartbeat_defaults": "Required by drupal/heartbeat_example",
+                "drupal/heartbeat_plugins": "Required by drupal/heartbeat_comments",
+                "drupal/nodejs": "Required by drupal/heartbeat_nodejs",
+                "drupal/og_context": "Required by drupal/heartbeat_og",
+                "drupal/rules": "Required by drupal/heartbeat_rules",
+                "drupal/token": "Required by drupal/heartbeat_rules"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Logs user activity when certain events occur, triggering actions. The logged data is accessable through heartbeat displays.",
+            "homepage": "https://www.drupal.org/project/heartbeat",
+            "time": "2012-09-04 19:14:45"
+        },
+        {
             "name": "drupal/job_scheduler",
             "version": "dev-7.x-2.x",
             "source": {
@@ -513,6 +821,157 @@
             "time": "2015-01-21 14:00:51"
         },
         {
+            "name": "drupal/migrate",
+            "version": "dev-7.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/migrate",
+                "reference": "bdb5a86116295df7c35fbb39bdd4397f743498c1"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/migrate_example": "self.version",
+                "drupal/migrate_example_baseball": "self.version",
+                "drupal/migrate_example_oracle": "self.version",
+                "drupal/migrate_ui": "self.version"
+            },
+            "suggest": {
+                "drupal/comment": "Required by drupal/migrate_example",
+                "drupal/features": "Required by drupal/migrate_example_oracle, drupal/migrate_example_baseball",
+                "drupal/image": "Required by drupal/migrate_example, drupal/migrate_example_oracle",
+                "drupal/list": "Required by drupal/migrate_example",
+                "drupal/number": "Required by drupal/migrate_example, drupal/migrate_example_baseball",
+                "drupal/taxonomy": "Required by drupal/migrate_example"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Import content from external sources",
+            "homepage": "https://www.drupal.org/project/migrate",
+            "time": "2015-11-28 20:45:16"
+        },
+        {
+            "name": "drupal/nodesinblock",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/nodesinblock",
+                "reference": "55f082c847b048f6346bdc0002c1d92b8e135f28"
+            },
+            "require": {
+                "drupal/block": "7.*",
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Use nodes as content in one or more regions.",
+            "homepage": "https://www.drupal.org/project/nodesinblock",
+            "time": "2011-12-02 09:33:02"
+        },
+        {
+            "name": "drupal/panels",
+            "version": "dev-7.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/panels",
+                "reference": "9c27c89ee9d7447010abea419b60315c72ba4cf6"
+            },
+            "require": {
+                "drupal/ctools": ">7.1.5",
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/i18n_panels": "self.version",
+                "drupal/panels_ipe": "self.version",
+                "drupal/panels_mini": "self.version",
+                "drupal/panels_node": "self.version"
+            },
+            "suggest": {
+                "drupal/i18n": "Required by drupal/i18n_panels",
+                "drupal/i18n_string": "Required by drupal/i18n_panels",
+                "drupal/i18n_translation": "Required by drupal/i18n_panels"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Core Panels display functions; provides no external UI, at least one other Panels module should be enabled.",
+            "homepage": "https://www.drupal.org/project/panels",
+            "time": "2016-02-19 01:20:22"
+        },
+        {
+            "name": "drupal/pathauto",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/pathauto",
+                "reference": "88db3ee74ddf62eab54e12347955dd2f6dd66737"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/pathauto-7.x-1.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/path": "7.*",
+                "drupal/token": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
+            "homepage": "https://www.drupal.org/project/pathauto",
+            "time": "2015-10-07 14:09:53"
+        },
+        {
+            "name": "drupal/schema",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/schema",
+                "reference": "08b02458694d186f8ab3bd0b24fbc738f9271108"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/schema-7.x-1.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "The Schema module provides functionality built on the Schema API.",
+            "homepage": "https://www.drupal.org/project/schema",
+            "time": "2014-03-23 20:22:27"
+        },
+        {
             "name": "drupal/token",
             "version": "dev-7.x-1.x",
             "source": {
@@ -533,6 +992,32 @@
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
             "time": "2015-12-27 17:30:45"
+        },
+        {
+            "name": "drupal/views",
+            "version": "dev-7.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views",
+                "reference": "41fbac72e048085b3273f692586eff1561add8c6"
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/views_ui": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Create customized lists and queries from your database.",
+            "homepage": "https://www.drupal.org/project/views",
+            "time": "2016-01-29 22:36:07"
         }
     ],
     "packages-dev": [],
@@ -540,7 +1025,10 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/admin_menu": 5,
-        "drupal/feeds": 10
+        "drupal/feeds": 10,
+        "drupal/displaysuite": 20,
+        "drupal/data": 15,
+        "drupal/field_collection": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,
