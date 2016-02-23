@@ -12,7 +12,20 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "lattice/ubuntu-trusty-64"
+
+  config.env.enable
+  config.vm.box = 'linode'
+  config.vm.provider :linode do |provider, override|
+    override.ssh.private_key_path = '~/.ssh/id_rsa'
+    override.vm.box = 'linode'
+    override.vm.box_url = "https://github.com/displague/vagrant-linode/raw/master/box/linode.box"
+
+    provider.api_key = ENV['LINODE_API_KEY']
+    provider.distribution = 'Ubuntu 14.04 LTS'
+    provider.datacenter = 'singapore'
+    provider.plan = 'Linode 4096'
+    provider.label = 'lectionary-staging'
+  end
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs

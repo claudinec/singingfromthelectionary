@@ -64,3 +64,10 @@ web/modules
 web/profiles
 web/scripts
 web/themes
+
+# Data for import
+data/
+
+# Vagrant
+.vagrant/
+.env
