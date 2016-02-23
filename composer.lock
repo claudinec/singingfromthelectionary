@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "43132811d806735e1fe27bc219fa9653",
-    "content-hash": "55e780947078a55907492dcd5418f3d2",
+    "hash": "f4065575530c045e064fe8881a807d8d",
+    "content-hash": "b10ac1482a834ee234c3b7a0215a398d",
     "packages": [
         {
             "name": "composer/installers",
@@ -301,6 +301,56 @@
             "time": "2015-08-26 15:25:08"
         },
         {
+            "name": "drupal/displaysuite",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/displaysuite",
+                "reference": "41324b7d294339a026b94addc3aef99ec631f853"
+            },
+            "require": {
+                "drupal/block": "7.*",
+                "drupal/comment": "7.*",
+                "drupal/contextual": "7.*",
+                "drupal/ctools": "7.*",
+                "drupal/dashboard": "7.*",
+                "drupal/dblog": "7.*",
+                "drupal/drupal": "7.*",
+                "drupal/ds": "7.*",
+                "drupal/ds_extras": "7.*",
+                "drupal/field_ui": "7.*",
+                "drupal/file": "7.*",
+                "drupal/heartbeat": "7.*",
+                "drupal/help": "7.*",
+                "drupal/image": "7.*",
+                "drupal/list": "7.*",
+                "drupal/menu": "7.*",
+                "drupal/nodesinblock": "7.*",
+                "drupal/number": "7.*",
+                "drupal/options": "7.*",
+                "drupal/page_manager": "7.*",
+                "drupal/panels": "7.*",
+                "drupal/panels_node": "7.*",
+                "drupal/path": "7.*",
+                "drupal/search": "7.*",
+                "drupal/shortcut": "7.*",
+                "drupal/taxonomy": "7.*",
+                "drupal/toolbar": "7.*",
+                "drupal/views": "7.*",
+                "drupal/views_ui": "7.*"
+            },
+            "type": "drupal-profile",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Install Display Suite and some key modules it supports.",
+            "homepage": "https://www.drupal.org/project/displaysuite",
+            "time": "2011-06-23 21:17:58"
+        },
+        {
             "name": "drupal/drupal",
             "version": "7.x-dev",
             "source": {
@@ -397,6 +447,40 @@
             "description": "Handles general site configuration for administrators.",
             "homepage": "https://www.drupal.org/project/drupal",
             "time": "2016-02-03 16:28:36"
+        },
+        {
+            "name": "drupal/ds",
+            "version": "dev-7.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/ds",
+                "reference": "2ccb1ddb42cb0dcf406bec5d8a70cc19ef2a1f0e"
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/ds_devel": "self.version",
+                "drupal/ds_extras": "self.version",
+                "drupal/ds_format": "self.version",
+                "drupal/ds_forms": "self.version",
+                "drupal/ds_search": "self.version",
+                "drupal/ds_ui": "self.version"
+            },
+            "suggest": {
+                "drupal/devel": "Required by drupal/ds_devel"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Extend the display options for every entity type.",
+            "homepage": "https://www.drupal.org/project/ds",
+            "time": "2016-01-19 18:29:18"
         },
         {
             "name": "drupal/entity",
@@ -541,6 +625,53 @@
             "time": "2015-12-15 04:49:30"
         },
         {
+            "name": "drupal/heartbeat",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/heartbeat",
+                "reference": "c1f306e2ce3bbc36579e2bbd74f271659889d8d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/heartbeat-7.x-1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/heartbeat_comments": "self.version",
+                "drupal/heartbeat_defaults": "self.version",
+                "drupal/heartbeat_example": "self.version",
+                "drupal/heartbeat_nodejs": "self.version",
+                "drupal/heartbeat_og": "self.version",
+                "drupal/heartbeat_plugins": "self.version",
+                "drupal/heartbeat_rules": "self.version",
+                "drupal/heartbeat_ui": "self.version"
+            },
+            "suggest": {
+                "drupal/heartbeat_defaults": "Required by drupal/heartbeat_example",
+                "drupal/heartbeat_plugins": "Required by drupal/heartbeat_comments",
+                "drupal/nodejs": "Required by drupal/heartbeat_nodejs",
+                "drupal/og_context": "Required by drupal/heartbeat_og",
+                "drupal/rules": "Required by drupal/heartbeat_rules",
+                "drupal/token": "Required by drupal/heartbeat_rules"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Logs user activity when certain events occur, triggering actions. The logged data is accessable through heartbeat displays.",
+            "homepage": "https://www.drupal.org/project/heartbeat",
+            "time": "2012-09-04 19:14:45"
+        },
+        {
             "name": "drupal/job_scheduler",
             "version": "dev-7.x-2.x",
             "source": {
@@ -605,6 +736,63 @@
             "time": "2015-11-28 20:45:16"
         },
         {
+            "name": "drupal/nodesinblock",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/nodesinblock",
+                "reference": "55f082c847b048f6346bdc0002c1d92b8e135f28"
+            },
+            "require": {
+                "drupal/block": "7.*",
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Use nodes as content in one or more regions.",
+            "homepage": "https://www.drupal.org/project/nodesinblock",
+            "time": "2011-12-02 09:33:02"
+        },
+        {
+            "name": "drupal/panels",
+            "version": "dev-7.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/panels",
+                "reference": "9c27c89ee9d7447010abea419b60315c72ba4cf6"
+            },
+            "require": {
+                "drupal/ctools": ">7.1.5",
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/i18n_panels": "self.version",
+                "drupal/panels_ipe": "self.version",
+                "drupal/panels_mini": "self.version",
+                "drupal/panels_node": "self.version"
+            },
+            "suggest": {
+                "drupal/i18n": "Required by drupal/i18n_panels",
+                "drupal/i18n_string": "Required by drupal/i18n_panels",
+                "drupal/i18n_translation": "Required by drupal/i18n_panels"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Core Panels display functions; provides no external UI, at least one other Panels module should be enabled.",
+            "homepage": "https://www.drupal.org/project/panels",
+            "time": "2016-02-19 01:20:22"
+        },
+        {
             "name": "drupal/pathauto",
             "version": "dev-7.x-1.x",
             "source": {
@@ -655,6 +843,32 @@
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
             "time": "2015-12-27 17:30:45"
+        },
+        {
+            "name": "drupal/views",
+            "version": "dev-7.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views",
+                "reference": "41fbac72e048085b3273f692586eff1561add8c6"
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/views_ui": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "description": "Create customized lists and queries from your database.",
+            "homepage": "https://www.drupal.org/project/views",
+            "time": "2016-01-29 22:36:07"
         }
     ],
     "packages-dev": [],
@@ -662,7 +876,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/admin_menu": 5,
-        "drupal/feeds": 10
+        "drupal/feeds": 10,
+        "drupal/displaysuite": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

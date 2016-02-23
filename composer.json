@@ -19,7 +19,9 @@
     "drupal/pathauto": "^7.1",
     "drupal/bootstrap": "7.3.4",
     "drupal/feeds_tamper": "^7.1",
-    "drupal/migrate": "^7.2"
+    "drupal/migrate": "^7.2",
+    "drupal/displaysuite": "7.1.x-dev",
+    "drupal/views": "^7.3"
   },
   "conflict": {
     "drupal/core": "8.*"
