@@ -10,10 +10,11 @@ Vagrant.configure(2) do |config|
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
 
+  # dotenv plugin
+  config.env.enable
+
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-
-  config.env.enable
   config.vm.box = 'linode'
   config.vm.provider :linode do |provider, override|
     override.ssh.private_key_path = '~/.ssh/id_rsa'
@@ -25,6 +26,7 @@ Vagrant.configure(2) do |config|
     provider.datacenter = 'singapore'
     provider.plan = 'Linode 4096'
     provider.label = 'lectionary-staging'
+    provider.group = 'Staging'
   end
 
   # Disable automatic box update checking. If you disable this, then
