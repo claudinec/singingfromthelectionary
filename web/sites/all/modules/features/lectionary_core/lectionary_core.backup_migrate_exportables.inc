@@ -20,9 +20,9 @@ function lectionary_core_exportables_backup_migrate_profiles() {
   $item->timestamp_format = 'Y-m-d\\TH-i-s';
   $item->filters = array(
     'compression' => 'gzip',
-    'notify_success_enable' => 0,
+    'notify_success_enable' => 1,
     'notify_success_email' => 'info@claudinec.net',
-    'notify_failure_enable' => 0,
+    'notify_failure_enable' => 1,
     'notify_failure_email' => 'info@claudinec.net',
     'utils_site_offline' => 0,
     'utils_site_offline_message' => 'Singing from the Lectionary is currently under maintenance. We should be back shortly. Thank you for your patience.',
@@ -45,6 +45,8 @@ function lectionary_core_exportables_backup_migrate_profiles() {
           'cache_page' => 'cache_page',
           'cache_path' => 'cache_path',
           'cache_update' => 'cache_update',
+          'cache_views' => 'cache_views',
+          'cache_views_data' => 'cache_views_data',
           'search_dataset' => 'search_dataset',
           'search_index' => 'search_index',
           'search_total' => 'search_total',
