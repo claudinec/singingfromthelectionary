@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Release 0.3 (5 Mar 2016)
+
+- Update songbook data structure and import: song references as unlimited text values, for proof of concept.
+  See #5.
+
 ## Release 0.2 (23 Feb 2016)
 
 - Install Pathauto module  

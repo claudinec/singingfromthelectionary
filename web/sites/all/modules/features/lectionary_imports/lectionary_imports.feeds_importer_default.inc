@@ -21,7 +21,7 @@ function lectionary_imports_feeds_importer_default() {
       'plugin_key' => 'FeedsFileFetcher',
       'config' => array(
         'allowed_extensions' => 'txt csv tsv xml opml',
-        'direct' => 1,
+        'direct' => 0,
         'directory' => 'private://feeds',
         'allowed_schemes' => array(
           'public' => 'public',
@@ -59,6 +59,11 @@ function lectionary_imports_feeds_importer_default() {
             'unique' => FALSE,
           ),
           3 => array(
+            'source' => 'songbooks',
+            'target' => 'field_songbook_references',
+            'unique' => FALSE,
+          ),
+          4 => array(
             'source' => 'Comments',
             'target' => 'body',
             'unique' => FALSE,
