@@ -27,7 +27,8 @@
     "drupal/schema": "^7.1",
     "drupal/advanced_help": "^7.1",
     "drupal/field_collection": "^7.1@beta",
-    "drupal/field_group": "^7.1"
+    "drupal/field_group": "^7.1",
+    "drupal/disqus": "^7.1"
   },
   "conflict": {
     "drupal/core": "8.*"

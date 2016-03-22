@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c15b60739c580192bb707988cac4d32f",
-    "content-hash": "0c4a609628876469f5e576c79fc0d529",
+    "hash": "cb4a08ef4b0c299a051bcd4902bf7d20",
+    "content-hash": "3af802549afd715fc0b7d02c3c497c6b",
     "packages": [
         {
             "name": "composer/installers",
@@ -442,6 +442,37 @@
             "description": "Install Display Suite and some key modules it supports.",
             "homepage": "https://www.drupal.org/project/displaysuite",
             "time": "2011-06-23 21:17:58"
+        },
+        {
+            "name": "drupal/disqus",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/disqus",
+                "reference": "25e573dfe32ec5102148e62f896e72aae84c3fa3"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/disqus_ds": "self.version"
+            },
+            "suggest": {
+                "drupal/ds": "Required by drupal/disqus_ds"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Uses the Disqus web service to enhance comments.",
+            "homepage": "https://www.drupal.org/project/disqus",
+            "time": "2016-03-03 12:28:00"
         },
         {
             "name": "drupal/drupal",
