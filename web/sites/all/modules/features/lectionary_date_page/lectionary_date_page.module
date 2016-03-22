@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Lectionary Date Page feature.
+ */
+
+include_once 'lectionary_date_page.features.inc';
