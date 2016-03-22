@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2786d3164bef6ef9ac13aa73b8602988",
-    "content-hash": "b2c861d1aa88ee2d2ab0702cfc280ebe",
+    "hash": "20cd88360f08947bd76b2871fbe0d0d7",
+    "content-hash": "2053f4122bc418c814098ccbfb95d759",
     "packages": [
         {
             "name": "composer/installers",
@@ -306,45 +306,6 @@
             "description": "A library of helpful tools by Merlin of Chaos.",
             "homepage": "https://www.drupal.org/project/ctools",
             "time": "2016-02-19 22:05:26"
-        },
-        {
-            "name": "drupal/data",
-            "version": "7.1.0-alpha7",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/data",
-                "reference": "a2a94f4572f09f11806df9ca456d939f0a7eb36c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/data-7.x-1.0-alpha7.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/ctools": "7.*",
-                "drupal/drupal": "7.*"
-            },
-            "replace": {
-                "drupal/data_entity": "self.version",
-                "drupal/data_search": "self.version",
-                "drupal/data_ui": "self.version"
-            },
-            "suggest": {
-                "drupal/data_ui": "Required by drupal/data_entity",
-                "drupal/entity": "Required by drupal/data_entity",
-                "drupal/schema": "Required by drupal/data_ui",
-                "drupal/search": "Required by drupal/data_search"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "description": "Provides two dimensional storage space for arbitrary data sets.",
-            "homepage": "https://www.drupal.org/project/data"
         },
         {
             "name": "drupal/devel",
@@ -1072,7 +1033,6 @@
         "drupal/admin_menu": 5,
         "drupal/feeds": 10,
         "drupal/displaysuite": 20,
-        "drupal/data": 15,
         "drupal/field_collection": 10
     },
     "prefer-stable": false,
