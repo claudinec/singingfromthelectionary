@@ -190,7 +190,7 @@ function lectionary_date_page_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -331,10 +331,13 @@ function lectionary_date_page_field_default_field_instances() {
     'description' => 'Enter a comma-separated list of words to describe your content.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'label' => 'hidden',
+        'module' => 'ds',
+        'settings' => array(
+          'taxonomy_term_link' => 0,
+          'taxonomy_term_separator' => ', ',
+        ),
+        'type' => 'ds_taxonomy_separator',
         'weight' => 3,
       ),
       'teaser' => array(
