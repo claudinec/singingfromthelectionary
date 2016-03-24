@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "20cd88360f08947bd76b2871fbe0d0d7",
-    "content-hash": "2053f4122bc418c814098ccbfb95d759",
+    "hash": "dcfd06eaaa82f3f263c0a067101f3a94",
+    "content-hash": "63fa2ac186a182bba31c91a9370fd35a",
     "packages": [
         {
             "name": "composer/installers",
@@ -17,7 +17,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/0d061bff8273df2f4a45287209acfb769a01a02d",
+                "url": "https://api.github.com/repos/composer/installers/zipball/6aac6a0a931ad06780fa7c574f27178d48109ec7",
                 "reference": "0d061bff8273df2f4a45287209acfb769a01a02d",
                 "shasum": ""
             },
@@ -861,6 +861,31 @@
             "description": "Import content from external sources",
             "homepage": "https://www.drupal.org/project/migrate",
             "time": "2015-11-28 20:45:16"
+        },
+        {
+            "name": "drupal/module_filter",
+            "version": "dev-7.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/module_filter",
+                "reference": "429c5cee03cf51d0b8c0ea676ab0bf0345c2fd01"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Filter the modules list.",
+            "homepage": "https://www.drupal.org/project/module_filter",
+            "time": "2016-03-21 05:34:27"
         },
         {
             "name": "drupal/nodesinblock",
