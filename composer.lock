@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dcfd06eaaa82f3f263c0a067101f3a94",
-    "content-hash": "63fa2ac186a182bba31c91a9370fd35a",
+    "hash": "ea5f7b0593efc0dc61e328c5001500e7",
+    "content-hash": "3000bb07df64e0d60f8ae58c2736f208",
     "packages": [
         {
             "name": "composer/installers",
@@ -1001,6 +1001,31 @@
             "description": "The Schema module provides functionality built on the Schema API.",
             "homepage": "https://www.drupal.org/project/schema",
             "time": "2014-03-23 20:22:27"
+        },
+        {
+            "name": "drupal/search404",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/search404",
+                "reference": "ad9aa8ea10d0966ced53c9c7588a399b0c8bd3e6"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Automatically search for the keywords in URLs that result in 404 errors and show results instead of Page-Not-Found. ",
+            "homepage": "https://www.drupal.org/project/search404",
+            "time": "2016-03-21 07:05:44"
         },
         {
             "name": "drupal/token",
