@@ -23,10 +23,10 @@
     "drupal/displaysuite": "7.1.x-dev",
     "drupal/views": "^7.3",
     "drupal/devel": "^7.1",
-    "drupal/data": "^7.1@alpha",
     "drupal/schema": "^7.1",
     "drupal/advanced_help": "^7.1",
-    "drupal/field_collection": "^7.1@beta"
+    "drupal/field_collection": "^7.1@beta",
+    "drupal/disqus": "^7.1"
   },
   "conflict": {
     "drupal/core": "8.*"
