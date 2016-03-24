@@ -4,6 +4,7 @@ core = 7.x
 package = Lectionary
 version = 7.x-0.4
 dependencies[] = ctools
+dependencies[] = ds
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = options
