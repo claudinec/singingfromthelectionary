@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "97b0689db1ab8ab58623817fd791b78e",
-    "content-hash": "f17f13b28c4a34c844b76862aa38d26d",
+    "hash": "ea5f7b0593efc0dc61e328c5001500e7",
+    "content-hash": "3000bb07df64e0d60f8ae58c2736f208",
     "packages": [
         {
             "name": "composer/installers",
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
+                "reference": "0d061bff8273df2f4a45287209acfb769a01a02d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "url": "https://api.github.com/repos/composer/installers/zipball/6aac6a0a931ad06780fa7c574f27178d48109ec7",
+                "reference": "0d061bff8273df2f4a45287209acfb769a01a02d",
                 "shasum": ""
             },
             "require": {
@@ -62,6 +62,7 @@
                 "Dolibarr",
                 "Hurad",
                 "MODX Evo",
+                "Mautic",
                 "OXID",
                 "SMF",
                 "Thelia",
@@ -103,7 +104,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-01-27 12:54:22"
+            "time": "2016-03-11 13:58:36"
         },
         {
             "name": "derhasi/composer-preserve-paths",
@@ -269,7 +270,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "a48f1541916a89fb3b0fbc760b98e8937206994e"
+                "reference": "5aa6dba4dcf81ec24f7a6cdec3033c463ce74dbf"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -299,48 +300,12 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "A library of helpful tools by Merlin of Chaos.",
             "homepage": "https://www.drupal.org/project/ctools",
-            "time": "2015-11-18 04:40:26"
-        },
-        {
-            "name": "drupal/data",
-            "version": "7.1.0-alpha7",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/data",
-                "reference": "a2a94f4572f09f11806df9ca456d939f0a7eb36c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/data-7.x-1.0-alpha7.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/ctools": "7.*",
-                "drupal/drupal": "7.*"
-            },
-            "replace": {
-                "drupal/data_entity": "self.version",
-                "drupal/data_search": "self.version",
-                "drupal/data_ui": "self.version"
-            },
-            "suggest": {
-                "drupal/data_ui": "Required by drupal/data_entity",
-                "drupal/entity": "Required by drupal/data_entity",
-                "drupal/schema": "Required by drupal/data_ui",
-                "drupal/search": "Required by drupal/data_search"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "description": "Provides two dimensional storage space for arbitrary data sets.",
-            "homepage": "https://www.drupal.org/project/data"
+            "time": "2016-02-19 22:05:26"
         },
         {
             "name": "drupal/devel",
@@ -348,7 +313,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/devel",
-                "reference": "8868652ec5f2a1121cf306287f1996dad44f4c27"
+                "reference": "f047d41e62769c9d9ec917df9648e935d7abc132"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -367,9 +332,12 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "https://www.drupal.org/project/devel",
-            "time": "2016-01-31 19:21:05"
+            "time": "2016-03-14 18:02:40"
         },
         {
             "name": "drupal/diff",
@@ -444,12 +412,43 @@
             "time": "2011-06-23 21:17:58"
         },
         {
+            "name": "drupal/disqus",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/disqus",
+                "reference": "25e573dfe32ec5102148e62f896e72aae84c3fa3"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/disqus_ds": "self.version"
+            },
+            "suggest": {
+                "drupal/ds": "Required by drupal/disqus_ds"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Uses the Disqus web service to enhance comments.",
+            "homepage": "https://www.drupal.org/project/disqus",
+            "time": "2016-03-03 12:28:00"
+        },
+        {
             "name": "drupal/drupal",
             "version": "7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/drupal",
-                "reference": "aaf2d59820d7daf70c3acdde20c0e13d618a4e07"
+                "reference": "199086149342862bb51d666cf9ec992e246249ca"
             },
             "replace": {
                 "drupal/aggregator": "self.version",
@@ -539,7 +538,7 @@
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Handles general site configuration for administrators.",
             "homepage": "https://www.drupal.org/project/drupal",
-            "time": "2016-02-03 16:28:36"
+            "time": "2016-02-24 19:30:28"
         },
         {
             "name": "drupal/ds",
@@ -581,7 +580,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity",
-                "reference": "4d76c5c2302e225fea2db7aba08d48f3558bf275"
+                "reference": "1fa8f2dcb25ab26904c3d910399eaf23e17232bc"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -596,9 +595,12 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "Enables modules to work with any entity type and to provide entities.",
             "homepage": "https://www.drupal.org/project/entity",
-            "time": "2015-02-27 17:08:22"
+            "time": "2016-03-17 17:02:49"
         },
         {
             "name": "drupal/entityreference",
@@ -651,15 +653,15 @@
         },
         {
             "name": "drupal/feeds",
-            "version": "7.2.0-beta1",
+            "version": "7.2.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/feeds",
-                "reference": "e7f7f3987bd10a37010e6d1fa3d4d1b50e67c4cb"
+                "reference": "c468750bb13c17963e44473366d8149edb345e5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/feeds-7.x-2.0-beta1.zip",
+                "url": "https://ftp.drupal.org/files/projects/feeds-7.x-2.0-beta2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -685,8 +687,12 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "Aggregates RSS/Atom/RDF feeds, imports CSV files and more.",
-            "homepage": "https://www.drupal.org/project/feeds"
+            "homepage": "https://www.drupal.org/project/feeds",
+            "time": "2016-02-21 11:26:35"
         },
         {
             "name": "drupal/feeds_tamper",
@@ -857,6 +863,31 @@
             "time": "2015-11-28 20:45:16"
         },
         {
+            "name": "drupal/module_filter",
+            "version": "dev-7.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/module_filter",
+                "reference": "429c5cee03cf51d0b8c0ea676ab0bf0345c2fd01"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Filter the modules list.",
+            "homepage": "https://www.drupal.org/project/module_filter",
+            "time": "2016-03-21 05:34:27"
+        },
+        {
             "name": "drupal/nodesinblock",
             "version": "dev-7.x-1.x",
             "source": {
@@ -885,7 +916,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/panels",
-                "reference": "9c27c89ee9d7447010abea419b60315c72ba4cf6"
+                "reference": "d8d12d1533948af029b0876ce63d7ef405398c9b"
             },
             "require": {
                 "drupal/ctools": ">7.1.5",
@@ -911,7 +942,7 @@
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Core Panels display functions; provides no external UI, at least one other Panels module should be enabled.",
             "homepage": "https://www.drupal.org/project/panels",
-            "time": "2016-02-19 01:20:22"
+            "time": "2016-03-16 16:40:48"
         },
         {
             "name": "drupal/pathauto",
@@ -972,6 +1003,31 @@
             "time": "2014-03-23 20:22:27"
         },
         {
+            "name": "drupal/search404",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/search404",
+                "reference": "ad9aa8ea10d0966ced53c9c7588a399b0c8bd3e6"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Automatically search for the keywords in URLs that result in 404 errors and show results instead of Page-Not-Found. ",
+            "homepage": "https://www.drupal.org/project/search404",
+            "time": "2016-03-21 07:05:44"
+        },
+        {
             "name": "drupal/token",
             "version": "dev-7.x-1.x",
             "source": {
@@ -999,7 +1055,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/views",
-                "reference": "41fbac72e048085b3273f692586eff1561add8c6"
+                "reference": "bf1e53a5121f906a96778ed6158a3a7d87cf2fb9"
             },
             "require": {
                 "drupal/ctools": "7.*",
@@ -1017,7 +1073,7 @@
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Create customized lists and queries from your database.",
             "homepage": "https://www.drupal.org/project/views",
-            "time": "2016-01-29 22:36:07"
+            "time": "2016-03-10 17:20:41"
         }
     ],
     "packages-dev": [],
@@ -1027,7 +1083,6 @@
         "drupal/admin_menu": 5,
         "drupal/feeds": 10,
         "drupal/displaysuite": 20,
-        "drupal/data": 15,
         "drupal/field_collection": 10
     },
     "prefer-stable": false,

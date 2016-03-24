@@ -5,3 +5,35 @@
 body {
     background-color: #fcfbf5;
 }
+
+/* SONG DISPLAY */
+
+.field-name-field-first-line {
+    color: #000099;
+    font-weight: bold;
+}
+
+.field-name-field-scripture {
+    color: #7d181e;
+    font-weight: bold;
+}
+
+.field-name-field-scripture-notes {
+    font-style: italic;
+}
+
+.field-name-field-section {
+    color: #7d181e;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.field-name-field-tags {
+    color: #d52a33;
+}
+
+.song-title {
+    color: #000099;
+    font-size: large;
+    font-weight: bold;
+}
