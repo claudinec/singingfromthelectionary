@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ea5f7b0593efc0dc61e328c5001500e7",
-    "content-hash": "3000bb07df64e0d60f8ae58c2736f208",
+    "hash": "6cd4c8f326e602e2fdebc89782eaf9e3",
+    "content-hash": "495de2d0ea56276b2759974084f25348",
     "packages": [
         {
             "name": "composer/installers",
@@ -1026,6 +1026,32 @@
             "description": "Automatically search for the keywords in URLs that result in 404 errors and show results instead of Page-Not-Found. ",
             "homepage": "https://www.drupal.org/project/search404",
             "time": "2016-03-21 07:05:44"
+        },
+        {
+            "name": "drupal/strongarm",
+            "version": "dev-7.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/strongarm",
+                "reference": "5a2326ba67e59923ecce63d9bb5e0ed6548abdf8"
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Enforces variable values defined by modules that need settings set to operate properly.",
+            "homepage": "https://www.drupal.org/project/strongarm",
+            "time": "2012-08-29 17:21:11"
         },
         {
             "name": "drupal/token",
