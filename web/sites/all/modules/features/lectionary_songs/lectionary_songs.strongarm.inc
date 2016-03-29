@@ -1,19 +1,19 @@
 <?php
 /**
  * @file
- * lectionary_songbooks.strongarm.inc
+ * lectionary_songs.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function lectionary_songbooks_strongarm() {
+function lectionary_songs_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__songbook';
+  $strongarm->name = 'field_bundle_settings_node__song';
   $strongarm->value = array(
     'view_modes' => array(
       'teaser' => array(
@@ -46,58 +46,61 @@ function lectionary_songbooks_strongarm() {
         'title' => array(
           'weight' => '0',
         ),
+        'path' => array(
+          'weight' => '6',
+        ),
       ),
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_node__songbook'] = $strongarm;
+  $export['field_bundle_settings_node__song'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_songbook';
+  $strongarm->name = 'menu_options_song';
   $strongarm->value = array(
     0 => 'main-menu',
   );
-  $export['menu_options_songbook'] = $strongarm;
+  $export['menu_options_song'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_songbook';
+  $strongarm->name = 'menu_parent_song';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_songbook'] = $strongarm;
+  $export['menu_parent_song'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_songbook';
+  $strongarm->name = 'node_options_song';
   $strongarm->value = array(
     0 => 'status',
     1 => 'revision',
   );
-  $export['node_options_songbook'] = $strongarm;
+  $export['node_options_song'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_songbook';
+  $strongarm->name = 'node_preview_song';
   $strongarm->value = '1';
-  $export['node_preview_songbook'] = $strongarm;
+  $export['node_preview_song'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_songbook';
+  $strongarm->name = 'node_submitted_song';
   $strongarm->value = 0;
-  $export['node_submitted_songbook'] = $strongarm;
+  $export['node_submitted_song'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_node_songbook_pattern';
-  $strongarm->value = 'songbook/[node:field_abbreviation]';
-  $export['pathauto_node_songbook_pattern'] = $strongarm;
+  $strongarm->name = 'pathauto_node_song_pattern';
+  $strongarm->value = 'song/[node:title]';
+  $export['pathauto_node_song_pattern'] = $strongarm;
 
   return $export;
 }

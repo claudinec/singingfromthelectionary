@@ -13,5 +13,7 @@ features[ctools][] = feeds_tamper:feeds_tamper_default:2
 features[features_api][] = api:2
 features[feeds_importer][] = song_index
 features[feeds_importer][] = songbook_list
+features[feeds_tamper][] = song_index-comments-array_filter
+features[feeds_tamper][] = song_index-comments-explode
 features[feeds_tamper][] = song_index-songbooks-array_filter
 features[feeds_tamper][] = song_index-songbooks-explode
