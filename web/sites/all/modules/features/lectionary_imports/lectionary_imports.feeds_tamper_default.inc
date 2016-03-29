@@ -30,9 +30,9 @@ function lectionary_imports_feeds_tamper_default() {
   $feeds_tamper->source = 'songbooks';
   $feeds_tamper->plugin_id = 'explode';
   $feeds_tamper->settings = array(
-    'separator' => ',',
+    'separator' => '%t',
     'limit' => '',
-    'real_separator' => ',',
+    'real_separator' => '	',
   );
   $feeds_tamper->weight = 0;
   $feeds_tamper->description = 'Explode';

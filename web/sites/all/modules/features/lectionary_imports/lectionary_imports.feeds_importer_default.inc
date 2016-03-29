@@ -45,29 +45,34 @@ function lectionary_imports_feeds_importer_default() {
         'authorize' => 1,
         'mappings' => array(
           0 => array(
-            'source' => 'First line',
+            'source' => 'First_line',
             'target' => 'title',
-            'unique' => 0,
+            'unique' => FALSE,
+            'language' => 'und',
           ),
           1 => array(
-            'source' => 'First line',
+            'source' => 'First_line',
             'target' => 'field_first_line',
             'unique' => FALSE,
+            'language' => 'und',
           ),
           2 => array(
             'source' => 'Author',
             'target' => 'field_author',
             'unique' => FALSE,
+            'language' => 'und',
           ),
           3 => array(
             'source' => 'songbooks',
             'target' => 'field_songbook_references',
             'unique' => FALSE,
+            'language' => 'und',
           ),
           4 => array(
             'source' => 'Comments',
             'target' => 'body',
             'unique' => FALSE,
+            'language' => 'und',
           ),
         ),
         'update_existing' => '2',
