@@ -32,8 +32,9 @@ function lectionary_imports_feeds_importer_default() {
     'parser' => array(
       'plugin_key' => 'FeedsCSVParser',
       'config' => array(
-        'delimiter' => ',',
+        'delimiter' => 'TAB',
         'no_headers' => 0,
+        'encoding' => 'UTF-8',
       ),
     ),
     'processor' => array(
@@ -74,6 +75,8 @@ function lectionary_imports_feeds_importer_default() {
         'input_format' => 'plain_text',
         'skip_hash_check' => 0,
         'bundle' => 'song',
+        'insert_new' => 1,
+        'language' => 'und',
       ),
     ),
     'content_type' => '',
