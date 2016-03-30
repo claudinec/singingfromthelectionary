@@ -28,11 +28,6 @@ function lectionary_songs_ds_field_settings_info() {
         'ft' => array(),
       ),
     ),
-    'field_tags' => array(
-      'formatter_settings' => array(
-        'ft' => array(),
-      ),
-    ),
   );
   $export['node|song|default'] = $ds_fieldsetting;
 
