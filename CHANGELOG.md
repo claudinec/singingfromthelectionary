@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## Release 0.5 (30 Mar 2016)
+
+- Add display suite layouts to Lectionary date and Song content types.
+- Enable Strongarm. Display full content of lectionary pages in front page view (/frontpage).
+- Promote Lectionary page to front by default.
+- Add Display Suite and Strongarm settings for Songbooks feature.
+- Song index importer/exporter to use tab- rather than comma-separated values.
+- Update Song index import settings.
+- Require jQuery Update module.
+- jQuery to add songbook references in song displays.
+- Update display and path settings for songbooks and songs. Add tamper to songbook import.
+- Regular expression to add links to the abbreviation part of songbook references only.
+- See #1, #5, #12.
+
 ## Release 0.4 (24 Mar 2016)
 
 - Add Tags to Song page.  

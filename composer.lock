@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ea5f7b0593efc0dc61e328c5001500e7",
-    "content-hash": "3000bb07df64e0d60f8ae58c2736f208",
+    "hash": "2a100d955becfbc4b44d369d4323b1a9",
+    "content-hash": "fe743c35c6e38c67a4eb82c164d2c603",
     "packages": [
         {
             "name": "composer/installers",
@@ -827,6 +827,37 @@
             "time": "2015-01-21 14:00:51"
         },
         {
+            "name": "drupal/jquery_update",
+            "version": "dev-7.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/jquery_update",
+                "reference": "8fe2eb0fcad9b8db683b0f17d375f02d07212252"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_update-7.x-3.0-alpha3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Update jQuery and jQuery UI to a more recent version.",
+            "homepage": "https://www.drupal.org/project/jquery_update",
+            "time": "2015-10-20 22:25:49"
+        },
+        {
             "name": "drupal/migrate",
             "version": "dev-7.x-2.x",
             "source": {
@@ -1026,6 +1057,32 @@
             "description": "Automatically search for the keywords in URLs that result in 404 errors and show results instead of Page-Not-Found. ",
             "homepage": "https://www.drupal.org/project/search404",
             "time": "2016-03-21 07:05:44"
+        },
+        {
+            "name": "drupal/strongarm",
+            "version": "dev-7.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/strongarm",
+                "reference": "5a2326ba67e59923ecce63d9bb5e0ed6548abdf8"
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Enforces variable values defined by modules that need settings set to operate properly.",
+            "homepage": "https://www.drupal.org/project/strongarm",
+            "time": "2012-08-29 17:21:11"
         },
         {
             "name": "drupal/token",
