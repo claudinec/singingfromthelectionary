@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## Release 0.6 (2 Apr 2016)
+
+- Fix regular expression for song references.
+- Add Strongarm settings for theme and jQuery.
+- Upload file to songbook import.
+- Closes #20.
+- See #12.
+
 ## Release 0.5 (30 Mar 2016)
 
 - Add display suite layouts to Lectionary date and Song content types.
