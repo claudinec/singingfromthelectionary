@@ -104,7 +104,7 @@ function lectionary_imports_feeds_importer_default() {
       'plugin_key' => 'FeedsFileFetcher',
       'config' => array(
         'allowed_extensions' => 'txt csv tsv xml opml',
-        'direct' => 1,
+        'direct' => 0,
         'directory' => 'private://feeds',
         'allowed_schemes' => array(
           'public' => 'public',
@@ -117,6 +117,7 @@ function lectionary_imports_feeds_importer_default() {
       'config' => array(
         'delimiter' => ',',
         'no_headers' => 0,
+        'encoding' => 'UTF-8',
       ),
     ),
     'processor' => array(
@@ -147,6 +148,8 @@ function lectionary_imports_feeds_importer_default() {
         'input_format' => 'plain_text',
         'skip_hash_check' => 0,
         'bundle' => 'songbook',
+        'insert_new' => 1,
+        'language' => 'und',
       ),
     ),
     'content_type' => '',
