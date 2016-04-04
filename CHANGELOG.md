@@ -3,6 +3,8 @@
 ## Release 0.7 NEXT
 
 - Temporary change to songbook jQuery to use bare/un-clean URLs until this is enabled.
+- Add Strongarm variables for Display Suite, Search, Token.
+- Add Strongarm variables for site information.
 
 ## Release 0.6 (2 Apr 2016)
 
