@@ -4,6 +4,7 @@
 
 - Add Strongarm variables for Display Suite, Search, Token.
 - Add Strongarm variables for site information.
+- Require Views.
 
 ## Release 0.6 (2 Apr 2016)
 
