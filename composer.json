@@ -31,7 +31,8 @@
     "drupal/search404": "^7.1",
     "drupal/strongarm": "^7.2",
     "drupal/jquery_update": "^7.2",
-    "drupal/backup_migrate_s3": "^7.1"
+    "drupal/backup_migrate_s3": "^7.1",
+    "aws/aws-sdk-php": "^3.17"
   },
   "conflict": {
     "drupal/core": "8.*"
