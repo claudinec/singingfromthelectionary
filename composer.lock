@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2a100d955becfbc4b44d369d4323b1a9",
-    "content-hash": "fe743c35c6e38c67a4eb82c164d2c603",
+    "hash": "bf676e1ad21ec072b9aade13e2b29020",
+    "content-hash": "969a0eaa7878f4799491c54cf7045a5d",
     "packages": [
         {
             "name": "composer/installers",
@@ -17,7 +17,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/6aac6a0a931ad06780fa7c574f27178d48109ec7",
+                "url": "https://api.github.com/repos/composer/installers/zipball/52ac70ba8db3fc28964f6e73d2f5d65df9f6cb11",
                 "reference": "0d061bff8273df2f4a45287209acfb769a01a02d",
                 "shasum": ""
             },
@@ -236,6 +236,39 @@
             "description": "Backup the Drupal database and files or migrate them to another environment.",
             "homepage": "https://www.drupal.org/project/backup_migrate",
             "time": "2015-07-01 20:41:14"
+        },
+        {
+            "name": "drupal/backup_migrate_s3",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/backup_migrate_s3.git",
+                "reference": "e2faa8a3869678e0678e724565e17994881d411e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/backup_migrate_s3-7.x-1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/backup_migrate": "7.*",
+                "drupal/drupal": "7.*",
+                "drupal/libraries": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows Back and Migrate to save the backup files to any S3 compatible service.",
+            "homepage": "https://www.drupal.org/project/backup_migrate_s3",
+            "time": "2015-10-19 17:38:04"
         },
         {
             "name": "drupal/bootstrap",
@@ -856,6 +889,32 @@
             "description": "Update jQuery and jQuery UI to a more recent version.",
             "homepage": "https://www.drupal.org/project/jquery_update",
             "time": "2015-10-20 22:25:49"
+        },
+        {
+            "name": "drupal/libraries",
+            "version": "dev-7.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/libraries",
+                "reference": "ee131dbe7ee2763ba1ce82255c027d71c41a4755"
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/system": ">=7.11.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows version-dependent and shared usage of external libraries.",
+            "homepage": "https://www.drupal.org/project/libraries",
+            "time": "2014-10-13 02:31:06"
         },
         {
             "name": "drupal/migrate",
