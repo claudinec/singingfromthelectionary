@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Release 0.7 NEXT
+## Release 0.7 (4 Apr 2016)
 
 - Temporary change to songbook jQuery to use bare/un-clean URLs until this is enabled.
 - Add Strongarm variables for Display Suite, Search, Token.
@@ -8,6 +8,8 @@
 - Add Libraries and Backup Migrate S3 modules (Drush).
 - Update Display Suite Search result settings for songbook.
 - Require Views.
+- Test data imports on staging.
+- Closes #1, #2, #5, #10, #12.
 
 ## Release 0.6 (2 Apr 2016)
 
