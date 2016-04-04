@@ -15,7 +15,7 @@ function lectionary_core_exportables_backup_migrate_profiles() {
   $item->api_version = 1;
   $item->machine_name = 'default';
   $item->name = 'Default Settings';
-  $item->filename = '[site:url-brief]';
+  $item->filename = '[site:url]';
   $item->append_timestamp = TRUE;
   $item->timestamp_format = 'Y-m-d\\TH-i-s';
   $item->filters = array(
@@ -45,8 +45,6 @@ function lectionary_core_exportables_backup_migrate_profiles() {
           'cache_page' => 'cache_page',
           'cache_path' => 'cache_path',
           'cache_update' => 'cache_update',
-          'cache_views' => 'cache_views',
-          'cache_views_data' => 'cache_views_data',
           'search_dataset' => 'search_dataset',
           'search_index' => 'search_index',
           'search_total' => 'search_total',
