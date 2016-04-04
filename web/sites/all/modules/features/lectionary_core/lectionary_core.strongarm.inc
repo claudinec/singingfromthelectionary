@@ -530,5 +530,14 @@ function lectionary_core_strongarm() {
   );
   $export['theme_lectionary_bootstrap_settings'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'views_defaults';
+  $strongarm->value = array(
+    'frontpage' => FALSE,
+  );
+  $export['views_defaults'] = $strongarm;
+
   return $export;
 }

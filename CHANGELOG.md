@@ -7,6 +7,7 @@
 - Add Strongarm variables for site information.
 - Add Libraries and Backup Migrate S3 modules (Drush).
 - Update Display Suite Search result settings for songbook.
+- Require Views.
 
 ## Release 0.6 (2 Apr 2016)
 
