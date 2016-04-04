@@ -20,6 +20,143 @@ function lectionary_core_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_file_render';
+  $strongarm->value = 0;
+  $export['ds_search_file_render'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_group_by_type';
+  $strongarm->value = 1;
+  $export['ds_search_group_by_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_group_by_type_other';
+  $strongarm->value = 'Other';
+  $export['ds_search_group_by_type_other'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_group_by_type_other_wrapper';
+  $strongarm->value = 'fieldset';
+  $export['ds_search_group_by_type_other_wrapper'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_group_by_type_settings';
+  $strongarm->value = array(
+    'page' => array(
+      'status' => 1,
+      'label' => 'Results for basic page',
+      'wrapper' => 'fieldset',
+      'weight' => '-27',
+    ),
+    'article' => array(
+      'status' => 1,
+      'label' => 'Results for lectionary date',
+      'wrapper' => 'fieldset',
+      'weight' => '-30',
+    ),
+    'song' => array(
+      'status' => 1,
+      'label' => 'Results for song',
+      'wrapper' => 'fieldset',
+      'weight' => '-29',
+    ),
+    'songbook' => array(
+      'status' => 1,
+      'label' => 'Results for songbook',
+      'wrapper' => 'fieldset',
+      'weight' => '-28',
+    ),
+  );
+  $export['ds_search_group_by_type_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_highlight';
+  $strongarm->value = 1;
+  $export['ds_search_highlight'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_highlight_selector';
+  $strongarm->value = '.view-mode-search_result';
+  $export['ds_search_highlight_selector'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_language';
+  $strongarm->value = 0;
+  $export['ds_search_language'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_node_form_alter';
+  $strongarm->value = 0;
+  $export['ds_search_node_form_alter'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_node_limit';
+  $strongarm->value = '10';
+  $export['ds_search_node_limit'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_path';
+  $strongarm->value = 'content';
+  $export['ds_search_path'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_show_title';
+  $strongarm->value = 1;
+  $export['ds_search_show_title'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_type';
+  $strongarm->value = 'node';
+  $export['ds_search_type'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_variables';
+  $strongarm->value = 'search_totals_plus_keywords';
+  $export['ds_search_variables'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_search_view_mode';
+  $strongarm->value = 'search_result';
+  $export['ds_search_view_mode'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'ds_user_override_search_page';
+  $strongarm->value = 1;
+  $export['ds_user_override_search_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'jquery_update_compression_type';
   $strongarm->value = 'none';
   $export['jquery_update_compression_type'] = $strongarm;
@@ -72,6 +209,221 @@ function lectionary_core_strongarm() {
   $strongarm->name = 'jquery_update__active_tab';
   $strongarm->value = 'edit-themes';
   $export['jquery_update__active_tab'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_custom_search_path';
+  $strongarm->value = 'search/@keys';
+  $export['search404_custom_search_path'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_disable_error_message';
+  $strongarm->value = 0;
+  $export['search404_disable_error_message'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_do_custom_search';
+  $strongarm->value = 0;
+  $export['search404_do_custom_search'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_do_google_cse';
+  $strongarm->value = 0;
+  $export['search404_do_google_cse'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_do_google_cse_adv';
+  $strongarm->value = 0;
+  $export['search404_do_google_cse_adv'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_do_search_by_page';
+  $strongarm->value = 0;
+  $export['search404_do_search_by_page'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_first';
+  $strongarm->value = 0;
+  $export['search404_first'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_ignore';
+  $strongarm->value = 'and or the';
+  $export['search404_ignore'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_ignore_extensions';
+  $strongarm->value = 'htm html php';
+  $export['search404_ignore_extensions'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_ignore_paths';
+  $strongarm->value = '';
+  $export['search404_ignore_paths'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_ignore_query';
+  $strongarm->value = 'gif jpg jpeg bmp png';
+  $export['search404_ignore_query'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_jump';
+  $strongarm->value = 1;
+  $export['search404_jump'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_no_redirect';
+  $strongarm->value = 0;
+  $export['search404_no_redirect'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_page_text';
+  $strongarm->value = '';
+  $export['search404_page_text'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_page_title';
+  $strongarm->value = 'Page not found';
+  $export['search404_page_title'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_redirect_301';
+  $strongarm->value = 0;
+  $export['search404_redirect_301'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_regex';
+  $strongarm->value = '';
+  $export['search404_regex'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_search_message';
+  $strongarm->value = '';
+  $export['search404_search_message'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_skip_auto_search';
+  $strongarm->value = 0;
+  $export['search404_skip_auto_search'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_use_or';
+  $strongarm->value = 0;
+  $export['search404_use_or'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search404_use_search_engine';
+  $strongarm->value = 0;
+  $export['search404_use_search_engine'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search_active_modules';
+  $strongarm->value = array(
+    'ds_search' => 'ds_search',
+    'advanced_help' => 0,
+    'node' => 0,
+    'user' => 0,
+  );
+  $export['search_active_modules'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search_cron_limit';
+  $strongarm->value = '500';
+  $export['search_cron_limit'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'search_default_module';
+  $strongarm->value = 'ds_search';
+  $export['search_default_module'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'site_403';
+  $strongarm->value = '';
+  $export['site_403'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'site_404';
+  $strongarm->value = 'search404';
+  $export['site_404'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'site_default_country';
+  $strongarm->value = 'AU';
+  $export['site_default_country'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'site_mail';
+  $strongarm->value = 'info@claudinec.net';
+  $export['site_mail'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'site_name';
+  $strongarm->value = 'Singing from the Lectionary';
+  $export['site_name'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'site_slogan';
+  $strongarm->value = '';
+  $export['site_slogan'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
