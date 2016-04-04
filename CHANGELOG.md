@@ -5,6 +5,7 @@
 - Temporary change to songbook jQuery to use bare/un-clean URLs until this is enabled.
 - Add Strongarm variables for Display Suite, Search, Token.
 - Add Strongarm variables for site information.
+- Add Libraries and Backup Migrate S3 modules (Drush).
 
 ## Release 0.6 (2 Apr 2016)
 
