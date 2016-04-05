@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Release 0.8 NEXT
+
+- Enable PHPMailer. Closes #22.
+
 ## Release 0.7 (4 Apr 2016)
 
 - Temporary change to songbook jQuery to use bare/un-clean URLs until this is enabled.
