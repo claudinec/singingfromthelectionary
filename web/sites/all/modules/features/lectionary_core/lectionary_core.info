@@ -15,6 +15,7 @@ dependencies[] = lectionary_date_page
 dependencies[] = lectionary_songbooks
 dependencies[] = lectionary_songs
 dependencies[] = pathauto
+dependencies[] = phpmailer
 dependencies[] = search
 dependencies[] = search404
 dependencies[] = strongarm
