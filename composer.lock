@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2a100d955becfbc4b44d369d4323b1a9",
-    "content-hash": "fe743c35c6e38c67a4eb82c164d2c603",
+    "hash": "a525f4c21378a45ba3ce3f9f38717730",
+    "content-hash": "1fc241bd333e687d78286d0859fa2c39",
     "packages": [
         {
             "name": "composer/installers",
@@ -17,7 +17,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/6aac6a0a931ad06780fa7c574f27178d48109ec7",
+                "url": "https://api.github.com/repos/composer/installers/zipball/8eb240460b9297793084b957f97dddff119247c7",
                 "reference": "0d061bff8273df2f4a45287209acfb769a01a02d",
                 "shasum": ""
             },
@@ -603,6 +603,35 @@
             "time": "2016-03-17 17:02:49"
         },
         {
+            "name": "drupal/entityqueue",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/entityqueue",
+                "reference": "eb648dcb53f9b26c2af3e50da2585f2f364cc5a7"
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*",
+                "drupal/entity": "7.*",
+                "drupal/entityreference": "7.*",
+                "drupal/system": ">7.11.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows users to collect entities in arbitrarily ordered lists.",
+            "homepage": "https://www.drupal.org/project/entityqueue",
+            "time": "2016-01-08 10:44:52"
+        },
+        {
             "name": "drupal/entityreference",
             "version": "dev-7.x-1.x",
             "source": {
@@ -858,6 +887,32 @@
             "time": "2015-10-20 22:25:49"
         },
         {
+            "name": "drupal/libraries",
+            "version": "dev-7.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/libraries",
+                "reference": "ee131dbe7ee2763ba1ce82255c027d71c41a4755"
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/system": ">=7.11.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Allows version-dependent and shared usage of external libraries.",
+            "homepage": "https://www.drupal.org/project/libraries",
+            "time": "2014-10-13 02:31:06"
+        },
+        {
             "name": "drupal/migrate",
             "version": "dev-7.x-2.x",
             "source": {
@@ -1006,6 +1061,50 @@
             "time": "2015-10-07 14:09:53"
         },
         {
+            "name": "drupal/phpmailer",
+            "version": "dev-7.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/phpmailer.git",
+                "reference": "8f7c632ddd4b44d2623002ddc6d8be26a2af0fd1"
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/libraries": "7.*",
+                "phpmailer/phpmailer": ">=5.2.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Stefan M. Kudwien (smk-ka)",
+                    "homepage": "http://drupal.org/user/48898"
+                },
+                {
+                    "name": "Daniel F. Kudwien (sun)",
+                    "homepage": "http://drupal.org/user/54136"
+                }
+            ],
+            "description": "Integrates the PHPMailer library for SMTP e-mail delivery.",
+            "homepage": "https://drupal.org/project/phpmailer",
+            "keywords": [
+                "Drupal",
+                "email",
+                "mail",
+                "phpmailer",
+                "smtp"
+            ],
+            "time": "2014-05-16 23:02:05"
+        },
+        {
             "name": "drupal/schema",
             "version": "dev-7.x-1.x",
             "source": {
@@ -1131,6 +1230,66 @@
             "description": "Create customized lists and queries from your database.",
             "homepage": "https://www.drupal.org/project/views",
             "time": "2016-03-10 17:20:41"
+        },
+        {
+            "name": "phpmailer/phpmailer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPMailer/PHPMailer.git",
+                "reference": "b7151db9b758364f39677cd0d691fd368b901df0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/b7151db9b758364f39677cd0d691fd368b901df0",
+                "reference": "b7151db9b758364f39677cd0d691fd368b901df0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "require-dev": {
+                "phpdocumentor/phpdocumentor": "*",
+                "phpunit/phpunit": "4.7.*"
+            },
+            "suggest": {
+                "league/oauth2-google": "Needed for Google XOAUTH2 authentication"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "class.phpmailer.php",
+                    "class.phpmaileroauth.php",
+                    "class.phpmaileroauthgoogle.php",
+                    "class.smtp.php",
+                    "class.pop3.php",
+                    "extras/EasyPeasyICS.php",
+                    "extras/ntlm_sasl_client.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
+                },
+                {
+                    "name": "Marcus Bointon",
+                    "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Andy Prevost",
+                    "email": "codeworxtech@users.sourceforge.net"
+                },
+                {
+                    "name": "Brent R. Matzelle"
+                }
+            ],
+            "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+            "time": "2016-03-29 13:14:19"
         }
     ],
     "packages-dev": [],
@@ -1140,7 +1299,8 @@
         "drupal/admin_menu": 5,
         "drupal/feeds": 10,
         "drupal/displaysuite": 20,
-        "drupal/field_collection": 10
+        "drupal/field_collection": 10,
+        "drupal/phpmailer": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

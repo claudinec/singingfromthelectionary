@@ -13,6 +13,24 @@ function lectionary_date_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'entityqueue_field_names';
+  $strongarm->value = array(
+    0 => 'eq_node',
+  );
+  $export['entityqueue_field_names'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'entityqueue_queue_names';
+  $strongarm->value = array(
+    0 => 'lectionary_pages',
+  );
+  $export['entityqueue_queue_names'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'field_bundle_settings_node__article';
   $strongarm->value = array(
     'view_modes' => array(
