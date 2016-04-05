@@ -535,7 +535,7 @@ function lectionary_core_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'views_defaults';
   $strongarm->value = array(
-    'frontpage' => FALSE,
+    'frontpage' => TRUE,
   );
   $export['views_defaults'] = $strongarm;
 

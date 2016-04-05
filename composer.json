@@ -30,7 +30,10 @@
     "drupal/module_filter": "^7.2",
     "drupal/search404": "^7.1",
     "drupal/strongarm": "^7.2",
-    "drupal/jquery_update": "^7.2"
+    "drupal/jquery_update": "^7.2",
+    "drupal/entityqueue": "^7.1",
+    "drupal/libraries": "^7.2",
+    "drupal/phpmailer": "7.3.x-dev"
   },
   "conflict": {
     "drupal/core": "8.*"
