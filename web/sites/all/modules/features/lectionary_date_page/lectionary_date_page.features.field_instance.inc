@@ -10,6 +10,41 @@
 function lectionary_date_page_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'entityqueue_subqueue-lectionary_pages-eq_node'.
+  $field_instances['entityqueue_subqueue-lectionary_pages-eq_node'] = array(
+    'bundle' => 'lectionary_pages',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'entityqueue_subqueue',
+    'field_name' => 'eq_node',
+    'label' => 'Queue items',
+    'required' => FALSE,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'entityqueue',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'size' => 60,
+      ),
+      'type' => 'entityqueue_dragtable',
+      'weight' => 0,
+    ),
+  );
+
   // Exported field_instance:
   // 'field_collection_item-field_lectionary_section-field_scripture'.
   $field_instances['field_collection_item-field_lectionary_section-field_scripture'] = array(
@@ -371,6 +406,7 @@ function lectionary_date_page_field_default_field_instances() {
   t('Image');
   t('Lectionary section');
   t('Notes');
+  t('Queue items');
   t('Scripture');
   t('Scripture notes');
   t('Scripture references for this section.');

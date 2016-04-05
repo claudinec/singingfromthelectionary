@@ -17,6 +17,15 @@ function lectionary_date_page_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_entityqueue_api().
+ */
+function lectionary_date_page_entityqueue_api($module = NULL, $api = NULL) {
+  if ($module == "entityqueue" && $api == "entityqueue_default") {
+    return array("version" => "1");
+  }
+}
+
+/**
  * Implements hook_node_info().
  */
 function lectionary_date_page_node_info() {

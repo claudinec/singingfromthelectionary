@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Release 0.8 (5 Apr 2016)
+
+- Enable PHPMailer. Closes #22.
+- Add to composer: phpmailer, libraries, entityqueue.
+- Clone default frontpage view to Lectionary front page and add entity queue.  
+  Resolves #24.
+
 ## Release 0.7 (4 Apr 2016)
 
 - Temporary change to songbook jQuery to use bare/un-clean URLs until this is enabled.
