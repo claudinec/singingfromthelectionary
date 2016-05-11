@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d28ded7f72b1134d2311a050451dcae2",
-    "content-hash": "87c783da02b54619bb68fe12b3acf279",
+    "hash": "491d3023db3b758024a58033be1db2ec",
+    "content-hash": "4abf2e411f08ed2c38a0c5224ab08292",
     "packages": [
         {
             "name": "composer/installers",
@@ -277,7 +277,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/content_access-7.x-1.2-beta2.zip",
-                "reference": null,
+                "reference": "60d678d049bebc77851be48cf414c89a4e5cb8ae",
                 "shasum": null
             },
             "require": {
@@ -827,6 +827,44 @@
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Provides a field collection field, to which any number of fields can be attached.",
             "homepage": "https://www.drupal.org/project/field_collection"
+        },
+        {
+            "name": "drupal/field_validation",
+            "version": "dev-7.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/field_validation",
+                "reference": "60874718ff39a823c02c61afc7af5fd1e3e3d751"
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*",
+                "drupal/field": "7.*",
+                "drupal/token": "7.*"
+            },
+            "replace": {
+                "drupal/field_validation_extras": "self.version",
+                "drupal/field_validation_ui": "self.version",
+                "drupal/property_validation": "self.version"
+            },
+            "suggest": {
+                "drupal/ctools": "Required by drupal/field_validation_ui, drupal/property_validation",
+                "drupal/entity": "Required by drupal/property_validation",
+                "drupal/field": "Required by drupal/property_validation"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Add validation rules to fields.",
+            "homepage": "https://www.drupal.org/project/field_validation",
+            "time": "2015-06-26 16:43:23"
         },
         {
             "name": "drupal/heartbeat",
