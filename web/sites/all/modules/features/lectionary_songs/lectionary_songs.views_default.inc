@@ -122,11 +122,6 @@ function lectionary_songs_views_default_views() {
   $handler->display->display_options['fields']['imported']['field'] = 'imported';
   $handler->display->display_options['fields']['imported']['date_format'] = 'short';
   $handler->display->display_options['fields']['imported']['second_date_format'] = 'long';
-  /* Field: Feeds log: Importer name */
-  $handler->display->display_options['fields']['importer_name']['id'] = 'importer_name';
-  $handler->display->display_options['fields']['importer_name']['table'] = 'feeds_log';
-  $handler->display->display_options['fields']['importer_name']['field'] = 'importer_name';
-  $handler->display->display_options['fields']['importer_name']['link'] = '0';
   /* Sort criterion: Feeds item: Import date */
   $handler->display->display_options['sorts']['imported']['id'] = 'imported';
   $handler->display->display_options['sorts']['imported']['table'] = 'feeds_item';
