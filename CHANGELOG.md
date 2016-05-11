@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Release 0.9 (11 May 2016)
+
+- Add songs admin view
+- Add unique Imported song ID to facilitate imports
+- Enable Disqus on lectionary pages and songbooks
+
 ## Release 0.8 (5 Apr 2016)
 
 - Enable PHPMailer. Closes #22.
