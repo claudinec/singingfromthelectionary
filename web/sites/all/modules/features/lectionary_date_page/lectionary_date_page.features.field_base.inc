@@ -85,27 +85,6 @@ function lectionary_date_page_field_default_field_bases() {
     'type' => 'field_collection',
   );
 
-  // Exported field_base: 'field_scripture'.
-  $field_bases['field_scripture'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_scripture',
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
   // Exported field_base: 'field_scripture_notes'.
   $field_bases['field_scripture_notes'] = array(
     'active' => 1,

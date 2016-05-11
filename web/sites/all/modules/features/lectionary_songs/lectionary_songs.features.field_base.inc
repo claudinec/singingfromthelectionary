@@ -88,6 +88,32 @@ function lectionary_songs_field_default_field_bases() {
     'type' => 'number_integer',
   );
 
+  // Exported field_base: 'field_scripture_references'.
+  $field_bases['field_scripture_references'] = array(
+    'active' => 1,
+    'cardinality' => 2,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_scripture_references',
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'scripture_references',
+          'parent' => 0,
+        ),
+      ),
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
   // Exported field_base: 'field_songbook_references'.
   $field_bases['field_songbook_references'] = array(
     'active' => 1,
