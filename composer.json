@@ -34,7 +34,9 @@
     "drupal/entityqueue": "^7.1",
     "drupal/libraries": "^7.2",
     "drupal/phpmailer": "7.3.x-dev",
-    "drupal/views_bulk_operations": "^7.3"
+    "drupal/views_bulk_operations": "^7.3",
+    "drupal/content_access": "^7.1@beta",
+    "drupal/field_validation": "^7.2"
   },
   "conflict": {
     "drupal/core": "8.*"
