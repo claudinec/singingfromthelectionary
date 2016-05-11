@@ -65,8 +65,8 @@ function lectionary_core_strongarm() {
   $strongarm->name = 'disqus_nodetypes';
   $strongarm->value = array(
     'article' => 'article',
-    'song' => 'song',
-    'songbook' => 0,
+    'songbook' => 'songbook',
+    'song' => 0,
     'page' => 0,
   );
   $export['disqus_nodetypes'] = $strongarm;
