@@ -143,11 +143,12 @@ function lectionary_date_page_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        'OT' => 'Old Testament',
-        'OT_alt' => 'Old Testament (alternate)',
+        'OT' => 'Hebrew Scriptures',
+        'OT_alt' => 'Hebrew Scriptures (alternate)',
+        'Acts' => 'Acts (Easter season)',
         'Ps' => 'Psalm',
         'Ps_alt' => 'Psalm (alternate)',
-        'NT' => 'New Testament (Epistle)',
+        'NT' => 'Epistle',
         'Gospel' => 'Gospel',
       ),
       'allowed_values_function' => '',
