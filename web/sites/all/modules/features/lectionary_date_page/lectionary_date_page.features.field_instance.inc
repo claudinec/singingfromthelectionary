@@ -96,11 +96,14 @@ function lectionary_date_page_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 4,
+        'label' => 'hidden',
+        'module' => 'ds',
+        'settings' => array(
+          'taxonomy_term_reference_view_mode' => 'full',
+          'use_content_language' => TRUE,
+        ),
+        'type' => 'ds_taxonomy_view_mode',
+        'weight' => 1,
       ),
     ),
     'entity_type' => 'field_collection_item',
