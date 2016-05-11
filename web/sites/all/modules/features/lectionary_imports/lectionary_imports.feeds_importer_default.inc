@@ -77,7 +77,7 @@ function lectionary_imports_feeds_importer_default() {
           5 => array(
             'source' => 'song_id',
             'target' => 'field_imported_song_id',
-            'unique' => FALSE,
+            'unique' => 1,
           ),
         ),
         'update_existing' => '2',
