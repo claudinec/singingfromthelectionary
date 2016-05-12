@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "767a93b20417f604660c99cb21f9dc90",
-    "content-hash": "12a5a510a7beb1157e62fbebb2476ed2",
+    "hash": "42c89f20ebc64ee5a8dc1da40144aa7b",
+    "content-hash": "36d4a6843e25b365eee030709972fa32",
     "packages": [
         {
             "name": "composer/installers",
@@ -238,6 +238,42 @@
             "description": "Backup the Drupal database and files or migrate them to another environment.",
             "homepage": "https://www.drupal.org/project/backup_migrate",
             "time": "2015-07-01 20:41:14"
+        },
+        {
+            "name": "drupal/bean",
+            "version": "7.2.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/bean",
+                "reference": "80c2bd6931f6a97349a48c302d43a1f6f635302d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bean-7.x-2.0-alpha2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*",
+                "drupal/entity": "7.*"
+            },
+            "replace": {
+                "drupal/bean_admin_ui": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Create Bean (Block Entities)",
+            "homepage": "https://www.drupal.org/project/bean",
+            "time": "2011-06-17 00:35:16"
         },
         {
             "name": "drupal/bootstrap",
@@ -1341,7 +1377,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/uuid-7.x-1.0-beta1.zip",
-                "reference": null,
+                "reference": "0707ea6350131480cc45d35eb864b21df2a99e50",
                 "shasum": null
             },
             "require": {
