@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "767a93b20417f604660c99cb21f9dc90",
-    "content-hash": "12a5a510a7beb1157e62fbebb2476ed2",
+    "hash": "1436951ff916fd980bf0b88f07e3c026",
+    "content-hash": "8c8188bd95cc0f09de9b8259843712da",
     "packages": [
         {
             "name": "composer/installers",
@@ -1331,50 +1331,6 @@
             "time": "2016-04-08 04:02:39"
         },
         {
-            "name": "drupal/uuid",
-            "version": "7.1.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/uuid",
-                "reference": "0707ea6350131480cc45d35eb864b21df2a99e50"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/uuid-7.x-1.0-beta1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/drupal": "7.*",
-                "drupal/node": "7.*",
-                "drupal/user": "7.*"
-            },
-            "replace": {
-                "drupal/uuid_path": "self.version",
-                "drupal/uuid_services": "self.version",
-                "drupal/uuid_services_example": "self.version"
-            },
-            "suggest": {
-                "drupal/entity": "Required by drupal/uuid_services",
-                "drupal/rest_server": "Required by drupal/uuid_services_example",
-                "drupal/services": "Required by drupal/uuid_services, drupal/uuid_services_example",
-                "drupal/uuid_services": "Required by drupal/uuid_services_example"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Extends the entity functionality and adds support for universally unique identifiers.",
-            "homepage": "https://www.drupal.org/project/uuid",
-            "time": "2015-09-05 13:03:56"
-        },
-        {
             "name": "drupal/views",
             "version": "dev-7.x-3.x",
             "source": {
@@ -1503,8 +1459,7 @@
         "drupal/displaysuite": 20,
         "drupal/field_collection": 10,
         "drupal/phpmailer": 20,
-        "drupal/content_access": 10,
-        "drupal/uuid": 10
+        "drupal/content_access": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,

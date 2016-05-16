@@ -37,8 +37,7 @@
     "drupal/views_bulk_operations": "^7.3",
     "drupal/content_access": "^7.1@beta",
     "drupal/field_validation": "^7.2",
-    "drupal/boxes": "^7.1",
-    "drupal/uuid": "^7.1@beta"
+    "drupal/boxes": "^7.1"
   },
   "conflict": {
     "drupal/core": "8.*"
