@@ -90,9 +90,27 @@ function lectionary_core_menu_default_menu_links() {
     'weight' => -49,
     'customized' => 1,
   );
+  // Exported menu link: navigation_contact:contact.
+  $menu_links['navigation_contact:contact'] = array(
+    'menu_name' => 'navigation',
+    'link_path' => 'contact',
+    'router_path' => 'contact',
+    'link_title' => 'Contact',
+    'options' => array(
+      'identifier' => 'navigation_contact:contact',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+  );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Contact');
   t('Lectionary Liturgies');
   t('Metrical index');
   t('The Text This Week');
