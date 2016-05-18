@@ -84,6 +84,7 @@ function lectionary_songs_ds_layout_settings_info() {
         2 => 'body',
         3 => 'field_tags',
         4 => 'field_songbook_references',
+        5 => 'field_scripture_references',
       ),
     ),
     'fields' => array(
@@ -92,6 +93,7 @@ function lectionary_songs_ds_layout_settings_info() {
       'body' => 'ds_content',
       'field_tags' => 'ds_content',
       'field_songbook_references' => 'ds_content',
+      'field_scripture_references' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(
