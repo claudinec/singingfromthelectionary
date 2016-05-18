@@ -276,24 +276,6 @@ function lectionary_core_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: 'administer feeds'.
-  $permissions['administer feeds'] = array(
-    'name' => 'administer feeds',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds',
-  );
-
-  // Exported permission: 'administer feeds_tamper'.
-  $permissions['administer feeds_tamper'] = array(
-    'name' => 'administer feeds_tamper',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds_tamper',
-  );
-
   // Exported permission: 'administer field collections'.
   $permissions['administer field collections'] = array(
     'name' => 'administer field collections',
@@ -520,24 +502,6 @@ function lectionary_core_user_default_permissions() {
       'editor' => 'editor',
     ),
     'module' => 'user',
-  );
-
-  // Exported permission: 'clear song_index feeds'.
-  $permissions['clear song_index feeds'] = array(
-    'name' => 'clear song_index feeds',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds',
-  );
-
-  // Exported permission: 'clear songbook_list feeds'.
-  $permissions['clear songbook_list feeds'] = array(
-    'name' => 'clear songbook_list feeds',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds',
   );
 
   // Exported permission: 'create article content'.
@@ -842,24 +806,6 @@ function lectionary_core_user_default_permissions() {
     'module' => 'features',
   );
 
-  // Exported permission: 'import song_index feeds'.
-  $permissions['import song_index feeds'] = array(
-    'name' => 'import song_index feeds',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds',
-  );
-
-  // Exported permission: 'import songbook_list feeds'.
-  $permissions['import songbook_list feeds'] = array(
-    'name' => 'import songbook_list feeds',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds',
-  );
-
   // Exported permission: 'manage features'.
   $permissions['manage features'] = array(
     'name' => 'manage features',
@@ -982,24 +928,6 @@ function lectionary_core_user_default_permissions() {
     'module' => 'devel',
   );
 
-  // Exported permission: 'tamper song_index'.
-  $permissions['tamper song_index'] = array(
-    'name' => 'tamper song_index',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds_tamper',
-  );
-
-  // Exported permission: 'tamper songbook_list'.
-  $permissions['tamper songbook_list'] = array(
-    'name' => 'tamper songbook_list',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds_tamper',
-  );
-
   // Exported permission: 'toggle disqus comments'.
   $permissions['toggle disqus comments'] = array(
     'name' => 'toggle disqus comments',
@@ -1009,31 +937,6 @@ function lectionary_core_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'disqus',
-  );
-
-  // Exported permission: 'unlock song_index feeds'.
-  $permissions['unlock song_index feeds'] = array(
-    'name' => 'unlock song_index feeds',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds',
-  );
-
-  // Exported permission: 'unlock songbook_list feeds'.
-  $permissions['unlock songbook_list feeds'] = array(
-    'name' => 'unlock songbook_list feeds',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds',
-  );
-
-  // Exported permission: 'update lectionary_pages entityqueue'.
-  $permissions['update lectionary_pages entityqueue'] = array(
-    'name' => 'update lectionary_pages entityqueue',
-    'roles' => array(),
-    'module' => 'entityqueue',
   );
 
   // Exported permission: 'use advanced search'.
