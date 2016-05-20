@@ -95,8 +95,7 @@ function lectionary_date_page_strongarm() {
   $strongarm->name = 'node_options_article';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
-    2 => 'revision',
+    1 => 'revision',
   );
   $export['node_options_article'] = $strongarm;
 
