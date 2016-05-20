@@ -21,14 +21,14 @@ function lectionary_date_page_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'field_section',
-        1 => 'field_scripture',
+        1 => 'field_scripture_references',
         2 => 'field_scripture_notes',
         3 => 'field_song',
       ),
     ),
     'fields' => array(
       'field_section' => 'ds_content',
-      'field_scripture' => 'ds_content',
+      'field_scripture_references' => 'ds_content',
       'field_scripture_notes' => 'ds_content',
       'field_song' => 'ds_content',
     ),
