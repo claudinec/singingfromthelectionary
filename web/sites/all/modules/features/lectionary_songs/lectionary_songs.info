@@ -7,7 +7,6 @@ dependencies[] = ctools
 dependencies[] = ds
 dependencies[] = entityreference
 dependencies[] = features
-dependencies[] = lectionary_core
 dependencies[] = number
 dependencies[] = options
 dependencies[] = strongarm
