@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "21a8c06dd5fe0a22b776797cc552e51d17d7e7dd"
+                "reference": "2db1f3ce7bcf0d294811f5f0214e24d2878a57da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/21a8c06dd5fe0a22b776797cc552e51d17d7e7dd",
-                "reference": "21a8c06dd5fe0a22b776797cc552e51d17d7e7dd",
+                "url": "https://api.github.com/repos/composer/installers/zipball/2db1f3ce7bcf0d294811f5f0214e24d2878a57da",
+                "reference": "2db1f3ce7bcf0d294811f5f0214e24d2878a57da",
                 "shasum": ""
             },
             "require": {
@@ -106,7 +106,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-04-24 13:17:36"
+            "time": "2016-05-19 16:58:29"
         },
         {
             "name": "derhasi/composer-preserve-paths",
@@ -813,7 +813,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/feeds_tamper",
-                "reference": "e310053a3f55a331d444665e0c0efef121bd190c"
+                "reference": "7f5db2ca426c6d2d7651d635811f038605f3af3f"
             },
             "require": {
                 "drupal/drupal": "7.*",
@@ -832,9 +832,12 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "Modify feeds data before it gets saved.",
             "homepage": "https://www.drupal.org/project/feeds_tamper",
-            "time": "2015-12-15 04:49:30"
+            "time": "2016-05-18 23:29:22"
         },
         {
             "name": "drupal/field_collection",
@@ -1395,12 +1398,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "268fc16c6911c4bcd83559c188a75f8448986be9"
+                "reference": "7b9fd0730946d56f4a194cf68bb9b75a8eb2563c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/268fc16c6911c4bcd83559c188a75f8448986be9",
-                "reference": "268fc16c6911c4bcd83559c188a75f8448986be9",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/7b9fd0730946d56f4a194cf68bb9b75a8eb2563c",
+                "reference": "7b9fd0730946d56f4a194cf68bb9b75a8eb2563c",
                 "shasum": ""
             },
             "require": {
@@ -1447,7 +1450,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2016-05-10 18:49:40"
+            "time": "2016-05-13 07:30:56"
         }
     ],
     "packages-dev": [],
