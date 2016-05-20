@@ -122,6 +122,7 @@ function lectionary_date_page_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
+        'Gen' => 'General',
         'OT' => 'Hebrew Scriptures',
         'OT_alt' => 'Hebrew Scriptures (alternate)',
         'Acts' => 'Acts (Easter season)',
