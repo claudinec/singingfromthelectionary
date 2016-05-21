@@ -5,6 +5,7 @@ package = Lectionary
 version = 7.x-0.9
 dependencies[] = ctools
 dependencies[] = feeds
+dependencies[] = feeds_sql
 dependencies[] = feeds_tamper
 dependencies[] = feeds_ui
 dependencies[] = field_validation
