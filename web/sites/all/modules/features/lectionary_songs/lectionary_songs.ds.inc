@@ -32,19 +32,43 @@ function lectionary_songs_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
+          'lbw' => 1,
+          'lbw-el' => 'strong',
           'ow' => TRUE,
           'ow-el' => 'div',
           'ow-cl' => 'field-name-field-songbook-references',
-          'ow-def-cl' => FALSE,
+          'ow-def-cl' => TRUE,
           'ow-at' => '',
-          'ow-def-at' => FALSE,
+          'ow-def-at' => TRUE,
           'fi' => TRUE,
           'fi-el' => 'div',
           'fi-cl' => 'col-md-4',
           'fi-at' => '',
           'fi-def-at' => TRUE,
           'fi-odd-even' => FALSE,
-          'fi-first-last' => FALSE,
+          'fi-first-last' => TRUE,
+        ),
+      ),
+    ),
+    'field_scripture_references' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lbw' => 1,
+          'lbw-el' => 'strong',
+          'ow' => TRUE,
+          'ow-el' => 'div',
+          'ow-cl' => 'field-name-field-scripture-references',
+          'ow-def-cl' => TRUE,
+          'ow-at' => '',
+          'ow-def-at' => TRUE,
+          'fi' => TRUE,
+          'fi-el' => 'div',
+          'fi-cl' => 'col-md-4',
+          'fi-at' => '',
+          'fi-def-at' => TRUE,
+          'fi-odd-even' => FALSE,
+          'fi-first-last' => TRUE,
         ),
       ),
     ),
@@ -95,36 +119,43 @@ function lectionary_songs_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'song';
   $ds_layout->view_mode = 'default';
-  $ds_layout->layout = 'ds_1col';
+  $ds_layout->layout = 'ds_2col_stacked_fluid';
   $ds_layout->settings = array(
-    'regions' => array(
-      'ds_content' => array(
-        0 => 'title',
-        1 => 'field_author',
-        2 => 'body',
-        3 => 'field_tags',
-        4 => 'field_songbook_references',
-        5 => 'field_scripture_references',
-      ),
-    ),
-    'fields' => array(
-      'title' => 'ds_content',
-      'field_author' => 'ds_content',
-      'body' => 'ds_content',
-      'field_tags' => 'ds_content',
-      'field_songbook_references' => 'ds_content',
-      'field_scripture_references' => 'ds_content',
-    ),
     'classes' => array(),
     'wrappers' => array(
-      'ds_content' => 'div',
+      'header' => 'div',
+      'left' => 'div',
+      'right' => 'div',
+      'footer' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
-    'layout_disable_css' => FALSE,
+    'layout_disable_css' => 0,
+    'regions' => array(
+      'header' => array(
+        0 => 'title',
+        1 => 'field_author',
+        2 => 'body',
+        3 => 'field_tags',
+      ),
+      'left' => array(
+        0 => 'field_scripture_references',
+      ),
+      'right' => array(
+        0 => 'field_songbook_references',
+      ),
+    ),
+    'fields' => array(
+      'title' => 'header',
+      'field_author' => 'header',
+      'body' => 'header',
+      'field_tags' => 'header',
+      'field_scripture_references' => 'left',
+      'field_songbook_references' => 'right',
+    ),
   );
   $export['node|song|default'] = $ds_layout;
 
