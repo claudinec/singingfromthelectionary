@@ -42,6 +42,7 @@ features[field_instance][] = node-song-field_tags
 features[node][] = song
 features[taxonomy][] = tags
 features[variable][] = content_access_song
+features[variable][] = ds_extras_field_template
 features[variable][] = field_bundle_settings_node__song
 features[variable][] = menu_options_song
 features[variable][] = menu_parent_song
