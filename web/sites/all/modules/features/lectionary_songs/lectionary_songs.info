@@ -5,6 +5,7 @@ package = Lectionary
 version = 7.x-0.9
 dependencies[] = ctools
 dependencies[] = ds
+dependencies[] = ds_extras
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = lectionary_core
