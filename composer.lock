@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f8f081191ad89b762aa9f78800d277db",
-    "content-hash": "9fd527def988ced69f8e0b0e839984e9",
+    "hash": "491d3023db3b758024a58033be1db2ec",
+    "content-hash": "4abf2e411f08ed2c38a0c5224ab08292",
     "packages": [
         {
             "name": "composer/installers",
@@ -829,31 +829,6 @@
             "homepage": "https://www.drupal.org/project/field_collection"
         },
         {
-            "name": "drupal/field_formatter_settings",
-            "version": "dev-7.x-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/field_formatter_settings",
-                "reference": "a9a7d0c92b35ded8af0446e6052c6a6c3b2144b0"
-            },
-            "require": {
-                "drupal/drupal": "7.*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Provides missing alter hooks for field formatter settings and summaries",
-            "homepage": "https://www.drupal.org/project/field_formatter_settings",
-            "time": "2015-07-22 19:44:49"
-        },
-        {
             "name": "drupal/field_validation",
             "version": "dev-7.x-2.x",
             "source": {
@@ -890,32 +865,6 @@
             "description": "Add validation rules to fields.",
             "homepage": "https://www.drupal.org/project/field_validation",
             "time": "2015-06-26 16:43:23"
-        },
-        {
-            "name": "drupal/grid_field_formatter",
-            "version": "dev-7.x-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/grid_field_formatter",
-                "reference": "a2835b1beb2f90c18a0c491e3095583e8505f04a"
-            },
-            "require": {
-                "drupal/drupal": "7.*",
-                "drupal/field_formatter_settings": "7.*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Any Field formatter layout to Grid table.",
-            "homepage": "https://www.drupal.org/project/grid_field_formatter",
-            "time": "2014-08-14 04:21:06"
         },
         {
             "name": "drupal/heartbeat",
