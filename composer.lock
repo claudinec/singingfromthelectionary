@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1436951ff916fd980bf0b88f07e3c026",
-    "content-hash": "8c8188bd95cc0f09de9b8259843712da",
+    "hash": "15a611a3977612204dac81c425cab79e",
+    "content-hash": "88df3e87e67f84588971aad684238366",
     "packages": [
         {
             "name": "composer/installers",
@@ -301,43 +301,6 @@
             "description": "The next generation of Blocks as Entities",
             "homepage": "https://www.drupal.org/project/boxes",
             "time": "2012-05-09 01:52:35"
-        },
-        {
-            "name": "drupal/content_access",
-            "version": "7.1.2-beta2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/content_access",
-                "reference": "60d678d049bebc77851be48cf414c89a4e5cb8ae"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/content_access-7.x-1.2-beta2.zip",
-                "reference": "60d678d049bebc77851be48cf414c89a4e5cb8ae",
-                "shasum": null
-            },
-            "require": {
-                "drupal/drupal": "7.*"
-            },
-            "replace": {
-                "drupal/content_access_rules": "self.version"
-            },
-            "suggest": {
-                "drupal/rules": "Required by drupal/content_access_rules"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Provides flexible content access control.",
-            "homepage": "https://www.drupal.org/project/content_access",
-            "time": "2013-01-22 11:15:59"
         },
         {
             "name": "drupal/ctools",
@@ -866,6 +829,37 @@
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Provides a field collection field, to which any number of fields can be attached.",
             "homepage": "https://www.drupal.org/project/field_collection"
+        },
+        {
+            "name": "drupal/field_permissions",
+            "version": "7.1.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/field_permissions",
+                "reference": "dadb3a90eddf5dde3882d4200ea17a5ebe75db3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_permissions-7.x-1.0-beta2.zip",
+                "reference": "dadb3a90eddf5dde3882d4200ea17a5ebe75db3d",
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Set field-level permissions to create, update or view fields.",
+            "homepage": "https://www.drupal.org/project/field_permissions",
+            "time": "2012-01-10 21:06:26"
         },
         {
             "name": "drupal/field_validation",
@@ -1462,7 +1456,7 @@
         "drupal/displaysuite": 20,
         "drupal/field_collection": 10,
         "drupal/phpmailer": 20,
-        "drupal/content_access": 10
+        "drupal/field_permissions": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,
