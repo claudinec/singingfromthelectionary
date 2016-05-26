@@ -69,15 +69,15 @@ function lectionary_imports_feeds_importer_default() {
             'language' => 'und',
           ),
           4 => array(
-            'source' => 'Comments',
-            'target' => 'body',
-            'unique' => FALSE,
-            'language' => 'und',
-          ),
-          5 => array(
             'source' => 'song_id',
             'target' => 'field_imported_song_id',
             'unique' => 1,
+            'language' => 'und',
+          ),
+          5 => array(
+            'source' => 'Comments',
+            'target' => 'field_song_notes',
+            'unique' => FALSE,
           ),
         ),
         'update_existing' => '2',

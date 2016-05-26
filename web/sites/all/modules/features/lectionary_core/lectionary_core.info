@@ -9,7 +9,6 @@ dependencies[] = backup_migrate
 dependencies[] = block
 dependencies[] = boxes
 dependencies[] = contact
-dependencies[] = content_access
 dependencies[] = contextual
 dependencies[] = ctools
 dependencies[] = dashboard
