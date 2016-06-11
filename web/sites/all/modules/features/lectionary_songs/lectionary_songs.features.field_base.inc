@@ -73,21 +73,6 @@ function lectionary_songs_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_imported_song_id'.
-  $field_bases['field_imported_song_id'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_imported_song_id',
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
-  );
-
   // Exported field_base: 'field_scripture_references'.
   $field_bases['field_scripture_references'] = array(
     'active' => 1,

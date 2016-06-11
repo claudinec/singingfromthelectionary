@@ -92,8 +92,8 @@ function lectionary_songs_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-song-field_imported_song_id'.
-  $field_instances['node-song-field_imported_song_id'] = array(
+  // Exported field_instance: 'node-song-field_scripture_references'.
+  $field_instances['node-song-field_scripture_references'] = array(
     'bundle' => 'song',
     'default_value' => NULL,
     'deleted' => 0,
@@ -310,7 +310,6 @@ function lectionary_songs_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Author');
   t('First line');
-  t('Imported song ID');
   t('Scripture references');
   t('Song notes');
   t('Songbook references');
