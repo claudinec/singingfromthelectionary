@@ -66,13 +66,13 @@ function lectionary_core_strongarm() {
       'status' => 1,
       'label' => 'Results for song',
       'wrapper' => 'fieldset',
-      'weight' => '-29',
+      'weight' => '-28',
     ),
     'songbook' => array(
       'status' => 1,
       'label' => 'Results for songbook',
       'wrapper' => 'fieldset',
-      'weight' => '-28',
+      'weight' => '-29',
     ),
   );
   $export['ds_search_group_by_type_settings'] = $strongarm;
@@ -408,7 +408,7 @@ function lectionary_core_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_mail';
-  $strongarm->value = 'info@claudinec.net';
+  $strongarm->value = 'info@singingfromthelectionary.org';
   $export['site_mail'] = $strongarm;
 
   $strongarm = new stdClass();
