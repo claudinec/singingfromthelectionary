@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "15a611a3977612204dac81c425cab79e",
-    "content-hash": "88df3e87e67f84588971aad684238366",
+    "hash": "adb9b5cf381a33664bd67c558b58e28d",
+    "content-hash": "b6418bd227800ff387d7d6015bc8ef56",
     "packages": [
         {
             "name": "composer/installers",
@@ -1030,6 +1030,41 @@
             "description": "Allows version-dependent and shared usage of external libraries.",
             "homepage": "https://www.drupal.org/project/libraries",
             "time": "2014-10-13 02:31:06"
+        },
+        {
+            "name": "drupal/logintoboggan",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/logintoboggan",
+                "reference": "f64e4879b93256604ee6a1c009937e5a259eddcc"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/logintoboggan_content_access_integration": "self.version",
+                "drupal/logintoboggan_rules": "self.version",
+                "drupal/logintoboggan_variable": "self.version"
+            },
+            "suggest": {
+                "drupal/content_access": "Required by drupal/logintoboggan_content_access_integration",
+                "drupal/rules": "Required by drupal/logintoboggan_rules",
+                "drupal/variable": "Required by drupal/logintoboggan_variable"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Improves Drupal's login system.",
+            "homepage": "https://www.drupal.org/project/logintoboggan",
+            "time": "2015-06-04 20:26:41"
         },
         {
             "name": "drupal/migrate",
