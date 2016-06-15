@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0341f57f8e2121df2bf24ced9c80fcaa",
-    "content-hash": "bb76f8c902815857bb666856cf737a47",
+    "hash": "140287244b980605f6ad5b57cc7060fe",
+    "content-hash": "c6d7e3c93578abcae3db460cb76a9f8f",
     "packages": [
         {
             "name": "composer/installers",
@@ -900,6 +900,35 @@
             "time": "2015-06-26 16:43:23"
         },
         {
+            "name": "drupal/file_entity",
+            "version": "dev-7.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/file_entity",
+                "reference": "08e74fb6b6df4c294e6dabe654bbba9f3bdbe274"
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*",
+                "drupal/field": "7.*",
+                "drupal/file": "7.*",
+                "drupal/system": ">=7.33.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Extends Drupal file entities to be fieldable and viewable.",
+            "homepage": "https://www.drupal.org/project/file_entity",
+            "time": "2016-06-01 21:15:18"
+        },
+        {
             "name": "drupal/heartbeat",
             "version": "dev-7.x-1.x",
             "source": {
@@ -1077,7 +1106,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/masquerade-7.x-1.0-rc7.zip",
-                "reference": null,
+                "reference": "84688478d091dbdb55576881961d79fc07254a81",
                 "shasum": null
             },
             "require": {
@@ -1096,6 +1125,47 @@
             "description": "This module allows permitted users to masquerade as other users.",
             "homepage": "https://www.drupal.org/project/masquerade",
             "time": "2014-03-07 14:01:45"
+        },
+        {
+            "name": "drupal/media",
+            "version": "dev-7.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/media",
+                "reference": "6785848835db391ab7ffff2b7145e8d845815217"
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/file_entity": "7.*",
+                "drupal/image": "7.*",
+                "drupal/views": "7.*"
+            },
+            "replace": {
+                "drupal/media_bulk_upload": "self.version",
+                "drupal/media_internet": "self.version",
+                "drupal/media_migrate_file_types": "self.version",
+                "drupal/media_wysiwyg": "self.version",
+                "drupal/media_wysiwyg_view_mode": "self.version",
+                "drupal/mediafield": "self.version"
+            },
+            "suggest": {
+                "drupal/media_wysiwyg": "Required by drupal/media_wysiwyg_view_mode",
+                "drupal/multiform": "Required by drupal/media_bulk_upload",
+                "drupal/plupload": "Required by drupal/media_bulk_upload"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides the core Media API",
+            "homepage": "https://www.drupal.org/project/media",
+            "time": "2016-06-01 15:56:31"
         },
         {
             "name": "drupal/migrate",
