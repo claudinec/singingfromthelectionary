@@ -38,7 +38,8 @@
     "drupal/field_validation": "^7.2",
     "drupal/boxes": "^7.1",
     "drupal/field_permissions": "^7.1@beta",
-    "drupal/logintoboggan": "^7.1"
+    "drupal/logintoboggan": "^7.1",
+    "drupal/masquerade": "^7.1@RC"
   },
   "conflict": {
     "drupal/core": "8.*"
