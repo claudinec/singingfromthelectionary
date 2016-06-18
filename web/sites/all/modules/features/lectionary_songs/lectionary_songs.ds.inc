@@ -121,6 +121,34 @@ function lectionary_songs_ds_layout_settings_info() {
   $ds_layout->view_mode = 'default';
   $ds_layout->layout = 'ds_2col_stacked_fluid';
   $ds_layout->settings = array(
+    'regions' => array(
+      'header' => array(
+        0 => 'title',
+        1 => 'field_author',
+        2 => 'field_tags',
+      ),
+      'left' => array(
+        3 => 'field_scripture_references',
+      ),
+      'right' => array(
+        4 => 'field_songbook_references',
+      ),
+      'footer' => array(
+        5 => 'field_sheet_music_link',
+        6 => 'field_sound_sample_link',
+        7 => 'field_lyrics_link',
+      ),
+    ),
+    'fields' => array(
+      'title' => 'header',
+      'field_author' => 'header',
+      'field_tags' => 'header',
+      'field_scripture_references' => 'left',
+      'field_songbook_references' => 'right',
+      'field_sheet_music_link' => 'footer',
+      'field_sound_sample_link' => 'footer',
+      'field_lyrics_link' => 'footer',
+    ),
     'classes' => array(),
     'wrappers' => array(
       'header' => 'div',
@@ -134,28 +162,6 @@ function lectionary_songs_ds_layout_settings_info() {
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
     'layout_disable_css' => 0,
-    'regions' => array(
-      'header' => array(
-        0 => 'title',
-        1 => 'field_author',
-        2 => 'body',
-        3 => 'field_tags',
-      ),
-      'left' => array(
-        0 => 'field_scripture_references',
-      ),
-      'right' => array(
-        0 => 'field_songbook_references',
-      ),
-    ),
-    'fields' => array(
-      'title' => 'header',
-      'field_author' => 'header',
-      'body' => 'header',
-      'field_tags' => 'header',
-      'field_scripture_references' => 'left',
-      'field_songbook_references' => 'right',
-    ),
   );
   $export['node|song|default'] = $ds_layout;
 
