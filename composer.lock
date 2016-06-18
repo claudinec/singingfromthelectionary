@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e3f9eada19408d7d5504ae8316f03077",
-    "content-hash": "133b92750f62e1283f880115f027942b",
+    "hash": "f82ad49aed7d186823730bc20cdf2340",
+    "content-hash": "fcb6573404a2b88e586aac0dd33e680a",
     "packages": [
         {
             "name": "composer/installers",
@@ -308,7 +308,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "5aa6dba4dcf81ec24f7a6cdec3033c463ce74dbf"
+                "reference": "49023b62761071ca383946ad9c191d57c5c1fbc7"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -343,7 +343,7 @@
             ],
             "description": "A library of helpful tools by Merlin of Chaos.",
             "homepage": "https://www.drupal.org/project/ctools",
-            "time": "2016-02-19 22:05:26"
+            "time": "2016-06-16 07:13:21"
         },
         {
             "name": "drupal/devel",
@@ -900,35 +900,6 @@
             "time": "2015-06-26 16:43:23"
         },
         {
-            "name": "drupal/file_entity",
-            "version": "dev-7.x-2.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/file_entity",
-                "reference": "08e74fb6b6df4c294e6dabe654bbba9f3bdbe274"
-            },
-            "require": {
-                "drupal/ctools": "7.*",
-                "drupal/drupal": "7.*",
-                "drupal/field": "7.*",
-                "drupal/file": "7.*",
-                "drupal/system": ">=7.33.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-2.x": "7.2.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Extends Drupal file entities to be fieldable and viewable.",
-            "homepage": "https://www.drupal.org/project/file_entity",
-            "time": "2016-06-01 21:15:18"
-        },
-        {
             "name": "drupal/heartbeat",
             "version": "dev-7.x-1.x",
             "source": {
@@ -1071,7 +1042,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/link-7.x-1.4.zip",
-                "reference": null,
+                "reference": "3cfdc1848d00dc5d5a7b2e9e9b7e85a04fdbe9f5",
                 "shasum": null
             },
             "require": {
@@ -1156,47 +1127,6 @@
             "description": "This module allows permitted users to masquerade as other users.",
             "homepage": "https://www.drupal.org/project/masquerade",
             "time": "2014-03-07 14:01:45"
-        },
-        {
-            "name": "drupal/media",
-            "version": "dev-7.x-2.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/media",
-                "reference": "6785848835db391ab7ffff2b7145e8d845815217"
-            },
-            "require": {
-                "drupal/drupal": "7.*",
-                "drupal/file_entity": "7.*",
-                "drupal/image": "7.*",
-                "drupal/views": "7.*"
-            },
-            "replace": {
-                "drupal/media_bulk_upload": "self.version",
-                "drupal/media_internet": "self.version",
-                "drupal/media_migrate_file_types": "self.version",
-                "drupal/media_wysiwyg": "self.version",
-                "drupal/media_wysiwyg_view_mode": "self.version",
-                "drupal/mediafield": "self.version"
-            },
-            "suggest": {
-                "drupal/media_wysiwyg": "Required by drupal/media_wysiwyg_view_mode",
-                "drupal/multiform": "Required by drupal/media_bulk_upload",
-                "drupal/plupload": "Required by drupal/media_bulk_upload"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-2.x": "7.2.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Provides the core Media API",
-            "homepage": "https://www.drupal.org/project/media",
-            "time": "2016-06-01 15:56:31"
         },
         {
             "name": "drupal/migrate",
