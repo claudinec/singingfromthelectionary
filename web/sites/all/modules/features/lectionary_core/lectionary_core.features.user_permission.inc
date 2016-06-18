@@ -75,6 +75,7 @@ function lectionary_core_user_default_permissions() {
     'name' => 'access content overview',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -335,6 +336,7 @@ function lectionary_core_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -886,6 +888,7 @@ function lectionary_core_user_default_permissions() {
     'name' => 'revert revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -1033,6 +1036,7 @@ function lectionary_core_user_default_permissions() {
     'name' => 'view revisions',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
