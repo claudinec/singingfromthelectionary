@@ -54,7 +54,7 @@ function lectionary_songs_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '11',
         ),
       ),
       'display' => array(),
