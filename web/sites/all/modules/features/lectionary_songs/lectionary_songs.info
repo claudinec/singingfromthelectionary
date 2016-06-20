@@ -38,7 +38,6 @@ features[field_base][] = field_sound_sample_link
 features[field_base][] = field_tags
 features[field_instance][] = node-song-field_author
 features[field_instance][] = node-song-field_first_line
-features[field_instance][] = node-song-field_imported_song_id
 features[field_instance][] = node-song-field_lyrics_link
 features[field_instance][] = node-song-field_scripture_references
 features[field_instance][] = node-song-field_sheet_music_link
