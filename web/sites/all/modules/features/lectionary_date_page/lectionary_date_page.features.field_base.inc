@@ -144,6 +144,9 @@ function lectionary_date_page_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_song',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',
@@ -152,18 +155,20 @@ function lectionary_date_page_field_default_field_bases() {
     'locked' => 0,
     'module' => 'entityreference',
     'settings' => array(
-      'handler' => 'base',
+      'handler' => 'views',
       'handler_settings' => array(
         'behaviors' => array(
+          'entityqueue' => array(
+            'status' => 0,
+          ),
           'views-select-list' => array(
             'status' => 0,
           ),
         ),
-        'sort' => array(
-          'type' => 'none',
-        ),
-        'target_bundles' => array(
-          'song' => 'song',
+        'view' => array(
+          'args' => array(),
+          'display_name' => 'entityreference_1',
+          'view_name' => 'songs_and_authors',
         ),
       ),
       'target_type' => 'node',

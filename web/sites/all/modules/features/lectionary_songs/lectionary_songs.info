@@ -59,4 +59,5 @@ features[variable][] = node_submitted_song
 features[variable][] = pathauto_node_song_pattern
 features[variable][] = pathauto_taxonomy_term_tags_pattern
 features[views_view][] = songs_admin
+features[views_view][] = songs_and_authors
 features_exclude[field_base][field_imported_song_id] = field_imported_song_id
