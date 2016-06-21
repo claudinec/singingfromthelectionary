@@ -46,8 +46,18 @@ function lectionary_songbooks_strongarm() {
         'title' => array(
           'weight' => '0',
         ),
+        'path' => array(
+          'weight' => '30',
+        ),
       ),
-      'display' => array(),
+      'display' => array(
+        'disqus' => array(
+          'default' => array(
+            'weight' => '11',
+            'visible' => FALSE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__songbook'] = $strongarm;
