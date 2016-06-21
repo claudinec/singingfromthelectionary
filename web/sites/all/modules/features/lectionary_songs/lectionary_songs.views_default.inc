@@ -206,11 +206,14 @@ function lectionary_songs_views_default_views() {
   $handler->display->display_options['fields']['field_author']['field'] = 'field_author';
   $handler->display->display_options['fields']['field_author']['label'] = '';
   $handler->display->display_options['fields']['field_author']['element_label_colon'] = FALSE;
-  /* Sort criterion: Content: Post date */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'node';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  /* Sort criterion: Content: Author (field_author) */
+  $handler->display->display_options['sorts']['field_author_value']['id'] = 'field_author_value';
+  $handler->display->display_options['sorts']['field_author_value']['table'] = 'field_data_field_author';
+  $handler->display->display_options['sorts']['field_author_value']['field'] = 'field_author_value';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
