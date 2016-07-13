@@ -130,6 +130,27 @@ function lectionary_songs_ds_field_settings_info() {
   );
   $export['node|song|default'] = $ds_fieldsetting;
 
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'node|song|teaser';
+  $ds_fieldsetting->entity_type = 'node';
+  $ds_fieldsetting->bundle = 'song';
+  $ds_fieldsetting->view_mode = 'teaser';
+  $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '14',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '0',
+        'wrapper' => 'p',
+        'class' => '',
+        'ft' => array(),
+      ),
+    ),
+  );
+  $export['node|song|teaser'] = $ds_fieldsetting;
+
   return $export;
 }
 
@@ -223,6 +244,47 @@ function lectionary_songs_ds_layout_settings_info() {
     'layout_disable_css' => 0,
   );
   $export['node|song|default'] = $ds_layout;
+
+  $ds_layout = new stdClass();
+  $ds_layout->api_version = 1;
+  $ds_layout->id = 'node|song|teaser';
+  $ds_layout->entity_type = 'node';
+  $ds_layout->bundle = 'song';
+  $ds_layout->view_mode = 'teaser';
+  $ds_layout->layout = 'ds_1col';
+  $ds_layout->settings = array(
+    'regions' => array(
+      'ds_content' => array(
+        0 => 'group_title_author',
+        1 => 'field_song_notes_public',
+        2 => 'field_tags',
+        3 => 'field_scripture_references',
+        4 => 'field_songbook_references',
+        5 => 'title',
+        6 => 'field_author',
+      ),
+    ),
+    'fields' => array(
+      'group_title_author' => 'ds_content',
+      'field_song_notes_public' => 'ds_content',
+      'field_tags' => 'ds_content',
+      'field_scripture_references' => 'ds_content',
+      'field_songbook_references' => 'ds_content',
+      'title' => 'ds_content',
+      'field_author' => 'ds_content',
+    ),
+    'classes' => array(),
+    'wrappers' => array(
+      'ds_content' => 'div',
+    ),
+    'layout_wrapper' => 'div',
+    'layout_attributes' => '',
+    'layout_attributes_merge' => 1,
+    'layout_link_attribute' => '',
+    'layout_link_custom' => '',
+    'layout_disable_css' => FALSE,
+  );
+  $export['node|song|teaser'] = $ds_layout;
 
   return $export;
 }
