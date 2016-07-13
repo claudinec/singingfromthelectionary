@@ -46,7 +46,8 @@
         "drupal/field_permissions": "^7.1@beta",
         "drupal/logintoboggan": "^7.1",
         "drupal/masquerade": "^7.1@RC",
-        "drupal/link": "^7.1"
+        "drupal/link": "^7.1",
+        "drupal/field_group_inline": "^7.1@beta"
     },
     "conflict": {
         "drupal/core": "8.*"

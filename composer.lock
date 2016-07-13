@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "285de8b75ab2af08caa54a944b5774af",
-    "content-hash": "0ec58d4b449154e818f1e447e28779be",
+    "hash": "e3b7606f9462e8687e08fd118f531a08",
+    "content-hash": "66b3b0a58bfa352a2022bb52ca9057ce",
     "packages": [
         {
             "name": "composer/installers",
@@ -831,6 +831,65 @@
             "homepage": "https://www.drupal.org/project/field_collection"
         },
         {
+            "name": "drupal/field_group",
+            "version": "dev-7.x-2.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/field_group",
+                "reference": "5d1ce8e2438674d4c127c1a164bfa8b5a91d8fa6"
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*",
+                "drupal/field": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-2.x": "7.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Fieldgroup",
+            "homepage": "https://www.drupal.org/project/field_group",
+            "time": "2012-04-06 13:30:25"
+        },
+        {
+            "name": "drupal/field_group_inline",
+            "version": "7.1.0-beta5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/field_group_inline",
+                "reference": "9fde3d45b363b29ff6aab370e56c77f9fd974f6a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_group_inline-7.x-1.0-beta5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/field_group": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Show every field inside group as inline element.",
+            "homepage": "https://www.drupal.org/project/field_group_inline",
+            "time": "2014-04-18 23:49:33"
+        },
+        {
             "name": "drupal/field_permissions",
             "version": "7.1.0-beta2",
             "source": {
@@ -1560,7 +1619,8 @@
         "drupal/field_collection": 10,
         "drupal/phpmailer": 20,
         "drupal/field_permissions": 10,
-        "drupal/masquerade": 5
+        "drupal/masquerade": 5,
+        "drupal/field_group_inline": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,
