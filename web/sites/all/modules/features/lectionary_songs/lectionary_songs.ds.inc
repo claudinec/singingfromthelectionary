@@ -17,17 +17,6 @@ function lectionary_songs_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'song';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'title' => array(
-      'weight' => '0',
-      'label' => 'hidden',
-      'format' => 'default',
-      'formatter_settings' => array(
-        'link' => '1',
-        'wrapper' => 'h2',
-        'class' => 'song-title',
-        'ft' => array(),
-      ),
-    ),
     'field_songbook_references' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -165,7 +154,7 @@ function lectionary_songs_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'header' => array(
-        0 => 'title',
+        0 => 'field_first_line',
         1 => 'field_author',
         2 => 'field_song_notes',
         3 => 'field_song_notes_public',
@@ -182,7 +171,7 @@ function lectionary_songs_ds_layout_settings_info() {
       ),
     ),
     'fields' => array(
-      'title' => 'header',
+      'field_first_line' => 'header',
       'field_author' => 'header',
       'field_song_notes' => 'header',
       'field_song_notes_public' => 'header',

@@ -209,7 +209,7 @@ function lectionary_date_page_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 1,
-          'view_mode' => 'full',
+          'view_mode' => 'teaser',
         ),
         'type' => 'entityreference_entity_view',
         'weight' => 3,
