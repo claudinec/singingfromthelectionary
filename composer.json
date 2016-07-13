@@ -31,7 +31,16 @@
       "web/sites/all/libraries/{$name}/": ["type:drupal-library"],
       "web/sites/all/drush/{$name}/": ["type:drupal-drush"],
       "web/profiles/{$name}/": ["type:drupal-profile"]
-    },
+  },
+  "preserve-paths": [
+    "web/sites/all/modules/contrib",
+    "web/sites/all/themes/contrib",
+    "web/sites/all/libraries",
+    "web/sites/all/drush",
+    "web/sites/default/settings.php",
+    "web/sites/default/files"
+]
+},
     "require": {
         "composer/installers": "~1.0",
         "derhasi/composer-preserve-paths": "0.1.*",
@@ -69,18 +78,5 @@
         "drupal/masquerade": "^7.1@RC",
         "drupal/link": "^7.1",
         "drupal/field_group_inline": "^7.1@beta"
-    },
-    "conflict": {
-        "drupal/core": "8.*"
-    },
-    "minimum-stability": "dev",
-    "scripts": {
-        "post-create-project-cmd": [
-            "rm README.md LICENSE .travis.yml phpunit.xml.dist"
-        ]
-    },
-    "config": {
-        "vendor-dir": "vendor"
     }
-}
 }
