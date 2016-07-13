@@ -208,8 +208,8 @@ function lectionary_date_page_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'links' => 1,
-          'view_mode' => 'teaser',
+          'links' => 0,
+          'view_mode' => 'full',
         ),
         'type' => 'entityreference_entity_view',
         'weight' => 3,

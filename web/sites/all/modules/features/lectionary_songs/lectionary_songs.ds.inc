@@ -17,6 +17,30 @@ function lectionary_songs_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'song';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
+    'title' => array(
+      'weight' => '1',
+      'label' => 'hidden',
+      'format' => 'default',
+      'formatter_settings' => array(
+        'link' => '0',
+        'wrapper' => 'h3',
+        'class' => '',
+        'ft' => array(),
+      ),
+    ),
+    'field_author' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'h3',
+          'ow-cl' => '',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
+      ),
+    ),
     'field_songbook_references' => array(
       'formatter_settings' => array(
         'ft' => array(
@@ -154,33 +178,35 @@ function lectionary_songs_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'header' => array(
-        0 => 'field_first_line',
-        1 => 'field_author',
-        2 => 'field_song_notes',
-        3 => 'field_song_notes_public',
-        4 => 'field_tags',
+        0 => 'group_title_author',
+        1 => 'title',
+        2 => 'field_author',
+        3 => 'field_song_notes',
+        4 => 'field_song_notes_public',
+        5 => 'field_tags',
       ),
       'left' => array(
-        5 => 'field_scripture_references',
         6 => 'field_lyrics_link',
-        7 => 'field_sound_sample_link',
+        7 => 'field_sheet_music_link',
+        8 => 'field_sound_sample_link',
       ),
       'right' => array(
-        8 => 'field_songbook_references',
-        9 => 'field_sheet_music_link',
+        9 => 'field_scripture_references',
+        10 => 'field_songbook_references',
       ),
     ),
     'fields' => array(
-      'field_first_line' => 'header',
+      'group_title_author' => 'header',
+      'title' => 'header',
       'field_author' => 'header',
       'field_song_notes' => 'header',
       'field_song_notes_public' => 'header',
       'field_tags' => 'header',
-      'field_scripture_references' => 'left',
       'field_lyrics_link' => 'left',
+      'field_sheet_music_link' => 'left',
       'field_sound_sample_link' => 'left',
+      'field_scripture_references' => 'right',
       'field_songbook_references' => 'right',
-      'field_sheet_music_link' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
