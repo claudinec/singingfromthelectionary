@@ -45,7 +45,6 @@ function lectionary_songs_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'lbw' => 1,
           'lbw-el' => 'strong',
           'ow' => TRUE,
           'ow-el' => 'div',
@@ -67,7 +66,6 @@ function lectionary_songs_ds_field_settings_info() {
       'formatter_settings' => array(
         'ft' => array(
           'func' => 'theme_ds_field_expert',
-          'lbw' => 1,
           'lbw-el' => 'strong',
           'ow' => TRUE,
           'ow-el' => 'div',
