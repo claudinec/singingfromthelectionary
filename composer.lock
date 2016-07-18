@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "96d952bf148e3b1541ae17eec9f98e7e",
-    "content-hash": "66b3b0a58bfa352a2022bb52ca9057ce",
+    "hash": "264fa40faad96350f09c5833d023f4c8",
+    "content-hash": "1a91cf8ed28180863d00605ce45ca403",
     "packages": [
         {
             "name": "composer/installers",
@@ -772,6 +772,39 @@
             "time": "2016-02-21 11:26:35"
         },
         {
+            "name": "drupal/feeds_sql",
+            "version": "7.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/feeds_sql",
+                "reference": "f17e9703b01eb84c9b90e1587b6116c167b94982"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/feeds_sql-7.x-1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/ctools": "7.*",
+                "drupal/drupal": "7.*",
+                "drupal/feeds": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Imports data from an external database using Feeds.",
+            "homepage": "https://www.drupal.org/project/feeds_sql",
+            "time": "2011-08-28 15:15:07"
+        },
+        {
             "name": "drupal/feeds_tamper",
             "version": "dev-7.x-1.x",
             "source": {
@@ -869,7 +902,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/field_group_inline-7.x-1.0-beta5.zip",
-                "reference": null,
+                "reference": "9fde3d45b363b29ff6aab370e56c77f9fd974f6a",
                 "shasum": null
             },
             "require": {
