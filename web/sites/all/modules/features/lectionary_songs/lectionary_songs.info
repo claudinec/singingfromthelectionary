@@ -10,7 +10,6 @@ dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = field_group
 dependencies[] = field_group_inline
-dependencies[] = lectionary_core
 dependencies[] = link
 dependencies[] = number
 dependencies[] = options
