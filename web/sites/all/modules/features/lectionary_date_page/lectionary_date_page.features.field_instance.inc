@@ -97,27 +97,28 @@ function lectionary_date_page_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
+        'type' => 'text_default',
+        'weight' => 4,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_scripture_references',
     'label' => 'Scripture references',
     'required' => 0,
     'settings' => array(
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'taxonomy',
+      'active' => 1,
+      'module' => 'text',
       'settings' => array(
-        'autocomplete_path' => 'taxonomy/autocomplete',
         'size' => 60,
       ),
-      'type' => 'taxonomy_autocomplete',
+      'type' => 'text_textfield',
       'weight' => 1,
     ),
   );
@@ -190,6 +191,7 @@ function lectionary_date_page_field_default_field_instances() {
         'weight' => 3,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_song',
     'label' => 'Song',

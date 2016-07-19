@@ -51,10 +51,10 @@ function lectionary_songs_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '1',
+          'weight' => '0',
         ),
         'path' => array(
-          'weight' => '13',
+          'weight' => '12',
         ),
       ),
       'display' => array(),

@@ -112,23 +112,21 @@ function lectionary_songs_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_scripture_references',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
+      'format' => array(
+        0 => 'format',
       ),
     ),
     'locked' => 0,
-    'module' => 'taxonomy',
+    'module' => 'text',
     'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'scripture_references',
-          'parent' => 0,
-        ),
-      ),
+      'max_length' => 255,
     ),
     'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_sheet_music_link'.
