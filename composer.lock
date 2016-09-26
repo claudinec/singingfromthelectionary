@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.1.0",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "a3595c5272a6f247228abb20076ed27321e4aae9"
+                "reference": "d78064c68299743e0161004f2de3a0204e33b804"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/a3595c5272a6f247228abb20076ed27321e4aae9",
-                "reference": "a3595c5272a6f247228abb20076ed27321e4aae9",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d78064c68299743e0161004f2de3a0204e33b804",
+                "reference": "d78064c68299743e0161004f2de3a0204e33b804",
                 "shasum": ""
             },
             "require": {
@@ -72,9 +72,11 @@
                 "agl",
                 "aimeos",
                 "annotatecms",
+                "attogram",
                 "bitrix",
                 "cakephp",
                 "chef",
+                "cockpit",
                 "codeigniter",
                 "concrete5",
                 "croogo",
@@ -98,16 +100,18 @@
                 "piwik",
                 "ppi",
                 "puppet",
+                "reindex",
                 "roundcube",
                 "shopware",
                 "silverstripe",
                 "symfony",
                 "typo3",
                 "wordpress",
+                "yawik",
                 "zend",
                 "zikula"
             ],
-            "time": "2016-07-05 06:18:20"
+            "time": "2016-08-13 20:53:52"
         },
         {
             "name": "derhasi/composer-preserve-paths",
@@ -376,7 +380,13 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "1f2d43f86d8825b8399dc349247123445a07b2ae"
+                "reference": "72634bbb9ff05a71199426ea883bac3cf2866c96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ctools-7.x-1.10.zip",
+                "reference": null,
+                "shasum": null
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -411,7 +421,7 @@
             ],
             "description": "A library of helpful tools by Merlin of Chaos.",
             "homepage": "https://www.drupal.org/project/ctools",
-            "time": "2016-07-12 22:58:44"
+            "time": "2016-08-17 17:06:24"
         },
         {
             "name": "drupal/devel",
@@ -419,7 +429,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/devel",
-                "reference": "196a1eb74279b37416d64b30c6d5b54f5d769df7"
+                "reference": "de728df33b252cb56cd42655202beb61f458bb8f"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -443,7 +453,7 @@
             ],
             "description": "Various blocks, pages, and functions for developers.",
             "homepage": "https://www.drupal.org/project/devel",
-            "time": "2016-05-26 13:45:18"
+            "time": "2016-09-16 21:28:28"
         },
         {
             "name": "drupal/diff",
@@ -557,7 +567,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/drupal",
-                "reference": "8e69582fa301420d19bd53c90e587a4c6ab5a3b7"
+                "reference": "865bbe48ead6490343b222a0abf5d7a7cf97f7fa"
             },
             "replace": {
                 "drupal/aggregator": "self.version",
@@ -650,7 +660,7 @@
             ],
             "description": "Handles general site configuration for administrators.",
             "homepage": "https://www.drupal.org/project/drupal",
-            "time": "2016-07-18 09:55:43"
+            "time": "2016-09-25 14:05:54"
         },
         {
             "name": "drupal/ds",
@@ -749,7 +759,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entityreference",
-                "reference": "b5009cd1406f72a4fbc1103642ddc69a28d26c5a"
+                "reference": "0f63b96ad543077aab14caf3effa463bf9674ba8"
             },
             "require": {
                 "drupal/ctools": "7.*",
@@ -766,9 +776,12 @@
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
             "description": "Provides a field that can reference other entities.",
             "homepage": "https://www.drupal.org/project/entityreference",
-            "time": "2015-11-13 09:34:14"
+            "time": "2016-09-19 20:09:02"
         },
         {
             "name": "drupal/features",
@@ -776,7 +789,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/features",
-                "reference": "41fd9b821b03cbdc6476428f375f16c9f8dc4185"
+                "reference": "5bce5dfc56595f8da9ee6fe0c5d3fb24823610cd"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -793,7 +806,7 @@
             ],
             "description": "Provides feature management for Drupal.",
             "homepage": "https://www.drupal.org/project/features",
-            "time": "2016-04-18 19:27:42"
+            "time": "2016-09-14 14:26:20"
         },
         {
             "name": "drupal/feeds",
@@ -871,7 +884,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/feeds_tamper",
-                "reference": "7f5db2ca426c6d2d7651d635811f038605f3af3f"
+                "reference": "0823bb75c6ee94489a3cd41ab5d61022d886871a"
             },
             "require": {
                 "drupal/drupal": "7.*",
@@ -895,7 +908,7 @@
             ],
             "description": "Modify feeds data before it gets saved.",
             "homepage": "https://www.drupal.org/project/feeds_tamper",
-            "time": "2016-05-18 23:29:22"
+            "time": "2016-09-07 00:10:12"
         },
         {
             "name": "drupal/field_collection",
@@ -1372,10 +1385,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/panels",
-                "reference": "ed967104f132fd5eb7f2ba304a16f72fdad7ce67"
+                "reference": "b47ab12c16ffe1cfa2523cbcf76b4a9409f9d6a6"
             },
             "require": {
-                "drupal/ctools": ">7.1.5",
+                "drupal/ctools": "7.*",
                 "drupal/drupal": "7.*"
             },
             "replace": {
@@ -1401,7 +1414,7 @@
             ],
             "description": "Core Panels display functions; provides no external UI, at least one other Panels module should be enabled.",
             "homepage": "https://www.drupal.org/project/panels",
-            "time": "2016-03-29 16:26:46"
+            "time": "2016-08-20 14:20:35"
         },
         {
             "name": "drupal/pathauto",
@@ -1409,7 +1422,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/pathauto",
-                "reference": "4213909cb9899028d0e2133c8d5c9dd4e68850ac"
+                "reference": "3ec72f7ebfa217a76192fb494fa0fbec503d0d45"
             },
             "require": {
                 "drupal/drupal": "7.*",
@@ -1428,7 +1441,7 @@
             ],
             "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
             "homepage": "https://www.drupal.org/project/pathauto",
-            "time": "2016-04-08 04:08:36"
+            "time": "2016-08-30 16:59:38"
         },
         {
             "name": "drupal/phpmailer",
@@ -1508,7 +1521,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/search404",
-                "reference": "78c8c0bfc08abeda8746ceec9eb8adf8e946680a"
+                "reference": "eff79fdb8be4d372a2c7681a3c7a23a59c617947"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -1525,7 +1538,7 @@
             ],
             "description": "Automatically search for the keywords in URLs that result in 404 errors and show results instead of Page-Not-Found. ",
             "homepage": "https://www.drupal.org/project/search404",
-            "time": "2016-06-30 05:13:18"
+            "time": "2016-07-26 05:18:36"
         },
         {
             "name": "drupal/strongarm",
@@ -1584,7 +1597,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/views",
-                "reference": "33c86b54e238b1ffc8b82a5e98b70721867c9903"
+                "reference": "63e1d67c7125cdcf7e5aeaeefe375f8c49ce92d8"
             },
             "require": {
                 "drupal/ctools": "7.*",
@@ -1605,37 +1618,7 @@
             ],
             "description": "Create customized lists and queries from your database.",
             "homepage": "https://www.drupal.org/project/views",
-            "time": "2016-07-19 01:52:48"
-        },
-        {
-            "name": "drupal/views_bulk_operations",
-            "version": "dev-7.x-3.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/views_bulk_operations",
-                "reference": "f65fb0feef2497704774b530e96549113a9fa407"
-            },
-            "require": {
-                "drupal/drupal": "7.*",
-                "drupal/entity": "7.*",
-                "drupal/views": "7.*"
-            },
-            "replace": {
-                "drupal/actions_permissions": "self.version"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-3.x": "7.3.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Provides a way of selecting multiple rows and applying operations to them.",
-            "homepage": "https://www.drupal.org/project/views_bulk_operations",
-            "time": "2015-11-28 14:05:20"
+            "time": "2016-09-22 10:08:07"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -1643,12 +1626,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "fcf9cb7ae5c89fb26f5e1afd3feb91a2037e0278"
+                "reference": "afbe9433d71fc26b8867f48c5ee99bdd0cf0d20a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/fcf9cb7ae5c89fb26f5e1afd3feb91a2037e0278",
-                "reference": "fcf9cb7ae5c89fb26f5e1afd3feb91a2037e0278",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/afbe9433d71fc26b8867f48c5ee99bdd0cf0d20a",
+                "reference": "afbe9433d71fc26b8867f48c5ee99bdd0cf0d20a",
                 "shasum": ""
             },
             "require": {
@@ -1695,7 +1678,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2016-07-08 09:09:34"
+            "time": "2016-09-21 15:21:49"
         }
     ],
     "packages-dev": [],
