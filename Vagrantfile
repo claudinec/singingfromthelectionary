@@ -22,10 +22,10 @@ Vagrant.configure(2) do |config|
     override.vm.box_url = "https://github.com/displague/vagrant-linode/raw/master/box/linode.box"
 
     provider.api_key = ENV['LINODE_API_KEY']
-    provider.distribution = 'Ubuntu 14.04 LTS'
+    provider.distribution = 'Ubuntu 16.04 LTS'
     provider.datacenter = 'singapore'
     provider.plan = 'Linode 4096'
-    provider.label = 'lectionary-staging'
+    provider.label = 'lectionary_staging'
     provider.group = 'Staging'
   end
 
