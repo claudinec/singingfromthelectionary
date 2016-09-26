@@ -65,6 +65,7 @@
                 "MODX Evo",
                 "Mautic",
                 "OXID",
+                "Plentymarkets",
                 "RadPHP",
                 "SMF",
                 "Thelia",
@@ -976,7 +977,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/field_group_inline-7.x-1.0-beta5.zip",
-                "reference": "9fde3d45b363b29ff6aab370e56c77f9fd974f6a",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1008,7 +1009,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/field_permissions-7.x-1.0-beta2.zip",
-                "reference": "dadb3a90eddf5dde3882d4200ea17a5ebe75db3d",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1209,7 +1210,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/link-7.x-1.4.zip",
-                "reference": "3cfdc1848d00dc5d5a7b2e9e9b7e85a04fdbe9f5",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1235,7 +1236,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/logintoboggan",
-                "reference": "f64e4879b93256604ee6a1c009937e5a259eddcc"
+                "reference": "25ff64afb26968ac9370e9298ab129ce4407db6d"
             },
             "require": {
                 "drupal/drupal": "7.*"
@@ -1262,7 +1263,7 @@
             ],
             "description": "Improves Drupal's login system.",
             "homepage": "https://www.drupal.org/project/logintoboggan",
-            "time": "2015-06-04 20:26:41"
+            "time": "2016-07-20 08:35:28"
         },
         {
             "name": "drupal/masquerade",
@@ -1275,7 +1276,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/masquerade-7.x-1.0-rc7.zip",
-                "reference": "84688478d091dbdb55576881961d79fc07254a81",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1619,6 +1620,36 @@
             "description": "Create customized lists and queries from your database.",
             "homepage": "https://www.drupal.org/project/views",
             "time": "2016-09-22 10:08:07"
+        },
+        {
+            "name": "drupal/views_bulk_operations",
+            "version": "dev-7.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_bulk_operations",
+                "reference": "cc2e2b4345c0605006f593e195fdeceb8221858a"
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/entity": "7.*",
+                "drupal/views": ">=7.3.12"
+            },
+            "replace": {
+                "drupal/actions_permissions": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a way of selecting multiple rows and applying operations to them.",
+            "homepage": "https://www.drupal.org/project/views_bulk_operations",
+            "time": "2016-09-21 18:07:55"
         },
         {
             "name": "phpmailer/phpmailer",
