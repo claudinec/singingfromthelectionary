@@ -14,7 +14,7 @@
   "conflict": {
     "drupal/core": "8.*"
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "alpha",
   "scripts": {
     "post-create-project-cmd": [
       "rm README.md LICENSE .travis.yml phpunit.xml.dist"
@@ -54,18 +54,19 @@
         "drupal/content_access": "^7.1@beta",
         "drupal/devel": "^7.1",
         "drupal/diff": "^7.3",
-        "drupal/displaysuite": "7.1.x-dev",
         "drupal/disqus": "^7.1",
+        "drupal/ds": "^7.2",
         "drupal/entityqueue": "^7.1",
         "drupal/entityreference": "^7.1",
         "drupal/features": "^7.2",
-        "drupal/feeds": "^7.2@beta",
+        "drupal/feeds": "^7.2",
         "drupal/feeds_sql": "^7.1",
         "drupal/feeds_tamper": "^7.1",
         "drupal/field_collection": "^7.1@beta",
         "drupal/field_group_inline": "^7.1@beta",
         "drupal/field_permissions": "^7.1@beta",
         "drupal/field_validation": "^7.2",
+        "drupal/job_scheduler": "^7.2",
         "drupal/jquery_update": "^7.2",
         "drupal/libraries": "^7.2",
         "drupal/link": "^7.1",
