@@ -33,7 +33,8 @@
     "drupal/jquery_update": "^7.2",
     "drupal/entityqueue": "^7.1",
     "drupal/libraries": "^7.2",
-    "drupal/phpmailer": "7.3.x-dev"
+    "drupal/phpmailer": "7.3.x-dev",
+    "drupal/views_bulk_operations": "^7.3"
   },
   "conflict": {
     "drupal/core": "8.*"

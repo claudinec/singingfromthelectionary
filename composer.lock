@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a525f4c21378a45ba3ce3f9f38717730",
-    "content-hash": "1fc241bd333e687d78286d0859fa2c39",
+    "hash": "694bdc062ff81f7643d165e9f0e98163",
+    "content-hash": "357bdbe30aa0ca74ec55304488de62cd",
     "packages": [
         {
             "name": "composer/installers",
@@ -17,7 +17,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/8eb240460b9297793084b957f97dddff119247c7",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d78064c68299743e0161004f2de3a0204e33b804",
                 "reference": "0d061bff8273df2f4a45287209acfb769a01a02d",
                 "shasum": ""
             },
@@ -1232,6 +1232,36 @@
             "time": "2016-03-10 17:20:41"
         },
         {
+            "name": "drupal/views_bulk_operations",
+            "version": "dev-7.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_bulk_operations",
+                "reference": "cc2e2b4345c0605006f593e195fdeceb8221858a"
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/entity": "7.*",
+                "drupal/views": ">=7.3.12"
+            },
+            "replace": {
+                "drupal/actions_permissions": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a way of selecting multiple rows and applying operations to them.",
+            "homepage": "https://www.drupal.org/project/views_bulk_operations",
+            "time": "2016-09-21 18:07:55"
+        },
+        {
             "name": "phpmailer/phpmailer",
             "version": "dev-master",
             "source": {
@@ -1241,7 +1271,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/b7151db9b758364f39677cd0d691fd368b901df0",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/0de97aba002936519f2feff817e5e684c3d4db38",
                 "reference": "b7151db9b758364f39677cd0d691fd368b901df0",
                 "shasum": ""
             },

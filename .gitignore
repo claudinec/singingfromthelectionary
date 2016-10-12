@@ -71,3 +71,7 @@ data/
 # Vagrant
 .vagrant/
 .env
+
+# Logs
+logs/
+
