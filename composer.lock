@@ -398,16 +398,16 @@
         },
         {
             "name": "drupal/ctools",
-            "version": "7.1.10",
+            "version": "7.1.11",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ctools",
-                "reference": "72634bbb9ff05a71199426ea883bac3cf2866c96"
+                "reference": "066772fe2c933e36257dc1f26650d67705ddb296"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ctools-7.x-1.10.zip",
-                "reference": "72634bbb9ff05a71199426ea883bac3cf2866c96",
+                "url": "https://ftp.drupal.org/files/projects/ctools-7.x-1.11.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -443,7 +443,7 @@
             ],
             "description": "A library of helpful tools by Merlin of Chaos.",
             "homepage": "https://www.drupal.org/project/ctools",
-            "time": "2016-08-17 17:06:24"
+            "time": "2016-10-16 01:26:59"
         },
         {
             "name": "drupal/devel",
@@ -553,16 +553,16 @@
         },
         {
             "name": "drupal/drupal",
-            "version": "7.50.0",
+            "version": "7.51.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/drupal",
-                "reference": "088db3b125ef666914b788202dedefbf314bca98"
+                "reference": "ad47f9848e61f770fd1971706966fbfd791845bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/drupal-7.50.zip",
-                "reference": "088db3b125ef666914b788202dedefbf314bca98",
+                "url": "https://ftp.drupal.org/files/projects/drupal-7.51.zip",
+                "reference": null,
                 "shasum": null
             },
             "replace": {
@@ -656,7 +656,7 @@
             ],
             "description": "Handles general site configuration for administrators.",
             "homepage": "https://www.drupal.org/project/drupal",
-            "time": "2016-07-07 18:25:52"
+            "time": "2016-10-05 18:45:42"
         },
         {
             "name": "drupal/ds",
@@ -1046,16 +1046,16 @@
         },
         {
             "name": "drupal/field_permissions",
-            "version": "7.1.0-beta2",
+            "version": "7.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/field_permissions",
-                "reference": "dadb3a90eddf5dde3882d4200ea17a5ebe75db3d"
+                "reference": "3bcfcd779a932e6e8f36e7fcf57188a0e17757e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_permissions-7.x-1.0-beta2.zip",
-                "reference": "dadb3a90eddf5dde3882d4200ea17a5ebe75db3d",
+                "url": "https://ftp.drupal.org/files/projects/field_permissions-7.x-1.0.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -1073,7 +1073,7 @@
             ],
             "description": "Set field-level permissions to create, update or view fields.",
             "homepage": "https://www.drupal.org/project/field_permissions",
-            "time": "2012-01-10 21:06:26"
+            "time": "2016-10-15 22:21:17"
         },
         {
             "name": "drupal/field_validation",
