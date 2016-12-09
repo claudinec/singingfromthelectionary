@@ -175,6 +175,7 @@ function lectionary_date_page_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
+          'use_content_language' => TRUE,
           'view_mode' => 'full',
         ),
         'type' => 'entityreference_entity_view',
@@ -185,6 +186,7 @@ function lectionary_date_page_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 1,
+          'use_content_language' => TRUE,
           'view_mode' => 'full',
         ),
         'type' => 'entityreference_entity_view',
