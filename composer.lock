@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a525f4c21378a45ba3ce3f9f38717730",
-    "content-hash": "1fc241bd333e687d78286d0859fa2c39",
+    "hash": "b27c8374dc82b0f4c1299e0367150ad6",
+    "content-hash": "5088e8c3be51f64ea5bc253cf5bf17db",
     "packages": [
         {
             "name": "composer/installers",
@@ -17,7 +17,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/8eb240460b9297793084b957f97dddff119247c7",
+                "url": "https://api.github.com/repos/composer/installers/zipball/8d957c4bccddaacd94980c4eb1b06f17fc8d3995",
                 "reference": "0d061bff8273df2f4a45287209acfb769a01a02d",
                 "shasum": ""
             },
@@ -913,6 +913,72 @@
             "time": "2014-10-13 02:31:06"
         },
         {
+            "name": "drupal/link",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/link",
+                "reference": "3cfdc1848d00dc5d5a7b2e9e9b7e85a04fdbe9f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/link-7.x-1.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Defines simple link field types.",
+            "homepage": "https://www.drupal.org/project/link",
+            "time": "2015-12-11 05:10:27"
+        },
+        {
+            "name": "drupal/logintoboggan",
+            "version": "dev-7.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/logintoboggan",
+                "reference": "25ff64afb26968ac9370e9298ab129ce4407db6d"
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "replace": {
+                "drupal/logintoboggan_content_access_integration": "self.version",
+                "drupal/logintoboggan_rules": "self.version",
+                "drupal/logintoboggan_variable": "self.version"
+            },
+            "suggest": {
+                "drupal/content_access": "Required by drupal/logintoboggan_content_access_integration",
+                "drupal/rules": "Required by drupal/logintoboggan_rules",
+                "drupal/variable": "Required by drupal/logintoboggan_variable"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Improves Drupal's login system.",
+            "homepage": "https://www.drupal.org/project/logintoboggan",
+            "time": "2016-07-20 08:35:28"
+        },
+        {
             "name": "drupal/migrate",
             "version": "dev-7.x-2.x",
             "source": {
@@ -1232,6 +1298,36 @@
             "time": "2016-03-10 17:20:41"
         },
         {
+            "name": "drupal/views_bulk_operations",
+            "version": "dev-7.x-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/views_bulk_operations",
+                "reference": "cc2e2b4345c0605006f593e195fdeceb8221858a"
+            },
+            "require": {
+                "drupal/drupal": "7.*",
+                "drupal/entity": "7.*",
+                "drupal/views": ">=7.3.12"
+            },
+            "replace": {
+                "drupal/actions_permissions": "self.version"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-3.x": "7.3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides a way of selecting multiple rows and applying operations to them.",
+            "homepage": "https://www.drupal.org/project/views_bulk_operations",
+            "time": "2016-09-21 18:07:55"
+        },
+        {
             "name": "phpmailer/phpmailer",
             "version": "dev-master",
             "source": {
@@ -1241,7 +1337,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/b7151db9b758364f39677cd0d691fd368b901df0",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/0de97aba002936519f2feff817e5e684c3d4db38",
                 "reference": "b7151db9b758364f39677cd0d691fd368b901df0",
                 "shasum": ""
             },

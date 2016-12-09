@@ -114,7 +114,7 @@ function lectionary_date_page_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '6',
+          'weight' => '5',
         ),
       ),
       'display' => array(),
@@ -144,8 +144,7 @@ function lectionary_date_page_strongarm() {
   $strongarm->name = 'node_options_article';
   $strongarm->value = array(
     0 => 'status',
-    1 => 'promote',
-    2 => 'revision',
+    1 => 'revision',
   );
   $export['node_options_article'] = $strongarm;
 
@@ -169,13 +168,6 @@ function lectionary_date_page_strongarm() {
   $strongarm->name = 'pathauto_node_article_pattern';
   $strongarm->value = 'lectionary/[node:title]';
   $export['pathauto_node_article_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_taxonomy_term_tags_pattern';
-  $strongarm->value = '';
-  $export['pathauto_taxonomy_term_tags_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

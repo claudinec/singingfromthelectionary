@@ -17,7 +17,7 @@ function lectionary_imports_feeds_tamper_default() {
   $feeds_tamper->importer = 'song_index';
   $feeds_tamper->source = 'Comments';
   $feeds_tamper->plugin_id = 'array_filter';
-  $feeds_tamper->settings = '';
+  $feeds_tamper->settings = array();
   $feeds_tamper->weight = 1;
   $feeds_tamper->description = 'Filter empty items';
   $export['song_index-comments-array_filter'] = $feeds_tamper;
@@ -45,7 +45,7 @@ function lectionary_imports_feeds_tamper_default() {
   $feeds_tamper->importer = 'song_index';
   $feeds_tamper->source = 'songbooks';
   $feeds_tamper->plugin_id = 'array_filter';
-  $feeds_tamper->settings = '';
+  $feeds_tamper->settings = array();
   $feeds_tamper->weight = 1;
   $feeds_tamper->description = 'Filter empty items';
   $export['song_index-songbooks-array_filter'] = $feeds_tamper;
