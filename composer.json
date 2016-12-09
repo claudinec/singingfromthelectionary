@@ -2,10 +2,6 @@
     "name": "drupal-composer/drupal-project",
     "description": "Composer template for Drupal projects",
     "repositories": {
-        "0": {
-            "type": "composer",
-            "url": "https://packagist.drupal-composer.org"
-        },
         "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/7"
@@ -48,8 +44,6 @@
         "drupal/admin_menu": "^7.3@RC",
         "drupal/advanced_help": "^7.1",
         "drupal/backup_migrate": "^7.3",
-        "drupal/bootstrap": "7.3.4",
-        "drupal/boxes": "^7.1",
         "drupal/context": "^7.3",
         "drupal/content_access": "^7.1@beta",
         "drupal/devel": "^7.1",
@@ -81,6 +75,8 @@
         "drupal/strongarm": "^7.2",
         "drupal/token": "^7.1",
         "drupal/views": "^7.3",
-        "drupal/views_bulk_operations": "^7.3"
+        "drupal/views_bulk_operations": "^7.3",
+        "drupal/bootstrap": "^3.10",
+        "drupal/boxes": "^1.2"
     }
 }
