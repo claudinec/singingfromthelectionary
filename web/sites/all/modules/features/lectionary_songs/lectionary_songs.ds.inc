@@ -23,7 +23,7 @@ function lectionary_songs_ds_field_settings_info() {
       'format' => 'default',
       'formatter_settings' => array(
         'link' => '0',
-        'wrapper' => 'h3',
+        'wrapper' => 'h4',
         'class' => '',
         'ft' => array(),
       ),
@@ -33,7 +33,7 @@ function lectionary_songs_ds_field_settings_info() {
         'ft' => array(
           'func' => 'theme_ds_field_expert',
           'ow' => TRUE,
-          'ow-el' => 'h3',
+          'ow-el' => 'h4',
           'ow-cl' => '',
           'ow-def-cl' => FALSE,
           'ow-at' => '',
