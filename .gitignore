@@ -25,6 +25,7 @@ web/sites/all/themes/contrib
 web/sites/all/profiles/contrib
 
 # Ignore paths that contain generated content.
+private/
 web/files/
 web/sites/*/files
 web/sites/*/private
