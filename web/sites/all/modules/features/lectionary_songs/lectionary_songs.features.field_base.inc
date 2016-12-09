@@ -73,6 +73,38 @@ function lectionary_songs_field_default_field_bases() {
     'type' => 'text',
   );
 
+  // Exported field_base: 'field_lyrics_link'.
+  $field_bases['field_lyrics_link'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_lyrics_link',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
+  );
+
   // Exported field_base: 'field_scripture_references'.
   $field_bases['field_scripture_references'] = array(
     'active' => 1,
@@ -80,23 +112,53 @@ function lectionary_songs_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_scripture_references',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
+      'format' => array(
+        0 => 'format',
       ),
     ),
     'locked' => 0,
-    'module' => 'taxonomy',
+    'module' => 'text',
     'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'scripture_references',
-          'parent' => 0,
-        ),
-      ),
+      'max_length' => 255,
     ),
     'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_sheet_music_link'.
+  $field_bases['field_sheet_music_link'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_sheet_music_link',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
   );
 
   // Exported field_base: 'field_song_notes'.
@@ -105,16 +167,31 @@ function lectionary_songs_field_default_field_bases() {
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_imported_song_id',
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
     'field_name' => 'field_song_notes',
     'field_permissions' => array(
       'type' => 1,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_song_notes_public'.
+  $field_bases['field_song_notes_public'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_song_notes_public',
+    'field_permissions' => array(
+      'type' => 0,
     ),
     'indexes' => array(
       'format' => array(
@@ -147,6 +224,38 @@ function lectionary_songs_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'text',
+  );
+
+  // Exported field_base: 'field_sound_sample_link'.
+  $field_bases['field_sound_sample_link'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_sound_sample_link',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'link',
+    'settings' => array(
+      'attributes' => array(
+        'class' => '',
+        'rel' => '',
+        'target' => 'default',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'title' => 'optional',
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'link_field',
   );
 
   // Exported field_base: 'field_tags'.
