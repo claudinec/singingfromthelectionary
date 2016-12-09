@@ -7,6 +7,7 @@ dependencies[] = ctools
 dependencies[] = ds
 dependencies[] = features
 dependencies[] = feeds
+dependencies[] = lectionary_songs
 dependencies[] = link
 dependencies[] = strongarm
 dependencies[] = text

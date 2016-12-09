@@ -194,7 +194,7 @@ function lectionary_songs_field_default_field_instances() {
     'bundle' => 'song',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Scripture references for this song.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -519,6 +519,7 @@ function lectionary_songs_field_default_field_instances() {
   t('Imported song ID');
   t('Lyrics link');
   t('Scripture references');
+  t('Scripture references for this song.');
   t('Sheet music link');
   t('Song notes');
   t('Song notes (public)');
