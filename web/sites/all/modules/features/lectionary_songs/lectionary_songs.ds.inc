@@ -235,16 +235,15 @@ function lectionary_songs_ds_layout_settings_info() {
       'left' => 'div',
       'right' => 'div',
       'footer' => 'div',
-
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
     'layout_attributes_merge' => 1,
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
-    'layout_disable_css' => FALSE,
+    'layout_disable_css' => 0,
   );
-  $export['node|song|teaser'] = $ds_layout;
+  $export['node|song|default'] = $ds_layout;
 
   return $export;
 }
