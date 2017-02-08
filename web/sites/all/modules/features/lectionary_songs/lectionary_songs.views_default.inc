@@ -52,6 +52,10 @@ function lectionary_songs_views_default_views() {
   $handler->display->display_options['header']['result']['id'] = 'result';
   $handler->display->display_options['header']['result']['table'] = 'views';
   $handler->display->display_options['header']['result']['field'] = 'result';
+  /* Footer: Global: Result summary */
+  $handler->display->display_options['footer']['result']['id'] = 'result';
+  $handler->display->display_options['footer']['result']['table'] = 'views';
+  $handler->display->display_options['footer']['result']['field'] = 'result';
   /* Field: Bulk operations: Content */
   $handler->display->display_options['fields']['views_bulk_operations']['id'] = 'views_bulk_operations';
   $handler->display->display_options['fields']['views_bulk_operations']['table'] = 'node';
@@ -109,7 +113,6 @@ function lectionary_songs_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Field: Content: First line */
@@ -126,11 +129,6 @@ function lectionary_songs_views_default_views() {
   $handler->display->display_options['fields']['imported']['field'] = 'imported';
   $handler->display->display_options['fields']['imported']['date_format'] = 'short';
   $handler->display->display_options['fields']['imported']['second_date_format'] = 'long';
-  /* Field: Feeds log: Importer name */
-  $handler->display->display_options['fields']['importer_name']['id'] = 'importer_name';
-  $handler->display->display_options['fields']['importer_name']['table'] = 'feeds_log';
-  $handler->display->display_options['fields']['importer_name']['field'] = 'importer_name';
-  $handler->display->display_options['fields']['importer_name']['link'] = '0';
   /* Sort criterion: Feeds item: Import date */
   $handler->display->display_options['sorts']['imported']['id'] = 'imported';
   $handler->display->display_options['sorts']['imported']['table'] = 'feeds_item';
