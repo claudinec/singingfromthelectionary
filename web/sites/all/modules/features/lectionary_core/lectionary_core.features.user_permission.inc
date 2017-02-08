@@ -942,6 +942,13 @@ function lectionary_core_user_default_permissions() {
     'module' => 'disqus',
   );
 
+  // Exported permission: 'update lectionary_pages entityqueue'.
+  $permissions['update lectionary_pages entityqueue'] = array(
+    'name' => 'update lectionary_pages entityqueue',
+    'roles' => array(),
+    'module' => 'entityqueue',
+  );
+
   // Exported permission: 'use advanced search'.
   $permissions['use advanced search'] = array(
     'name' => 'use advanced search',
