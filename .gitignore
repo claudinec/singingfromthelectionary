@@ -28,6 +28,7 @@ web/sites/all/profiles/contrib
 web/files/
 web/sites/*/files
 web/sites/*/private
+private
 
 # Ignore default text files
 robots.txt
