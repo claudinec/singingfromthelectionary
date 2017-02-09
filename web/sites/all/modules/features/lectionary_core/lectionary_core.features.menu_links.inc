@@ -10,6 +10,26 @@
 function lectionary_core_menu_default_menu_links() {
   $menu_links = array();
 
+  // Exported menu link: menu-indexes_lectionary-index:lectionary-index.
+  $menu_links['menu-indexes_lectionary-index:lectionary-index'] = array(
+    'menu_name' => 'menu-indexes',
+    'link_path' => 'lectionary-index',
+    'router_path' => 'lectionary-index',
+    'link_title' => 'Lectionary Index',
+    'options' => array(
+      'attributes' => array(
+        'title' => '',
+      ),
+      'identifier' => 'menu-indexes_lectionary-index:lectionary-index',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => 0,
+    'customized' => 1,
+  );
   // Exported menu link: menu-other-useful-resources_lectionary-liturgies:http://lectionaryliturgies.blogspot.com/.
   $menu_links['menu-other-useful-resources_lectionary-liturgies:http://lectionaryliturgies.blogspot.com/'] = array(
     'menu_name' => 'menu-other-useful-resources',
@@ -111,6 +131,7 @@ function lectionary_core_menu_default_menu_links() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Contact');
+  t('Lectionary Index');
   t('Lectionary Liturgies');
   t('Metrical index');
   t('The Text This Week');
