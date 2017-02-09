@@ -412,7 +412,7 @@
                 "shasum": null
             },
             "require": {
-                "drupal/drupal": "7.*"
+                "drupal/drupal": "~7.0"
             },
             "replace": {
                 "drupal/content_access_rules": "self.version"
@@ -459,16 +459,36 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-3.x": "7.3.x-dev"
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-3.10+9-dev",
+                    "datestamp": "1483553643"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
             ],
-            "description": "Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.",
+            "authors": [
+                {
+                    "name": "markcarver",
+                    "homepage": "https://www.drupal.org/user/501638"
+                },
+                {
+                    "name": "neardark",
+                    "homepage": "https://www.drupal.org/user/661076"
+                },
+                {
+                    "name": "wundo",
+                    "homepage": "https://www.drupal.org/user/25523"
+                }
+            ],
             "homepage": "https://www.drupal.org/project/bootstrap",
-            "time": "2015-12-19 02:33:01"
+            "support": {
+                "source": "http://cgit.drupalcode.org/bootstrap"
+            },
+            "time": "2017-02-04 19:21:02"
         },
         {
             "name": "drupal/ctools",

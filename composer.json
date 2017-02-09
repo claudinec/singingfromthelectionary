@@ -19,7 +19,7 @@
     "drupal/diff": "^7.3",
     "drupal/entityreference": "^7.1",
     "drupal/pathauto": "^7.1",
-    "drupal/bootstrap": "7.3.4",
+    "drupal/bootstrap": "^3.10",
     "drupal/feeds_tamper": "^7.1",
     "drupal/migrate": "^7.2",
     "drupal/displaysuite": "7.1.x-dev",
