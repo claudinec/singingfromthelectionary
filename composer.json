@@ -7,42 +7,7 @@
             "url": "https://packages.drupal.org/7"
         }
     },
-  "require": {
-    "composer/installers": "~1.0",
-    "derhasi/composer-preserve-paths": "0.1.*",
-    "drupal/drupal": "7.*",
-    "drupal/admin_menu": "^7.3@RC",
-    "drupal/backup_migrate": "^7.3",
-    "drupal/token": "^7.1",
-    "drupal/feeds": "^7.2@beta",
-    "drupal/features": "^7.2",
-    "drupal/diff": "^7.3",
-    "drupal/entityreference": "^7.1",
-    "drupal/pathauto": "^7.1",
-    "drupal/bootstrap": "^3.10",
-    "drupal/feeds_tamper": "^7.1",
-    "drupal/migrate": "^7.2",
-    "drupal/displaysuite": "7.1.x-dev",
-    "drupal/views": "^7.3",
-    "drupal/devel": "^7.1",
-    "drupal/schema": "^7.1",
-    "drupal/advanced_help": "^7.1",
-    "drupal/field_collection": "^7.1@beta",
-    "drupal/disqus": "^7.1",
-    "drupal/module_filter": "^7.2",
-    "drupal/search404": "^7.1",
-    "drupal/strongarm": "^7.2",
-    "drupal/jquery_update": "^7.2",
-    "drupal/entityqueue": "^7.1",
-    "drupal/libraries": "^7.2",
-    "drupal/phpmailer": "7.3.x-dev",
-    "drupal/views_bulk_operations": "^7.3",
-    "drupal/logintoboggan": "^7.1",
-    "drupal/link": "^7.1",
-    "drupal/field_group": "^7.1",
-    "drupal/field_group_inline": "^7.1@beta",
-    "drupal/boxes": "^7.1"
-  },
+
   "conflict": {
     "drupal/core": "8.*"
   },
@@ -73,6 +38,7 @@
     "web/sites/default/files"
 ]
 },
+
     "require": {
         "composer/installers": "~1.0",
         "derhasi/composer-preserve-paths": "0.1.*",
@@ -115,4 +81,5 @@
         "drupal/bootstrap": "^3.10",
         "drupal/boxes": "^1.2"
     }
+
 }
