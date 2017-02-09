@@ -959,7 +959,20 @@ function lectionary_core_user_default_permissions() {
   // Exported permission: 'update lectionary_index entityqueue'.
   $permissions['update lectionary_index entityqueue'] = array(
     'name' => 'update lectionary_index entityqueue',
-    'roles' => array(),
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'entityqueue',
+  );
+
+  // Exported permission: 'update other_occasions entityqueue'.
+  $permissions['update other_occasions entityqueue'] = array(
+    'name' => 'update other_occasions entityqueue',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'entityqueue',
   );
 
