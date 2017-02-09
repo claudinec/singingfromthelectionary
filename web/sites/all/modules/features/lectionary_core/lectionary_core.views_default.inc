@@ -41,7 +41,8 @@ function lectionary_core_views_default_views() {
   $handler->display->display_options['relationships']['entityqueue_relationship']['required'] = TRUE;
   $handler->display->display_options['relationships']['entityqueue_relationship']['limit'] = 1;
   $handler->display->display_options['relationships']['entityqueue_relationship']['queues'] = array(
-    'lectionary_pages' => 'lectionary_pages',
+    'front_page' => 'front_page',
+    'lectionary_index' => 0,
   );
   /* Sort criterion: Entityqueue: Node Queue Position */
   $handler->display->display_options['sorts']['entityqueue_relationship']['id'] = 'entityqueue_relationship';

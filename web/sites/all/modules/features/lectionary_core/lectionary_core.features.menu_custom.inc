@@ -10,6 +10,12 @@
 function lectionary_core_menu_default_menu_custom() {
   $menus = array();
 
+  // Exported menu: menu-indexes.
+  $menus['menu-indexes'] = array(
+    'menu_name' => 'menu-indexes',
+    'title' => 'Indexes',
+    'description' => '',
+  );
   // Exported menu: menu-other-useful-resources.
   $menus['menu-other-useful-resources'] = array(
     'menu_name' => 'menu-other-useful-resources',
@@ -18,6 +24,7 @@ function lectionary_core_menu_default_menu_custom() {
   );
   // Translatables
   // Included for use with string extractors like potx.
+  t('Indexes');
   t('Other useful resources');
 
   return $menus;
