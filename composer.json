@@ -56,17 +56,14 @@
         "drupal/entityreference": "^7.1",
         "drupal/features": "^7.2",
         "drupal/feeds": "^7.2",
-        "drupal/feeds_sql": "^7.1",
         "drupal/feeds_tamper": "^7.1",
         "drupal/field_collection": "^7.1@beta",
         "drupal/field_group_inline": "^7.1@beta",
         "drupal/field_permissions": "^7.1@beta",
-        "drupal/field_validation": "^7.2",
+        "drupal/field_validation": "^2.6",
         "drupal/job_scheduler": "^7.2",
         "drupal/jquery_update": "^7.2",
         "drupal/libraries": "^7.2",
-        "drupal/link": "^7.1",
-        "drupal/logintoboggan": "^7.1",
         "drupal/masquerade": "^7.1@RC",
         "drupal/migrate": "^7.2",
         "drupal/module_filter": "^7.2",
@@ -77,9 +74,12 @@
         "drupal/strongarm": "^7.2",
         "drupal/token": "^7.1",
         "drupal/views": "^7.3",
-        "drupal/views_bulk_operations": "^7.3",
         "drupal/bootstrap": "^3.10",
-        "drupal/boxes": "^1.2"
+        "drupal/boxes": "^1.2",
+        "drupal/link": "^1.4",
+        "drupal/feeds_sql": "^1.0",
+        "drupal/views_bulk_operations": "^3.3",
+        "drupal/logintoboggan": "^1.5"
     }
 
 }
