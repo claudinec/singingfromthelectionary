@@ -158,6 +158,7 @@ features[user_permission][] = switch shortcut sets
 features[user_permission][] = switch users
 features[user_permission][] = toggle disqus comments
 features[user_permission][] = update front_page entityqueue
+features[user_permission][] = update lectionary_index entityqueue
 features[user_permission][] = use advanced search
 features[user_permission][] = use ctools import
 features[user_permission][] = use text format filtered_html
