@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "297260bb8c9f65f91b4040ff0a74e0a2",
-    "content-hash": "b8f9166764c4463d7d5677652cb86fc9",
+    "hash": "ee0d9f43d2cba7b821eb96bb4a4c7e4e",
+    "content-hash": "e1c7ddeec89a7276fca951c7228240de",
     "packages": [
         {
             "name": "composer/installers",
@@ -491,42 +491,6 @@
             "time": "2017-02-04 19:21:02"
         },
         {
-            "name": "drupal/boxes",
-            "version": "dev-7.x-2.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/boxes",
-                "reference": "d0ceef4e4b21705054d582b2a65e6baa24ff527d"
-            },
-            "require": {
-                "drupal/block": "7.*",
-                "drupal/ctools": "7.*",
-                "drupal/drupal": "7.*",
-                "drupal/entity": "7.*"
-            },
-            "replace": {
-                "drupal/boxes_admin_ui": "self.version",
-                "drupal/boxes_uuid": "self.version"
-            },
-            "suggest": {
-                "drupal/bean": "Required by drupal/boxes_uuid",
-                "drupal/uuid": "Required by drupal/boxes_uuid"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-2.x": "7.2.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "The next generation of Blocks as Entities",
-            "homepage": "https://www.drupal.org/project/boxes",
-            "time": "2012-05-09 01:52:35"
-        },
-        {
             "name": "drupal/ctools",
             "version": "7.1.12",
             "source": {
@@ -625,59 +589,6 @@
             "description": "Show differences between content revisions.",
             "homepage": "https://www.drupal.org/project/diff",
             "time": "2017-01-24 23:17:53"
-        },
-        {
-            "name": "drupal/displaysuite",
-            "version": "dev-7.x-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/displaysuite",
-                "reference": "41324b7d294339a026b94addc3aef99ec631f853"
-            },
-            "require": {
-                "drupal/block": "7.*",
-                "drupal/comment": "7.*",
-                "drupal/contextual": "7.*",
-                "drupal/ctools": "7.*",
-                "drupal/dashboard": "7.*",
-                "drupal/dblog": "7.*",
-                "drupal/drupal": "7.*",
-                "drupal/ds": "7.*",
-                "drupal/ds_extras": "7.*",
-                "drupal/field_ui": "7.*",
-                "drupal/file": "7.*",
-                "drupal/heartbeat": "7.*",
-                "drupal/help": "7.*",
-                "drupal/image": "7.*",
-                "drupal/list": "7.*",
-                "drupal/menu": "7.*",
-                "drupal/nodesinblock": "7.*",
-                "drupal/number": "7.*",
-                "drupal/options": "7.*",
-                "drupal/page_manager": "7.*",
-                "drupal/panels": "7.*",
-                "drupal/panels_node": "7.*",
-                "drupal/path": "7.*",
-                "drupal/search": "7.*",
-                "drupal/shortcut": "7.*",
-                "drupal/taxonomy": "7.*",
-                "drupal/toolbar": "7.*",
-                "drupal/views": "7.*",
-                "drupal/views_ui": "7.*"
-            },
-            "type": "drupal-profile",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Install Display Suite and some key modules it supports.",
-            "homepage": "https://www.drupal.org/project/displaysuite",
-            "time": "2011-06-23 21:17:58"
         },
         {
             "name": "drupal/disqus",
@@ -1028,6 +939,55 @@
             "time": "2016-11-24 11:31:32"
         },
         {
+            "name": "drupal/feeds_sql",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/feeds_sql",
+                "reference": "7.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/feeds_sql-7.x-1.0.zip",
+                "reference": null,
+                "shasum": "a274db2e8f474ca1670df787dba23f2d42ef703e"
+            },
+            "require": {
+                "drupal/ctools": "*",
+                "drupal/drupal": "~7.0",
+                "drupal/feeds": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.0",
+                    "datestamp": "1314546416"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "LGLC",
+                    "homepage": "https://www.drupal.org/user/668002"
+                },
+                {
+                    "name": "vkareh",
+                    "homepage": "https://www.drupal.org/user/144520"
+                }
+            ],
+            "description": "Imports data from an external database using Feeds.",
+            "homepage": "https://www.drupal.org/project/feeds_sql",
+            "support": {
+                "source": "http://cgit.drupalcode.org/feeds_sql"
+            }
+        },
+        {
             "name": "drupal/feeds_tamper",
             "version": "7.1.1",
             "source": {
@@ -1093,9 +1053,7 @@
         },
         {
             "name": "drupal/field_group",
-
             "version": "7.1.5",
-
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/field_group",
@@ -1191,47 +1149,56 @@
         },
         {
             "name": "drupal/field_validation",
-            "version": "7.2.6",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/field_validation",
-                "reference": "0b25a15d90fc6056ccd2929acaa6ec315a94d966"
+                "reference": "7.x-2.6"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/field_validation-7.x-2.6.zip",
-                "reference": "0b25a15d90fc6056ccd2929acaa6ec315a94d966",
-                "shasum": null
+                "reference": null,
+                "shasum": "4e66028943146d379a0e827bc924415a407678f6"
             },
             "require": {
-                "drupal/ctools": "7.*",
-                "drupal/drupal": "7.*",
-                "drupal/field": "7.*",
-                "drupal/token": "7.*"
+                "drupal/ctools": "*",
+                "drupal/drupal": "*",
+                "drupal/token": "*"
             },
-            "replace": {
-                "drupal/field_validation_extras": "self.version",
-                "drupal/field_validation_ui": "self.version",
-                "drupal/property_validation": "self.version"
-            },
-            "suggest": {
-                "drupal/ctools": "Required by drupal/field_validation_ui, drupal/property_validation",
-                "drupal/entity": "Required by drupal/property_validation",
-                "drupal/field": "Required by drupal/property_validation"
+            "require-dev": {
+                "drupal/ctools": "*",
+                "drupal/entity": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-2.x": "7.2.x-dev"
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-2.6",
+                    "datestamp": "1434802380"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
             ],
-            "description": "Logs user activity when certain events occur, triggering actions. The logged data is accessable through heartbeat displays.",
-            "homepage": "https://www.drupal.org/project/heartbeat",
-            "time": "2012-09-04 19:14:45"
+            "authors": [
+                {
+                    "name": "aegirone",
+                    "homepage": "https://www.drupal.org/user/2720511"
+                },
+                {
+                    "name": "g089h515r806",
+                    "homepage": "https://www.drupal.org/user/174740"
+                }
+            ],
+            "description": "Add validation rules to fields.",
+            "homepage": "https://www.drupal.org/project/field_validation",
+            "support": {
+                "source": "http://cgit.drupalcode.org/field_validation"
+            }
         },
         {
             "name": "drupal/job_scheduler",
@@ -1332,135 +1299,150 @@
         },
         {
             "name": "drupal/link",
-            "version": "dev-7.x-1.x",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/link",
-                "reference": "3cfdc1848d00dc5d5a7b2e9e9b7e85a04fdbe9f5"
+                "reference": "7.x-1.4"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/link-7.x-1.4.zip",
                 "reference": null,
-                "shasum": null
+                "shasum": "e83d70c5598194125fa2ccfa2c638a238aef812a"
             },
             "require": {
-                "drupal/drupal": "7.*"
+                "drupal/drupal": "~7.0"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.4",
+                    "datestamp": "1452830639"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "diqidoq",
+                    "homepage": "https://www.drupal.org/user/1001934"
+                },
+                {
+                    "name": "dropcube",
+                    "homepage": "https://www.drupal.org/user/37031"
+                },
+                {
+                    "name": "jcfiala",
+                    "homepage": "https://www.drupal.org/user/163643"
+                },
+                {
+                    "name": "mrfelton",
+                    "homepage": "https://www.drupal.org/user/305669"
+                },
+                {
+                    "name": "sumitmadan",
+                    "homepage": "https://www.drupal.org/user/1538790"
+                },
+                {
+                    "name": "sun",
+                    "homepage": "https://www.drupal.org/user/54136"
+                }
             ],
             "description": "Defines simple link field types.",
             "homepage": "https://www.drupal.org/project/link",
-            "time": "2015-12-11 05:10:27"
+            "support": {
+                "source": "http://cgit.drupalcode.org/link"
+            }
         },
         {
             "name": "drupal/logintoboggan",
-            "version": "dev-7.x-1.x",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/logintoboggan",
-                "reference": "25ff64afb26968ac9370e9298ab129ce4407db6d"
-            },
-            "require": {
-                "drupal/drupal": "7.*"
-            },
-            "replace": {
-                "drupal/logintoboggan_content_access_integration": "self.version",
-                "drupal/logintoboggan_rules": "self.version",
-                "drupal/logintoboggan_variable": "self.version"
-            },
-            "suggest": {
-                "drupal/content_access": "Required by drupal/logintoboggan_content_access_integration",
-                "drupal/rules": "Required by drupal/logintoboggan_rules",
-                "drupal/variable": "Required by drupal/logintoboggan_variable"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Improves Drupal's login system.",
-            "homepage": "https://www.drupal.org/project/logintoboggan",
-            "time": "2016-07-20 08:35:28"
-        },
-        {
-            "name": "drupal/migrate",
-            "version": "dev-7.x-2.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/link",
-                "reference": "3cfdc1848d00dc5d5a7b2e9e9b7e85a04fdbe9f5"
+                "reference": "7.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/link-7.x-1.4.zip",
-                "reference": "3cfdc1848d00dc5d5a7b2e9e9b7e85a04fdbe9f5",
-                "shasum": null
+                "url": "https://ftp.drupal.org/files/projects/logintoboggan-7.x-1.5.zip",
+                "reference": null,
+                "shasum": "7bc53752c4c77255aea13b5ee0f5ab1046f927ce"
             },
             "require": {
-                "drupal/drupal": "7.*"
+                "drupal/drupal": "~7.0"
+            },
+            "require-dev": {
+                "drupal/content_access": "*",
+                "drupal/rules": "*",
+                "drupal/variable": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.5",
+                    "datestamp": "1430505479"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
             ],
-            "description": "Import content from external sources",
-            "homepage": "https://www.drupal.org/project/migrate",
-            "time": "2015-11-28 20:45:16"
-        },
-        {
-            "name": "drupal/logintoboggan",
-            "version": "7.1.5",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/module_filter",
-                "reference": "a649f31d5eb6465ceaa2c79b4ea86f80ee5d1286"
-            },
-            "require": {
-                "drupal/drupal": "7.*"
-            },
-            "replace": {
-                "drupal/logintoboggan_content_access_integration": "self.version",
-                "drupal/logintoboggan_rules": "self.version",
-                "drupal/logintoboggan_variable": "self.version"
-            },
-            "suggest": {
-                "drupal/content_access": "Required by drupal/logintoboggan_content_access_integration",
-                "drupal/rules": "Required by drupal/logintoboggan_rules",
-                "drupal/variable": "Required by drupal/logintoboggan_variable"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
+            "authors": [
+                {
+                    "name": "dooug",
+                    "homepage": "https://www.drupal.org/user/417693"
+                },
+                {
+                    "name": "galooph",
+                    "homepage": "https://www.drupal.org/user/241220"
+                },
+                {
+                    "name": "greg.harvey",
+                    "homepage": "https://www.drupal.org/user/130383"
+                },
+                {
+                    "name": "instanceofjamie",
+                    "homepage": "https://www.drupal.org/user/16327"
+                },
+                {
+                    "name": "ipo4ka704",
+                    "homepage": "https://www.drupal.org/user/2632891"
+                },
+                {
+                    "name": "jdanthinne",
+                    "homepage": "https://www.drupal.org/user/313766"
+                },
+                {
+                    "name": "md2",
+                    "homepage": "https://www.drupal.org/user/243300"
+                },
+                {
+                    "name": "serhiiy",
+                    "homepage": "https://www.drupal.org/user/2689537"
+                },
+                {
+                    "name": "stevecowie",
+                    "homepage": "https://www.drupal.org/user/110518"
+                },
+                {
+                    "name": "sudhirporwal",
+                    "homepage": "https://www.drupal.org/user/400834"
                 }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
             ],
             "description": "Improves Drupal's login system.",
             "homepage": "https://www.drupal.org/project/logintoboggan",
-            "time": "2015-05-01 15:50:05"
+            "support": {
+                "source": "http://cgit.drupalcode.org/logintoboggan"
+            }
         },
         {
             "name": "drupal/masquerade",
@@ -1808,46 +1790,73 @@
         },
         {
             "name": "drupal/views_bulk_operations",
-            "version": "dev-7.x-3.x",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/views_bulk_operations",
-                "reference": "9764cd5f3d5897f4401402f1dc518f6bc6a1a9f3"
+                "reference": "7.x-3.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-7.x-3.3.zip",
+                "reference": null,
+                "shasum": "1a156d95db1010ed7b7dac3632dcd96f4f09dde2"
             },
             "require": {
-                "drupal/drupal": "7.*",
-                "drupal/entity": "7.*",
-                "drupal/views": ">=7.3.12"
-            },
-            "replace": {
-                "drupal/actions_permissions": "self.version"
+                "drupal/drupal": "~7.0",
+                "drupal/entity": "*",
+                "drupal/views": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-3.x": "7.3.x-dev"
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-3.3",
+                    "datestamp": "1435779396"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "Jon Pugh",
+                    "homepage": "https://www.drupal.org/user/17028"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "infojunkie",
+                    "homepage": "https://www.drupal.org/user/48424"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                }
+            ],
             "description": "Provides a way of selecting multiple rows and applying operations to them.",
             "homepage": "https://www.drupal.org/project/views_bulk_operations",
-            "time": "2017-02-07 00:16:58"
+            "support": {
+                "source": "http://cgit.drupalcode.org/views_bulk_operations"
+            }
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.0.0rc2",
+            "version": "v6.0.0rc4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "8dc31573d2cc976a4748168495060545d4391a25"
+                "reference": "2963f2b2945610cc0c1a6b8a1714602cdd7299a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/8dc31573d2cc976a4748168495060545d4391a25",
-                "reference": "8dc31573d2cc976a4748168495060545d4391a25",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/2963f2b2945610cc0c1a6b8a1714602cdd7299a2",
+                "reference": "2963f2b2945610cc0c1a6b8a1714602cdd7299a2",
                 "shasum": ""
             },
             "require": {
@@ -1858,9 +1867,12 @@
                 "phpunit/phpunit": "4.*"
             },
             "suggest": {
+                "ext-mbstring": "Needed to send email in multibyte encoding charset",
                 "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
                 "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
-                "stevenmaguire/oauth2-microsoft": "Needed for Microsoft XOAUTH2 authentication"
+                "psr/log": "For optional PSR-3 debug logging",
+                "stevenmaguire/oauth2-microsoft": "Needed for Microsoft XOAUTH2 authentication",
+                "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)"
             },
             "type": "library",
             "autoload": {
@@ -1890,7 +1902,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2017-02-01 21:48:00"
+            "time": "2017-01-09 10:18:14"
         }
     ],
     "packages-dev": [],
