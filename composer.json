@@ -42,7 +42,10 @@
     "drupal/phpmailer": "7.3.x-dev",
     "drupal/views_bulk_operations": "^7.3",
     "drupal/logintoboggan": "^7.1",
-    "drupal/link": "^7.1"
+    "drupal/link": "^7.1",
+    "drupal/field_group": "^7.1",
+    "drupal/field_group_inline": "^7.1@beta",
+    "drupal/boxes": "^7.1"
   },
   "conflict": {
     "drupal/core": "8.*"
