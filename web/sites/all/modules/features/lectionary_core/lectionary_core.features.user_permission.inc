@@ -653,6 +653,13 @@ function lectionary_core_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in scripture_references'.
+  $permissions['delete terms in scripture_references'] = array(
+    'name' => 'delete terms in scripture_references',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'delete terms in tags'.
   $permissions['delete terms in tags'] = array(
     'name' => 'delete terms in tags',
@@ -759,6 +766,13 @@ function lectionary_core_user_default_permissions() {
       'editor' => 'editor',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in scripture_references'.
+  $permissions['edit terms in scripture_references'] = array(
+    'name' => 'edit terms in scripture_references',
+    'roles' => array(),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in tags'.
@@ -932,10 +946,13 @@ function lectionary_core_user_default_permissions() {
     'module' => 'disqus',
   );
 
-  // Exported permission: 'update lectionary_pages entityqueue'.
-  $permissions['update lectionary_pages entityqueue'] = array(
-    'name' => 'update lectionary_pages entityqueue',
-    'roles' => array(),
+  // Exported permission: 'update front_page entityqueue'.
+  $permissions['update front_page entityqueue'] = array(
+    'name' => 'update front_page entityqueue',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'entityqueue',
   );
 

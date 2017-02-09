@@ -13,8 +13,8 @@ function lectionary_date_page_entityqueue_default_queues() {
   $queue = new EntityQueue();
   $queue->disabled = FALSE; /* Edit this to true to make a default queue disabled initially */
   $queue->api_version = 1;
-  $queue->name = 'lectionary_pages';
-  $queue->label = 'Lectionary pages';
+  $queue->name = 'front_page';
+  $queue->label = 'Front page';
   $queue->language = 'en';
   $queue->handler = 'simple';
   $queue->target_type = 'node';
@@ -24,9 +24,9 @@ function lectionary_date_page_entityqueue_default_queues() {
     ),
     'min_size' => '0',
     'max_size' => '0',
-    'act_as_queue' => 0,
+    'act_as_queue' => 1,
   );
-  $export['lectionary_pages'] = $queue;
+  $export['front_page'] = $queue;
 
   return $export;
 }

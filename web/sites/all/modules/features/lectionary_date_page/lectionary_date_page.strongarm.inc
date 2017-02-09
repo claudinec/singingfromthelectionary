@@ -95,6 +95,7 @@ function lectionary_date_page_strongarm() {
   $strongarm->name = 'entityqueue_queue_names';
   $strongarm->value = array(
     0 => 'lectionary_pages',
+    1 => 'front_page',
   );
   $export['entityqueue_queue_names'] = $strongarm;
 
