@@ -32,7 +32,6 @@ dependencies[] = search404
 dependencies[] = shortcut
 dependencies[] = strongarm
 dependencies[] = taxonomy
-dependencies[] = toolbar
 dependencies[] = views
 dependencies[] = views_ui
 features[backup_migrate_profiles][] = default
