@@ -69,6 +69,7 @@ function lectionary_date_page_field_default_field_instances() {
         'weight' => 1,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_scripture',
     'label' => 'Scripture',
@@ -131,42 +132,6 @@ function lectionary_date_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'field_collection_item-field_lectionary_section-field_scripture_references'.
-  $field_instances['field_collection_item-field_lectionary_section-field_scripture_references'] = array(
-    'bundle' => 'field_lectionary_section',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Scripture references for this lectionary section.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_scripture_references',
-    'label' => 'Scripture references',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance:
   // 'field_collection_item-field_lectionary_section-field_section'.
   $field_instances['field_collection_item-field_lectionary_section-field_section'] = array(
     'bundle' => 'field_lectionary_section',
@@ -176,9 +141,8 @@ function lectionary_date_page_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'list',
         'settings' => array(),
-        'type' => 'list_default',
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'full' => array(
@@ -449,8 +413,6 @@ function lectionary_date_page_field_default_field_instances() {
   t('Queue items');
   t('Scripture');
   t('Scripture notes');
-  t('Scripture references');
-  t('Scripture references for this lectionary section.');
   t('Scripture references for this section.');
   t('Section');
   t('Song');

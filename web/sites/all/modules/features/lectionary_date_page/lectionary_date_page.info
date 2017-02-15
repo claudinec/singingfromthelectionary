@@ -36,7 +36,6 @@ features[field_base][] = field_song
 features[field_instance][] = entityqueue_subqueue-lectionary_pages-eq_node
 features[field_instance][] = field_collection_item-field_lectionary_section-field_scripture
 features[field_instance][] = field_collection_item-field_lectionary_section-field_scripture_notes
-features[field_instance][] = field_collection_item-field_lectionary_section-field_scripture_references
 features[field_instance][] = field_collection_item-field_lectionary_section-field_section
 features[field_instance][] = field_collection_item-field_lectionary_section-field_song
 features[field_instance][] = node-article-body
