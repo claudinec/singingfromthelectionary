@@ -27,7 +27,7 @@ function lectionary_core_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -49,
     'customized' => 1,
   );
   // Exported menu link: menu-indexes_other-occasions:other-occasions.
@@ -47,7 +47,7 @@ function lectionary_core_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => 0,
+    'weight' => -48,
     'customized' => 1,
   );
   // Exported menu link: menu-other-useful-resources_lectionary-liturgies:http://lectionaryliturgies.blogspot.com/.

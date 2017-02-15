@@ -69,14 +69,12 @@ function lectionary_songbooks_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'title',
-        1 => 'field_abbreviation',
-        2 => 'body',
-        3 => 'field_songbook_info_link',
+        0 => 'field_abbreviation',
+        1 => 'body',
+        2 => 'field_songbook_info_link',
       ),
     ),
     'fields' => array(
-      'title' => 'ds_content',
       'field_abbreviation' => 'ds_content',
       'body' => 'ds_content',
       'field_songbook_info_link' => 'ds_content',

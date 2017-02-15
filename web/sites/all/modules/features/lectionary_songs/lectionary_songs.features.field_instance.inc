@@ -144,47 +144,7 @@ function lectionary_songs_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 11,
-    ),
-  );
-
-  // Exported field_instance: 'node-song-field_scripture_references'.
-  $field_instances['node-song-field_scripture_references'] = array(
-    'bundle' => 'song',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Scripture references for this song.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 15,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'node',
-    'field_name' => 'field_scripture_references',
-    'label' => 'Scripture references',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 12,
     ),
   );
 
@@ -242,7 +202,7 @@ function lectionary_songs_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -329,6 +289,47 @@ function lectionary_songs_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-song-field_song_scripture_references'.
+  $field_instances['node-song-field_song_scripture_references'] = array(
+    'bundle' => 'song',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Scripture references for this song.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'node',
+    'field_name' => 'field_song_scripture_references',
+    'label' => 'Song scripture references',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-song-field_songbook_references'.
   $field_instances['node-song-field_songbook_references'] = array(
     'bundle' => 'song',
@@ -366,7 +367,7 @@ function lectionary_songs_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -424,7 +425,7 @@ function lectionary_songs_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -475,11 +476,11 @@ function lectionary_songs_field_default_field_instances() {
   t('Author');
   t('First line');
   t('Lyrics link');
-  t('Scripture references');
   t('Scripture references for this song.');
   t('Sheet music link');
   t('Song notes');
   t('Song notes (public)');
+  t('Song scripture references');
   t('Songbook references');
   t('Sound sample link');
   t('Tags');

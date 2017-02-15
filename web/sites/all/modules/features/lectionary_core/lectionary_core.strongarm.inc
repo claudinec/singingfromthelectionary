@@ -651,6 +651,7 @@ function lectionary_core_strongarm() {
   $strongarm->name = 'views_defaults';
   $strongarm->value = array(
     'frontpage' => TRUE,
+    'taxonomy_term' => FALSE,
   );
   $export['views_defaults'] = $strongarm;
 
