@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ee0d9f43d2cba7b821eb96bb4a4c7e4e",
-    "content-hash": "e1c7ddeec89a7276fca951c7228240de",
+    "hash": "611ad49b1b27d2e18858f44ee002e32a",
+    "content-hash": "a90fb26399342177881805d0bf0dc292",
     "packages": [
         {
             "name": "composer/installers",
@@ -396,43 +396,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/boxes"
             }
-        },
-        {
-            "name": "drupal/content_access",
-            "version": "7.1.2-beta2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/content_access",
-                "reference": "60d678d049bebc77851be48cf414c89a4e5cb8ae"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/content_access-7.x-1.2-beta2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/drupal": "~7.0"
-            },
-            "replace": {
-                "drupal/content_access_rules": "self.version"
-            },
-            "suggest": {
-                "drupal/rules": "Required by drupal/content_access_rules"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Provides flexible content access control.",
-            "homepage": "https://www.drupal.org/project/content_access",
-            "time": "2013-01-22 11:15:59"
         },
         {
             "name": "drupal/context",
@@ -1118,34 +1081,58 @@
         },
         {
             "name": "drupal/field_permissions",
-            "version": "7.1.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/field_permissions",
-                "reference": "3bcfcd779a932e6e8f36e7fcf57188a0e17757e1"
+                "reference": "7.x-1.0"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/field_permissions-7.x-1.0.zip",
                 "reference": null,
-                "shasum": null
+                "shasum": "2740c83973674e273223885ca0d938079362aa87"
             },
             "require": {
-                "drupal/drupal": "7.*"
+                "drupal/drupal": "~7.0"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-7.x-1.x": "7.1.x-dev"
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.0",
+                    "datestamp": "1476649739"
                 }
             },
-            "notification-url": "https://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packages.drupal.org/7/downloads",
             "license": [
                 "GPL-2.0+"
             ],
+            "authors": [
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                },
+                {
+                    "name": "mariacha1",
+                    "homepage": "https://www.drupal.org/user/2210776"
+                },
+                {
+                    "name": "markus_petrux",
+                    "homepage": "https://www.drupal.org/user/39593"
+                }
+            ],
             "description": "Set field-level permissions to create, update or view fields.",
             "homepage": "https://www.drupal.org/project/field_permissions",
-            "time": "2016-10-15 22:21:17"
+            "support": {
+                "source": "http://cgit.drupalcode.org/field_permissions"
+            }
         },
         {
             "name": "drupal/field_validation",
@@ -1910,10 +1897,8 @@
     "minimum-stability": "alpha",
     "stability-flags": {
         "drupal/admin_menu": 5,
-        "drupal/content_access": 10,
         "drupal/field_collection": 10,
         "drupal/field_group_inline": 10,
-        "drupal/field_permissions": 10,
         "drupal/masquerade": 5,
         "drupal/phpmailer": 20
     },
