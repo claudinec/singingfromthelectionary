@@ -3,27 +3,16 @@ description = Song content type for Singing from the Lectionary
 core = 7.x
 package = Lectionary
 version = 7.x-0.9
-dependencies[] = ctools
 dependencies[] = ds
 dependencies[] = ds_extras
 dependencies[] = entityreference
-dependencies[] = features
 dependencies[] = field_group
 dependencies[] = field_group_inline
+dependencies[] = field_permissions
 dependencies[] = lectionary_core
 dependencies[] = link
 dependencies[] = number
-dependencies[] = options
-dependencies[] = strongarm
-dependencies[] = taxonomy
-dependencies[] = text
-dependencies[] = views
 dependencies[] = views_bulk_operations
-<<<<<<< HEAD = ======
-<<<<<<< HEAD
-features[field_group][] = group_title_author|node|song|teaser
->>>>>>> update-core-754
-features[field_instance][] = node-song-field_lyrics_link
 features[ctools][] = data:data_default:1
 features[ctools][] = ds:ds:1
 features[ctools][] = feeds:feeds_importer_default:1
