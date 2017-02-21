@@ -21,7 +21,7 @@ function lectionary_songs_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => '',
-    'weight' => '0',
+    'weight' => '-10',
     'children' => array(
       0 => 'field_author',
       1 => 'title',
@@ -30,9 +30,16 @@ function lectionary_songs_field_group_info() {
     'format_settings' => array(
       'label' => '',
       'instance_settings' => array(
-        'separator' => '|',
+        'id' => '',
+        'classes' => '',
+        'element' => 'p',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
         'extra_classes' => '',
+        'separator' => '|',
       ),
+      'formatter' => '',
     ),
   );
   $field_groups[''] = $field_group;
