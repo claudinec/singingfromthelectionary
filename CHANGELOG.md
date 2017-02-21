@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Release 0.9.1 (21 Feb 2017)
+
+- Interface enhancements
+- Bug fixes
+- Resolves #26, #27, #28, #29, #30, #31, #32, #34, #35, #37, #38, #39, #40, #41, #42, #44, #45, #46, #47.
+
 ## Release 0.9 (11 May 2016)
 
 - Add songs admin view
