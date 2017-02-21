@@ -173,38 +173,8 @@ function lectionary_songs_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'song';
   $ds_layout->view_mode = 'default';
-  $ds_layout->layout = 'ds_2col_stacked_fluid';
+  $ds_layout->layout = 'ds_2col_stacked';
   $ds_layout->settings = array(
-    'regions' => array(
-      'header' => array(
-        0 => 'group_title_author',
-        1 => 'field_song_notes_public',
-        2 => 'field_song_notes',
-        3 => 'field_tags',
-        5 => 'title',
-        7 => 'field_author',
-      ),
-      'left' => array(
-        4 => 'field_lyrics_link',
-        6 => 'field_sheet_music_link',
-        8 => 'field_sound_sample_link',
-      ),
-      'right' => array(
-        9 => 'field_songbook_references',
-      ),
-    ),
-    'fields' => array(
-      'group_title_author' => 'header',
-      'field_song_notes_public' => 'header',
-      'field_song_notes' => 'header',
-      'field_tags' => 'header',
-      'field_lyrics_link' => 'left',
-      'title' => 'header',
-      'field_sheet_music_link' => 'left',
-      'field_author' => 'header',
-      'field_sound_sample_link' => 'left',
-      'field_songbook_references' => 'right',
-    ),
     'classes' => array(),
     'wrappers' => array(
       'header' => 'div',
@@ -218,6 +188,36 @@ function lectionary_songs_ds_layout_settings_info() {
     'layout_link_attribute' => '',
     'layout_link_custom' => '',
     'layout_disable_css' => 0,
+    'regions' => array(
+      'header' => array(
+        0 => 'group_title_author',
+        1 => 'field_song_notes_public',
+        2 => 'field_song_notes',
+        3 => 'field_tags',
+        4 => 'title',
+        5 => 'field_author',
+      ),
+      'left' => array(
+        0 => 'field_lyrics_link',
+        1 => 'field_sheet_music_link',
+        2 => 'field_sound_sample_link',
+      ),
+      'right' => array(
+        0 => 'field_songbook_references',
+      ),
+    ),
+    'fields' => array(
+      'group_title_author' => 'header',
+      'field_song_notes_public' => 'header',
+      'field_song_notes' => 'header',
+      'field_tags' => 'header',
+      'title' => 'header',
+      'field_author' => 'header',
+      'field_lyrics_link' => 'left',
+      'field_sheet_music_link' => 'left',
+      'field_sound_sample_link' => 'left',
+      'field_songbook_references' => 'right',
+    ),
   );
   $export['node|song|default'] = $ds_layout;
 
