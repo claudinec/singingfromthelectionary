@@ -252,3 +252,4 @@ features[variable][] = views_defaults
 features[views_view][] = lectionary_front_page
 features[views_view][] = lectionary_index
 features[views_view][] = other_occasions
+features[views_view][] = scripture_index
