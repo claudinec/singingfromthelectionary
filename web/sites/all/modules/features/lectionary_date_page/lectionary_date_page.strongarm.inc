@@ -62,6 +62,27 @@ function lectionary_date_page_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'diff_enable_revisions_page_node_article';
+  $strongarm->value = 1;
+  $export['diff_enable_revisions_page_node_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_show_preview_changes_node_article';
+  $strongarm->value = 1;
+  $export['diff_show_preview_changes_node_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'diff_view_mode_preview_node_article';
+  $strongarm->value = 'full';
+  $export['diff_view_mode_preview_node_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'entityqueue_field_names';
   $strongarm->value = array(
     0 => 'eq_node',
@@ -74,6 +95,9 @@ function lectionary_date_page_strongarm() {
   $strongarm->name = 'entityqueue_queue_names';
   $strongarm->value = array(
     0 => 'lectionary_pages',
+    1 => 'front_page',
+    2 => 'lectionary_index',
+    3 => 'other_occasions',
   );
   $export['entityqueue_queue_names'] = $strongarm;
 

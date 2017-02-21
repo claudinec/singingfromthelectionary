@@ -127,14 +127,24 @@ function lectionary_core_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'access toolbar'.
-  $permissions['access toolbar'] = array(
-    'name' => 'access toolbar',
+  // Exported permission: 'access site-wide contact form'.
+  $permissions['access site-wide contact form'] = array(
+    'name' => 'access site-wide contact form',
     'roles' => array(
       'administrator' => 'administrator',
-      'editor' => 'editor',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
     ),
-    'module' => 'toolbar',
+    'module' => 'contact',
+  );
+
+  // Exported permission: 'access user contact forms'.
+  $permissions['access user contact forms'] = array(
+    'name' => 'access user contact forms',
+    'roles' => array(
+      'administrator' => 'administrator',
+    ),
+    'module' => 'contact',
   );
 
   // Exported permission: 'access user profiles'.
@@ -211,6 +221,16 @@ function lectionary_core_user_default_permissions() {
     'module' => 'block',
   );
 
+  // Exported permission: 'administer contact forms'.
+  $permissions['administer contact forms'] = array(
+    'name' => 'administer contact forms',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'contact',
+  );
+
   // Exported permission: 'administer content types'.
   $permissions['administer content types'] = array(
     'name' => 'administer content types',
@@ -245,24 +265,6 @@ function lectionary_core_user_default_permissions() {
       'administrator' => 'administrator',
     ),
     'module' => 'features',
-  );
-
-  // Exported permission: 'administer feeds'.
-  $permissions['administer feeds'] = array(
-    'name' => 'administer feeds',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds',
-  );
-
-  // Exported permission: 'administer feeds_tamper'.
-  $permissions['administer feeds_tamper'] = array(
-    'name' => 'administer feeds_tamper',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'feeds_tamper',
   );
 
   // Exported permission: 'administer field collections'.
@@ -651,6 +653,13 @@ function lectionary_core_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in scripture_references'.
+  $permissions['delete terms in scripture_references'] = array(
+    'name' => 'delete terms in scripture_references',
+    'roles' => array(),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'delete terms in tags'.
   $permissions['delete terms in tags'] = array(
     'name' => 'delete terms in tags',
@@ -757,6 +766,13 @@ function lectionary_core_user_default_permissions() {
       'editor' => 'editor',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit terms in scripture_references'.
+  $permissions['edit terms in scripture_references'] = array(
+    'name' => 'edit terms in scripture_references',
+    'roles' => array(),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in tags'.
@@ -930,10 +946,33 @@ function lectionary_core_user_default_permissions() {
     'module' => 'disqus',
   );
 
-  // Exported permission: 'update lectionary_pages entityqueue'.
-  $permissions['update lectionary_pages entityqueue'] = array(
-    'name' => 'update lectionary_pages entityqueue',
-    'roles' => array(),
+  // Exported permission: 'update front_page entityqueue'.
+  $permissions['update front_page entityqueue'] = array(
+    'name' => 'update front_page entityqueue',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'entityqueue',
+  );
+
+  // Exported permission: 'update lectionary_index entityqueue'.
+  $permissions['update lectionary_index entityqueue'] = array(
+    'name' => 'update lectionary_index entityqueue',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
+    'module' => 'entityqueue',
+  );
+
+  // Exported permission: 'update other_occasions entityqueue'.
+  $permissions['update other_occasions entityqueue'] = array(
+    'name' => 'update other_occasions entityqueue',
+    'roles' => array(
+      'administrator' => 'administrator',
+      'editor' => 'editor',
+    ),
     'module' => 'entityqueue',
   );
 

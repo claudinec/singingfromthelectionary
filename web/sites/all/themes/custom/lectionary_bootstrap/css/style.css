@@ -13,7 +13,7 @@ body {
     font-weight: bold;
 }
 
-.field-name-field-scripture {
+.field-name-field-lectionary-scripture-refer {
     color: #7d181e;
     font-weight: bold;
 }
@@ -26,6 +26,18 @@ body {
     color: #7d181e;
     font-size: x-large;
     font-weight: bold;
+}
+
+.field-name-field-lyrics-link a {
+    color: green;
+}
+
+.field-name-field-sheet-music-link a {
+    color: purple;
+}
+
+.field-name-field-sound-sample-link a {
+    color: red;
 }
 
 .field-name-field-tags {

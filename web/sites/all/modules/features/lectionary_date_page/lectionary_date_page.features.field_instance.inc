@@ -21,6 +21,7 @@ function lectionary_date_page_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -46,44 +47,38 @@ function lectionary_date_page_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'field_collection_item-field_lectionary_section-field_scripture'.
-  $field_instances['field_collection_item-field_lectionary_section-field_scripture'] = array(
+  // 'field_collection_item-field_lectionary_section-field_lectionary_scripture_refer'.
+  $field_instances['field_collection_item-field_lectionary_section-field_lectionary_scripture_refer'] = array(
     'bundle' => 'field_lectionary_section',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Scripture references for this section.',
+    'description' => 'Scripture references for this lectionary section.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-      'full' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 1,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'field_collection_item',
-    'field_name' => 'field_scripture',
-    'label' => 'Scripture',
+    'field_name' => 'field_lectionary_scripture_refer',
+    'label' => 'Lectionary scripture references',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
+      'active' => 0,
+      'module' => 'taxonomy',
       'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
         'size' => 60,
       ),
-      'type' => 'text_textfield',
-      'weight' => 1,
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 2,
     ),
   );
 
@@ -125,43 +120,7 @@ function lectionary_date_page_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'field_collection_item-field_lectionary_section-field_scripture_references'.
-  $field_instances['field_collection_item-field_lectionary_section-field_scripture_references'] = array(
-    'bundle' => 'field_lectionary_section',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_scripture_references',
-    'label' => 'Scripture references',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'taxonomy',
-      'settings' => array(
-        'autocomplete_path' => 'taxonomy/autocomplete',
-        'size' => 60,
-      ),
-      'type' => 'taxonomy_autocomplete',
-      'weight' => 1,
+      'weight' => 3,
     ),
   );
 
@@ -175,10 +134,9 @@ function lectionary_date_page_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'list',
         'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 0,
+        'type' => 'hidden',
+        'weight' => 4,
       ),
       'full' => array(
         'label' => 'hidden',
@@ -235,6 +193,7 @@ function lectionary_date_page_field_default_field_instances() {
         'weight' => 3,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_song',
     'label' => 'Song',
@@ -251,7 +210,7 @@ function lectionary_date_page_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -392,7 +351,7 @@ function lectionary_date_page_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 7,
+      'weight' => 3,
     ),
   );
 
@@ -434,7 +393,7 @@ function lectionary_date_page_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'taxonomy_autocomplete',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -442,13 +401,12 @@ function lectionary_date_page_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Enter a comma-separated list of words to describe your content.');
   t('Image');
+  t('Lectionary scripture references');
   t('Lectionary section');
   t('Notes');
   t('Queue items');
-  t('Scripture');
   t('Scripture notes');
-  t('Scripture references');
-  t('Scripture references for this section.');
+  t('Scripture references for this lectionary section.');
   t('Section');
   t('Song');
   t('Tags');

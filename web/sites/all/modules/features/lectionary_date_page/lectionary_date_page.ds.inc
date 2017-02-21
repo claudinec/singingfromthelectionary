@@ -5,6 +5,30 @@
  */
 
 /**
+ * Implements hook_ds_field_settings_info().
+ */
+function lectionary_date_page_ds_field_settings_info() {
+  $export = array();
+
+  $ds_fieldsetting = new stdClass();
+  $ds_fieldsetting->api_version = 1;
+  $ds_fieldsetting->id = 'field_collection_item|field_lectionary_section|default';
+  $ds_fieldsetting->entity_type = 'field_collection_item';
+  $ds_fieldsetting->bundle = 'field_lectionary_section';
+  $ds_fieldsetting->view_mode = 'default';
+  $ds_fieldsetting->settings = array(
+    'field_song' => array(
+      'formatter_settings' => array(
+        'ft' => array(),
+      ),
+    ),
+  );
+  $export['field_collection_item|field_lectionary_section|default'] = $ds_fieldsetting;
+
+  return $export;
+}
+
+/**
  * Implements hook_ds_layout_settings_info().
  */
 function lectionary_date_page_ds_layout_settings_info() {
@@ -20,15 +44,15 @@ function lectionary_date_page_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_section',
-        1 => 'field_scripture_references',
+        0 => 'field_scripture',
+        1 => 'field_lectionary_scripture_refer',
         2 => 'field_scripture_notes',
         3 => 'field_song',
       ),
     ),
     'fields' => array(
-      'field_section' => 'ds_content',
-      'field_scripture_references' => 'ds_content',
+      'field_scripture' => 'ds_content',
+      'field_lectionary_scripture_refer' => 'ds_content',
       'field_scripture_notes' => 'ds_content',
       'field_song' => 'ds_content',
     ),

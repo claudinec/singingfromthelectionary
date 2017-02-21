@@ -30,4 +30,5 @@ stylesheets[all][] = css/style.css
 ;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;
 
+scripts[] = js/scripture_links.js
 scripts[] = js/songbook_refs.js
