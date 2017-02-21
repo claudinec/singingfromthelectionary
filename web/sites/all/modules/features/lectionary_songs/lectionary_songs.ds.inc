@@ -55,7 +55,7 @@ function lectionary_songs_ds_field_settings_info() {
           'ow-def-at' => TRUE,
           'fi' => TRUE,
           'fi-el' => 'div',
-          'fi-cl' => 'col-md-4',
+          'fi-cl' => 'col-md-3',
           'fi-at' => '',
           'fi-def-at' => TRUE,
           'fi-odd-even' => FALSE,
