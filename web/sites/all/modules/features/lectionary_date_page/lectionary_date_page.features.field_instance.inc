@@ -57,15 +57,8 @@ function lectionary_date_page_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'taxonomy',
-        'settings' => array(
-          'element_class' => '',
-          'element_option' => '- None -',
-          'links_option' => 0,
-          'separator_option' => ', ',
-          'wrapper_class' => '',
-          'wrapper_option' => '- None -',
-        ),
-        'type' => 'taxonomy_term_reference_link',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 1,
       ),
     ),
@@ -182,7 +175,7 @@ function lectionary_date_page_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 1,
-          'use_content_language' => TRUE,
+          'use_content_language' => 1,
           'view_mode' => 'full',
         ),
         'type' => 'entityreference_entity_view',
