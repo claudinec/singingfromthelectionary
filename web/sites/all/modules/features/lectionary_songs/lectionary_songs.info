@@ -57,6 +57,7 @@ features[variable][] = node_options_song
 features[variable][] = node_preview_song
 features[variable][] = node_submitted_song
 features[variable][] = pathauto_node_song_pattern
+features[variable][] = pathauto_taxonomy_term_scripture_references_pattern
 features[variable][] = pathauto_taxonomy_term_tags_pattern
 features[views_view][] = songs_admin
 features[views_view][] = songs_and_authors

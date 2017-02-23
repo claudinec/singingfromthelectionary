@@ -114,6 +114,10 @@ function lectionary_core_views_default_views() {
     'front_page' => 0,
     'other_occasions' => 0,
   );
+  /* Relationship: Content: Song scripture references (field_song_scripture_references) */
+  $handler->display->display_options['relationships']['field_song_scripture_references_tid']['id'] = 'field_song_scripture_references_tid';
+  $handler->display->display_options['relationships']['field_song_scripture_references_tid']['table'] = 'field_data_field_song_scripture_references';
+  $handler->display->display_options['relationships']['field_song_scripture_references_tid']['field'] = 'field_song_scripture_references_tid';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -140,20 +144,6 @@ function lectionary_core_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'lectionary-index';
-
-  /* Display: Feed */
-  $handler = $view->new_display('feed', 'Feed', 'feed');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Front page feed';
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['style_plugin'] = 'rss';
-  $handler->display->display_options['row_plugin'] = 'node_rss';
-  $handler->display->display_options['path'] = 'rss.xml';
-  $handler->display->display_options['displays'] = array(
-    'default' => 'default',
-    'page' => 'page',
-  );
-  $handler->display->display_options['sitename_title'] = '1';
   $export['lectionary_index'] = $view;
 
   $view = new view();
@@ -216,20 +206,6 @@ function lectionary_core_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'other-occasions';
-
-  /* Display: Feed */
-  $handler = $view->new_display('feed', 'Feed', 'feed');
-  $handler->display->display_options['defaults']['title'] = FALSE;
-  $handler->display->display_options['title'] = 'Front page feed';
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['style_plugin'] = 'rss';
-  $handler->display->display_options['row_plugin'] = 'node_rss';
-  $handler->display->display_options['path'] = 'rss.xml';
-  $handler->display->display_options['displays'] = array(
-    'default' => 'default',
-    'page' => 'page',
-  );
-  $handler->display->display_options['sitename_title'] = '1';
   $export['other_occasions'] = $view;
 
   $view = new view();

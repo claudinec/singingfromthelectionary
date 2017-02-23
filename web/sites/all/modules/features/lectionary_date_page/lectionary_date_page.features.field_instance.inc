@@ -57,8 +57,15 @@ function lectionary_date_page_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_plain',
+        'settings' => array(
+          'element_class' => '',
+          'element_option' => '- None -',
+          'links_option' => 0,
+          'separator_option' => ', ',
+          'wrapper_class' => '',
+          'wrapper_option' => '- None -',
+        ),
+        'type' => 'taxonomy_term_reference_link',
         'weight' => 1,
       ),
     ),

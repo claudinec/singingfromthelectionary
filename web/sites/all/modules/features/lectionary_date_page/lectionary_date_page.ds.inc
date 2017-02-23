@@ -17,7 +17,7 @@ function lectionary_date_page_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'field_lectionary_section';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
-    'field_song' => array(
+    'field_lectionary_scripture_refer' => array(
       'formatter_settings' => array(
         'ft' => array(),
       ),
@@ -44,14 +44,12 @@ function lectionary_date_page_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_scripture',
-        1 => 'field_lectionary_scripture_refer',
-        2 => 'field_scripture_notes',
-        3 => 'field_song',
+        0 => 'field_lectionary_scripture_refer',
+        1 => 'field_scripture_notes',
+        2 => 'field_song',
       ),
     ),
     'fields' => array(
-      'field_scripture' => 'ds_content',
       'field_lectionary_scripture_refer' => 'ds_content',
       'field_scripture_notes' => 'ds_content',
       'field_song' => 'ds_content',
