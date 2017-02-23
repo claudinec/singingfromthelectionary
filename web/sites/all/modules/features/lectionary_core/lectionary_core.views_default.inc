@@ -212,7 +212,7 @@ function lectionary_core_views_default_views() {
   $view->name = 'scripture_index';
   $view->description = '';
   $view->tag = 'default';
-  $view->base_table = 'taxonomy_term_data';
+  $view->base_table = 'node';
   $view->human_name = 'Scripture Index';
   $view->core = 7;
   $view->api_version = '3.0';
@@ -231,31 +231,87 @@ function lectionary_core_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['inline'] = array(
-    'name' => 'name',
+    'field_scripture_ref_book' => 'field_scripture_ref_book',
+    'field_scripture_ref_num' => 'field_scripture_ref_num',
   );
-  /* Field: Taxonomy term: Name */
-  $handler->display->display_options['fields']['name']['id'] = 'name';
-  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['fields']['name']['field'] = 'name';
-  $handler->display->display_options['fields']['name']['label'] = '';
-  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Sort criterion: Taxonomy term: Name */
-  $handler->display->display_options['sorts']['name']['id'] = 'name';
-  $handler->display->display_options['sorts']['name']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['sorts']['name']['field'] = 'name';
-  /* Filter criterion: Taxonomy vocabulary: Machine name */
-  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
-  $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
-  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
-  $handler->display->display_options['filters']['machine_name']['value'] = array(
-    'scripture_references' => 'scripture_references',
+  /* Relationship: Content: Lectionary section (field_lectionary_section) */
+  $handler->display->display_options['relationships']['field_lectionary_section_value']['id'] = 'field_lectionary_section_value';
+  $handler->display->display_options['relationships']['field_lectionary_section_value']['table'] = 'field_data_field_lectionary_section';
+  $handler->display->display_options['relationships']['field_lectionary_section_value']['field'] = 'field_lectionary_section_value';
+  $handler->display->display_options['relationships']['field_lectionary_section_value']['required'] = TRUE;
+  $handler->display->display_options['relationships']['field_lectionary_section_value']['delta'] = '0';
+  /* Field: Field collection item: Scripture ref book */
+  $handler->display->display_options['fields']['field_scripture_ref_book']['id'] = 'field_scripture_ref_book';
+  $handler->display->display_options['fields']['field_scripture_ref_book']['table'] = 'field_data_field_scripture_ref_book';
+  $handler->display->display_options['fields']['field_scripture_ref_book']['field'] = 'field_scripture_ref_book';
+  $handler->display->display_options['fields']['field_scripture_ref_book']['relationship'] = 'field_lectionary_section_value';
+  $handler->display->display_options['fields']['field_scripture_ref_book']['label'] = '';
+  $handler->display->display_options['fields']['field_scripture_ref_book']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_scripture_ref_book']['hide_empty'] = TRUE;
+  /* Field: Field collection item: Scripture ref num */
+  $handler->display->display_options['fields']['field_scripture_ref_num']['id'] = 'field_scripture_ref_num';
+  $handler->display->display_options['fields']['field_scripture_ref_num']['table'] = 'field_data_field_scripture_ref_num';
+  $handler->display->display_options['fields']['field_scripture_ref_num']['field'] = 'field_scripture_ref_num';
+  $handler->display->display_options['fields']['field_scripture_ref_num']['relationship'] = 'field_lectionary_section_value';
+  $handler->display->display_options['fields']['field_scripture_ref_num']['label'] = '';
+  $handler->display->display_options['fields']['field_scripture_ref_num']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_scripture_ref_num']['hide_empty'] = TRUE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Sort criterion: Field collection item: Scripture ref book (field_scripture_ref_book) */
+  $handler->display->display_options['sorts']['field_scripture_ref_book_value']['id'] = 'field_scripture_ref_book_value';
+  $handler->display->display_options['sorts']['field_scripture_ref_book_value']['table'] = 'field_data_field_scripture_ref_book';
+  $handler->display->display_options['sorts']['field_scripture_ref_book_value']['field'] = 'field_scripture_ref_book_value';
+  $handler->display->display_options['sorts']['field_scripture_ref_book_value']['relationship'] = 'field_lectionary_section_value';
+  /* Sort criterion: Field collection item: Scripture ref num (field_scripture_ref_num) */
+  $handler->display->display_options['sorts']['field_scripture_ref_num_value']['id'] = 'field_scripture_ref_num_value';
+  $handler->display->display_options['sorts']['field_scripture_ref_num_value']['table'] = 'field_data_field_scripture_ref_num';
+  $handler->display->display_options['sorts']['field_scripture_ref_num_value']['field'] = 'field_scripture_ref_num_value';
+  $handler->display->display_options['sorts']['field_scripture_ref_num_value']['relationship'] = 'field_lectionary_section_value';
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'article' => 'article',
   );
+  /* Filter criterion: Field collection item: Scripture ref book (field_scripture_ref_book) */
+  $handler->display->display_options['filters']['field_scripture_ref_book_value']['id'] = 'field_scripture_ref_book_value';
+  $handler->display->display_options['filters']['field_scripture_ref_book_value']['table'] = 'field_data_field_scripture_ref_book';
+  $handler->display->display_options['filters']['field_scripture_ref_book_value']['field'] = 'field_scripture_ref_book_value';
+  $handler->display->display_options['filters']['field_scripture_ref_book_value']['relationship'] = 'field_lectionary_section_value';
+  $handler->display->display_options['filters']['field_scripture_ref_book_value']['operator'] = 'not empty';
+  /* Filter criterion: Field collection item: Scripture ref num (field_scripture_ref_num) */
+  $handler->display->display_options['filters']['field_scripture_ref_num_value']['id'] = 'field_scripture_ref_num_value';
+  $handler->display->display_options['filters']['field_scripture_ref_num_value']['table'] = 'field_data_field_scripture_ref_num';
+  $handler->display->display_options['filters']['field_scripture_ref_num_value']['field'] = 'field_scripture_ref_num_value';
+  $handler->display->display_options['filters']['field_scripture_ref_num_value']['relationship'] = 'field_lectionary_section_value';
+  $handler->display->display_options['filters']['field_scripture_ref_num_value']['operator'] = 'not empty';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'scripture-index';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Scripture Index';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'menu-indexes';
+  $handler->display->display_options['menu']['context'] = 0;
+  $handler->display->display_options['menu']['context_only_inline'] = 0;
   $export['scripture_index'] = $view;
 
   return $export;
