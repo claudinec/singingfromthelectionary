@@ -6,15 +6,17 @@ body {
     background-color: #fcfbf5;
 }
 
+/* LECTIONARY DISPLAY */
+
+.field-name-field-lectionary-scripture-refs, .field-name-field-lectionary-scripture-refer, .group-lectionary-scripture-ref {
+    color: #7d181e;
+    font-weight: bold;
+}
+
 /* SONG DISPLAY */
 
 .field-name-field-first-line {
     color: #000099;
-    font-weight: bold;
-}
-
-.field-name-field-lectionary-scripture-refer {
-    color: #7d181e;
     font-weight: bold;
 }
 
@@ -49,3 +51,12 @@ body {
     font-size: large;
     font-weight: bold;
 }
+
+/* SCRIPTURE INDEX */
+
+.views-field-field-scripture-ref-book,
+.views-field-field-scripture-ref-num {
+    color: #7d181e;
+    font-weight: bold;
+}
+

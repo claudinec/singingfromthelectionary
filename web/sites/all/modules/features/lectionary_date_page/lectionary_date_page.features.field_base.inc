@@ -70,6 +70,9 @@ function lectionary_date_page_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_lectionary_scripture_refer',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'tid' => array(
         0 => 'tid',
@@ -87,6 +90,30 @@ function lectionary_date_page_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'taxonomy_term_reference',
+  );
+
+  // Exported field_base: 'field_lectionary_scripture_refs'.
+  $field_bases['field_lectionary_scripture_refs'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_lectionary_scripture_refs',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_lectionary_section'.
@@ -122,6 +149,122 @@ function lectionary_date_page_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_scripture_notes',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => 255,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_scripture_ref_book'.
+  $field_bases['field_scripture_ref_book'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_scripture_ref_book',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        1 => 'Genesis',
+        2 => 'Exodus',
+        3 => 'Leviticus',
+        4 => 'Numbers',
+        5 => 'Deuteronomy',
+        6 => 'Joshua',
+        7 => 'Judges',
+        8 => 'Ruth',
+        9 => '1 Samuel',
+        10 => '2 Samuel',
+        11 => '1 Kings',
+        12 => '2 Kings',
+        13 => '1 Chronicles',
+        14 => '2 Chronicles',
+        15 => 'Ezra',
+        16 => 'Nehemiah',
+        17 => 'Esther',
+        18 => 'Job',
+        19 => 'Proverbs',
+        20 => 'Ecclesiastes',
+        21 => 'Song of Solomon',
+        22 => 'Isaiah',
+        23 => 'Jeremiah',
+        24 => 'Lamentations',
+        25 => 'Ezekiel',
+        26 => 'Daniel',
+        27 => 'Hosea',
+        28 => 'Joel',
+        29 => 'Amos',
+        30 => 'Obadiah',
+        31 => 'Jonah',
+        32 => 'Micah',
+        33 => 'Nahum',
+        34 => 'Habakkuk',
+        35 => 'Zephaniah',
+        36 => 'Haggai',
+        37 => 'Zechariah',
+        38 => 'Malachi',
+        39 => 'Psalm',
+        40 => 'Matthew',
+        41 => 'Mark',
+        42 => 'Luke',
+        43 => 'John',
+        44 => 'Acts',
+        45 => 'Romans',
+        46 => '1 Corinthians',
+        47 => '2 Corinthians',
+        48 => 'Galatians',
+        49 => 'Ephesians',
+        50 => 'Philippians',
+        51 => 'Colossians',
+        52 => '1 Thessalonians',
+        53 => '2 Thessalonians',
+        54 => '1 Timothy',
+        55 => '2 Timothy',
+        56 => 'Titus',
+        57 => 'Philemon',
+        58 => 'Hebrews',
+        59 => 'James',
+        60 => '1 Peter',
+        61 => '2 Peter',
+        62 => '1 John',
+        63 => '2 John',
+        64 => '3 John',
+        65 => 'Jude',
+        66 => 'Revelation',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => 0,
+    'type' => 'list_integer',
+  );
+
+  // Exported field_base: 'field_scripture_ref_num'.
+  $field_bases['field_scripture_ref_num'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_scripture_ref_num',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
