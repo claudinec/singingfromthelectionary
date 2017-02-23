@@ -19,7 +19,23 @@ function lectionary_date_page_ds_field_settings_info() {
   $ds_fieldsetting->settings = array(
     'field_song' => array(
       'formatter_settings' => array(
-        'ft' => array(),
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'lb-el' => 'h3',
+        ),
+      ),
+    ),
+    'field_lectionary_scripture_refer' => array(
+      'formatter_settings' => array(
+        'ft' => array(
+          'func' => 'theme_ds_field_expert',
+          'ow' => TRUE,
+          'ow-el' => 'h3',
+          'ow-cl' => 'field-name-field-lectionary-scripture-refer',
+          'ow-def-cl' => FALSE,
+          'ow-at' => '',
+          'ow-def-at' => FALSE,
+        ),
       ),
     ),
   );
@@ -44,14 +60,12 @@ function lectionary_date_page_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_scripture',
-        1 => 'field_lectionary_scripture_refer',
-        2 => 'field_scripture_notes',
-        3 => 'field_song',
+        0 => 'field_lectionary_scripture_refer',
+        1 => 'field_scripture_notes',
+        2 => 'field_song',
       ),
     ),
     'fields' => array(
-      'field_scripture' => 'ds_content',
       'field_lectionary_scripture_refer' => 'ds_content',
       'field_scripture_notes' => 'ds_content',
       'field_song' => 'ds_content',
