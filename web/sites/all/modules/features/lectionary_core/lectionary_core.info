@@ -55,6 +55,7 @@ features[menu_custom][] = menu-indexes
 features[menu_custom][] = menu-other-useful-resources
 features[menu_links][] = menu-indexes_lectionary-index:lectionary-index
 features[menu_links][] = menu-indexes_other-occasions:other-occasions
+features[menu_links][] = menu-indexes_scripture-index:scripture-index
 features[menu_links][] = menu-other-useful-resources_lectionary-liturgies:http://lectionaryliturgies.blogspot.com/
 features[menu_links][] = menu-other-useful-resources_metrical-index:http://www.hymntime.com/tch/mid/met/met.htm
 features[menu_links][] = menu-other-useful-resources_the-text-this-week:http://www.textweek.com/

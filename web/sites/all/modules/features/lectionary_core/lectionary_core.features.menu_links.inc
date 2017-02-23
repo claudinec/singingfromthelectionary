@@ -50,6 +50,23 @@ function lectionary_core_menu_default_menu_links() {
     'weight' => -48,
     'customized' => 1,
   );
+  // Exported menu link: menu-indexes_scripture-index:scripture-index.
+  $menu_links['menu-indexes_scripture-index:scripture-index'] = array(
+    'menu_name' => 'menu-indexes',
+    'link_path' => 'scripture-index',
+    'router_path' => 'scripture-index',
+    'link_title' => 'Scripture Index',
+    'options' => array(
+      'identifier' => 'menu-indexes_scripture-index:scripture-index',
+    ),
+    'module' => 'system',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+  );
   // Exported menu link: menu-other-useful-resources_lectionary-liturgies:http://lectionaryliturgies.blogspot.com/.
   $menu_links['menu-other-useful-resources_lectionary-liturgies:http://lectionaryliturgies.blogspot.com/'] = array(
     'menu_name' => 'menu-other-useful-resources',
@@ -155,6 +172,7 @@ function lectionary_core_menu_default_menu_links() {
   t('Lectionary Liturgies');
   t('Metrical index');
   t('Other Occasions');
+  t('Scripture Index');
   t('The Text This Week');
   t('Together to Celebrate');
 
