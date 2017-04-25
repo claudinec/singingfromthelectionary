@@ -42,7 +42,7 @@ function lectionary_songs_field_group_info() {
       'formatter' => '',
     ),
   );
-  $field_groups[''] = $field_group;
+  $field_groups['group_title_author|node|song|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -69,7 +69,7 @@ function lectionary_songs_field_group_info() {
       ),
     ),
   );
-  $field_groups[''] = $field_group;
+  $field_groups['group_title_author|node|song|teaser'] = $field_group;
 
   return $field_groups;
 }
