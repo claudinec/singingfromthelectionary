@@ -141,14 +141,7 @@ function lectionary_date_page_strongarm() {
           'weight' => '5',
         ),
       ),
-      'display' => array(
-        'disqus' => array(
-          'teaser' => array(
-            'weight' => '4',
-            'visible' => FALSE,
-          ),
-        ),
-      ),
+      'display' => array(),
     ),
   );
   $export['field_bundle_settings_node__article'] = $strongarm;
