@@ -64,6 +64,11 @@ body {
 .views-field-field-scripture-ref-num {
     color: #7d181e;
     font-weight: bold;
+}
+
+/* ALL VIEWS */
+
+.views-row {
     margin-top: 12px;
 }
 
