@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## Release 0.9.2 (25 Apr 2017)
+
+In progress:
+- #49 Trim whitespace in Oremus link
+
+Resolves:
+- #50 Front page view
+- #51 Nav bar style
+- #52 Remove home link from nav bar
+- #53 Scripture index vertical space
+
 ## Release 0.9.1 (21 Feb 2017)
 
 - Interface enhancements
