@@ -12,6 +12,7 @@ Thumbs.db
 *.komodoproject
 *.komodotools
 nbproject
+*.swp
 
 # Ignore configuration files that may contain sensitive information.
 web/sites/*/*settings*.php
