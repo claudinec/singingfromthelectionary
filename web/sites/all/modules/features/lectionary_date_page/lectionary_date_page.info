@@ -40,6 +40,7 @@ features[field_base][] = field_section
 features[field_base][] = field_song
 features[field_group][] = group_lectionary_scripture_ref|field_collection_item|field_lectionary_section|default
 features[field_group][] = group_lectionary_scripture_ref|field_collection_item|field_lectionary_section|form
+features[field_group][] = group_lectionary_scripture_ref|field_collection_item|field_lectionary_section|full
 features[field_instance][] = entityqueue_subqueue-lectionary_pages-eq_node
 features[field_instance][] = field_collection_item-field_lectionary_section-field_lectionary_scripture_refer
 features[field_instance][] = field_collection_item-field_lectionary_section-field_lectionary_scripture_refs
