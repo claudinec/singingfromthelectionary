@@ -6,6 +6,12 @@ body {
     background-color: #fcfbf5;
 }
 
+/* NAVIGATION BAR */
+
+.name navbar-brand {
+    font-size: 36px;
+}
+
 /* LECTIONARY DISPLAY */
 
 .field-name-field-lectionary-scripture-refs, .field-name-field-lectionary-scripture-refer, .group-lectionary-scripture-ref {
@@ -58,5 +64,6 @@ body {
 .views-field-field-scripture-ref-num {
     color: #7d181e;
     font-weight: bold;
+    margin-top: 12px;
 }
 

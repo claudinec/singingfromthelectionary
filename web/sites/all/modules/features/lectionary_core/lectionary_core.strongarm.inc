@@ -537,7 +537,7 @@ function lectionary_core_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_slogan';
-  $strongarm->value = '';
+  $strongarm->value = 'Weekly song, hymn and recorded music suggestions and resources for worship - based on the Revised Common Lectionary. ';
   $export['site_slogan'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -559,15 +559,15 @@ function lectionary_core_strongarm() {
     'toggle_comment_user_picture' => 1,
     'toggle_comment_user_verification' => 1,
     'toggle_favicon' => 1,
-    'toggle_main_menu' => 1,
-    'toggle_secondary_menu' => 1,
+    'toggle_main_menu' => 0,
+    'toggle_secondary_menu' => 0,
     'default_logo' => 1,
     'logo_path' => '',
     'logo_upload' => '',
     'default_favicon' => 1,
     'favicon_path' => '',
     'favicon_upload' => '',
-    'bootstrap__active_tab' => 'edit-components',
+    'bootstrap__active_tab' => 'edit-general',
     'bootstrap_fluid_container' => 0,
     'bootstrap_button_size' => '',
     'bootstrap_button_colorize' => 1,
@@ -642,6 +642,7 @@ function lectionary_core_strongarm() {
     'bootstrap_cdn_custom_js_min' => 'https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js',
     'bootstrap_cdn_jsdelivr_version' => '3.3.5',
     'bootstrap_cdn_jsdelivr_theme' => 'readable',
+    'jquery_update_jquery_version' => '2.1',
   );
   $export['theme_lectionary_bootstrap_settings'] = $strongarm;
 
