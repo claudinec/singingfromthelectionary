@@ -349,15 +349,6 @@ function lectionary_core_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: 'administer phpmailer settings'.
-  $permissions['administer phpmailer settings'] = array(
-    'name' => 'administer phpmailer settings',
-    'roles' => array(
-      'administrator' => 'administrator',
-    ),
-    'module' => 'phpmailer',
-  );
-
   // Exported permission: 'administer schema'.
   $permissions['administer schema'] = array(
     'name' => 'administer schema',
