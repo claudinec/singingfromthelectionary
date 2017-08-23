@@ -144,7 +144,7 @@ function lectionary_date_page_strongarm() {
       'display' => array(
         'disqus' => array(
           'teaser' => array(
-            'weight' => '4',
+            'weight' => '3',
             'visible' => FALSE,
           ),
         ),
