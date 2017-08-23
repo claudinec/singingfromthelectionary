@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Release 0.9.3 (23 Aug 2017)
+
+Resolves:
+- #57
+- #58
+
 ## Release 0.9.2 (25 Apr 2017)
 
 In progress:
